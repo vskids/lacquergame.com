@@ -1,0 +1,11 @@
+{
+  "name": "lacquergame.com",
+  "description": "lacquergame.com static web content",
+  "version": "2.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:vskids/lacquergame.com.git"
+  },
+  "private": true,
+  "devDependencies": {}
+}
