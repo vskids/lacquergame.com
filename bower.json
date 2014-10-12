@@ -1,0 +1,18 @@
+{
+  "name": "lacquergame.com",
+  "version": "2.0.0",
+  "homepage": "https://github.com/vskids/lacquergame.com",
+  "authors": [
+    "Slipp Douglas Thompson <git@slippyd.com>"
+  ],
+  "description": "lacquergame.com static web content",
+  "license": "Copyright by the authors.  All rights reserved.",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
