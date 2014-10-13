@@ -1,4 +1,6 @@
-var gulp = require('gulp');
+var gulp = require('gulp-help')(
+	require('gulp')
+);
 
 gulp.task('default', function() {
 	// place code for your default task here
