@@ -36,6 +36,7 @@ gulp.task('build-less', "Compiles LESS › CSS", function () {
 
 gulp.task('watch', "Automatically re-builds changes LESS files", function () {
 	gulp.watch(PATHS.dev.less+'**/*.less', ['build-less']);
+	gulp.watch(PATHS.browser.css+'non-responsive.css', ['build-less']); // eww
 });
 
 
