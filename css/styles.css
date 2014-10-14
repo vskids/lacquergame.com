@@ -6262,5 +6262,9 @@ button.close {
   background-color: transparent !important;
 }
 
+/* fix for right-edge white area when the viewport is narrower than bootstrap .container width set in non-responsive.css */
+body {
+  min-width: 970px !important;
+}
 
 /*# sourceMappingURL=styles.css.map */
