@@ -3,6 +3,8 @@ var gulp = require('gulp-help')(
 );
 var less = require('gulp-less');
 var sourcemaps = require('gulp-sourcemaps');
+var notify = require("gulp-notify");
+var plumber = require('gulp-plumber');
 
 
 
@@ -23,7 +25,13 @@ const PATHS = {
 
 gulp.task('build-less', "Compiles LESS › CSS", function () {
 	gulp.src(PATHS.dev.less+'styles.less').pipe(
+		plumber({
+			errorHandler: notify.onError({ message: 'Error: <%= error.message %>' })
+		})
+	).pipe(
 		sourcemaps.init()
+	).pipe(
+		notify({ message: "Rebuilt LESS: <%= file.relative %>", emitError: false })
 	).pipe(
 		less()
 	).pipe(
