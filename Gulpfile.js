@@ -5,6 +5,9 @@ var less = require('gulp-less');
 var sourcemaps = require('gulp-sourcemaps');
 
 
+
+// Constants
+
 const PATHS = {
 	'dev': {
 		'less': './less/'
@@ -14,6 +17,9 @@ const PATHS = {
 	}
 };
 
+
+
+// Tasks
 
 gulp.task('build-less', "Compiles LESS › CSS", function () {
 	gulp.src(PATHS.dev.less+'styles.less').pipe(
@@ -32,6 +38,9 @@ gulp.task('watch', "Automatically re-builds changes LESS files", function () {
 	gulp.watch(PATHS.dev.less+'**/*.less', ['build-less']);
 });
 
+
+
+// Tasks Aliases
 
 function addGulpTaskAlias(alias, originalTask)
 {
