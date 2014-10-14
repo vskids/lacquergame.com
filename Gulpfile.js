@@ -29,3 +29,8 @@ gulp.task('build-less', "Compiles LESS › CSS",
 	},
 	{ "aliases": ['less'] }
 );
+
+
+gulp.task('watch', "Automatically re-builds changes LESS files", function () {
+	gulp.watch(PATHS.dev.less+'**/*.less', ['build-less']);
+});
