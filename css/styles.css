@@ -6262,9 +6262,93 @@ button.close {
   background-color: transparent !important;
 }
 
-/* fix for right-edge white area when the viewport is narrower than bootstrap .container width set in non-responsive.css */
 body {
   min-width: 970px !important;
+}
+html,
+body {
+  height: 100%;
+}
+.screenheight-50 {
+  height: 50%;
+}
+.screenheight-50 > .screenheight-50 {
+  height: 100%;
+}
+.screenheight-100 {
+  height: 100%;
+}
+.screenheight-100 > .screenheight-50 {
+  height: 50%;
+}
+.screenheight-100 > .screenheight-100 {
+  height: 100%;
+}
+.screenheight-150 {
+  height: 150%;
+}
+.screenheight-150 > .screenheight-50 {
+  height: 33.33333333%;
+}
+.screenheight-150 > .screenheight-100 {
+  height: 66.66666667%;
+}
+.screenheight-150 > .screenheight-150 {
+  height: 100%;
+}
+.screenheight-200 {
+  height: 200%;
+}
+.screenheight-200 > .screenheight-50 {
+  height: 25%;
+}
+.screenheight-200 > .screenheight-100 {
+  height: 50%;
+}
+.screenheight-200 > .screenheight-150 {
+  height: 75%;
+}
+.screenheight-200 > .screenheight-200 {
+  height: 100%;
+}
+.screenheight-300 {
+  height: 300%;
+}
+.screenheight-300 > .screenheight-50 {
+  height: 16.66666667%;
+}
+.screenheight-300 > .screenheight-100 {
+  height: 33.33333333%;
+}
+.screenheight-300 > .screenheight-150 {
+  height: 50%;
+}
+.screenheight-300 > .screenheight-200 {
+  height: 66.66666667%;
+}
+.screenheight-300 > .screenheight-300 {
+  height: 100%;
+}
+.screenheight-400 {
+  height: 400%;
+}
+.screenheight-400 > .screenheight-50 {
+  height: 12.5%;
+}
+.screenheight-400 > .screenheight-100 {
+  height: 25%;
+}
+.screenheight-400 > .screenheight-150 {
+  height: 37.5%;
+}
+.screenheight-400 > .screenheight-200 {
+  height: 50%;
+}
+.screenheight-400 > .screenheight-300 {
+  height: 75%;
+}
+.screenheight-400 > .screenheight-400 {
+  height: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */

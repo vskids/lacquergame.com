@@ -2,3 +2,11 @@
 body {
 	min-width: 970px !important;
 }
+
+
+// full-screen-height adjustments, rules
+
+html, body { height: 100%; }
+
+@screenheights: 50%, 100%, 150%, 200%, 300%, 400%;
+.generate-screenheights(@screenheights);
