@@ -6350,5 +6350,17 @@ body {
 .screenheight-400 > .screenheight-400 {
   height: 100%;
 }
+#sky-phase {
+  background-color: #050c13;
+  color: #6fa8da;
+}
+#ambitions-phase {
+  background-color: #1e5558;
+  color: white;
+}
+#title-phase {
+  background-color: #accdea;
+  color: black;
+}
 
 /*# sourceMappingURL=styles.css.map */
