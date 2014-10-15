@@ -6352,15 +6352,29 @@ body {
 }
 #sky-phase {
   background-color: #050c13;
+  background-image: -webkit-linear-gradient(top, #050c13 0%, #1a4163 100%);
+  background-image: -o-linear-gradient(top, #050c13 0%, #1a4163 100%);
+  background-image: linear-gradient(to bottom, #050c13 0%, #1a4163 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff050c13', endColorstr='#ff1a4163', GradientType=0);
   color: #6fa8da;
 }
 #ambitions-phase {
-  background-color: #1e5558;
+  background-color: #352337;
+  background-image: -webkit-linear-gradient(top, #815585 0%, #1e5558 100%);
+  background-image: -o-linear-gradient(top, #815585 0%, #1e5558 100%);
+  background-image: linear-gradient(to bottom, #815585 0%, #1e5558 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff815585', endColorstr='#ff1e5558', GradientType=0);
   color: white;
 }
 #title-phase {
   background-color: #accdea;
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #accdea 100%);
+  background-image: -o-linear-gradient(top, #ffffff 0%, #accdea 100%);
+  background-image: linear-gradient(to bottom, #ffffff 0%, #accdea 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffaccdea', GradientType=0);
   color: black;
 }
-
 /*# sourceMappingURL=styles.css.map */

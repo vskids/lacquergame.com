@@ -18,16 +18,25 @@ html, body { height: 100%; }
 }
 #sky-phase {
 	.phase;
+	
 	background-color: @blue-darker;
+	#gradient > .vertical(@blue-darker, @cobalt-darker);
+	
 	color: @cobalt;
 }
 #ambitions-phase {
 	.phase;
-	background-color: @teal-darker;
+	
+	background-color: @purple-darker;
+	#gradient > .vertical(@purple-dark, @teal-darker);
+	
 	color: white;
 }
 #title-phase {
 	.phase;
+	
 	background-color: @cobalt-light;
+	#gradient > .vertical(white, @cobalt-light);
+	
 	color: black;
 }
