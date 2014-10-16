@@ -24,7 +24,10 @@ const PATHS = {
 // Tasks
 
 gulp.task('build-less', "Compiles LESS › CSS", function () {
-	gulp.src(PATHS.dev.less+'styles.less').pipe(
+	gulp.src([
+		PATHS.dev.less+'styles.less',
+		PATHS.dev.less+'styles-test.less'
+	]).pipe(
 		plumber({
 			errorHandler: notify.onError({ message: 'Error: <%= error.message %>' })
 		})
