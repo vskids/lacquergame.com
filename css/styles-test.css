@@ -6445,10 +6445,10 @@ body {
   min-width: 970px;
 }
 #full-back .on-dark {
-  background-color: #0d0d0d;
+  background-color: #000000;
 }
 #full-back .on-light {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 #full-back .on-half {
   width: 50%;
