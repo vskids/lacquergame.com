@@ -5,6 +5,7 @@ var less = require('gulp-less');
 var sourcemaps = require('gulp-sourcemaps');
 var notify = require("gulp-notify");
 var plumber = require('gulp-plumber');
+var _ = require('lodash');
 
 
 
@@ -21,13 +22,25 @@ const PATHS = {
 
 
 
+/// Helpers
+
+function prefixEach(strings, prefix) {
+	return _.map(strings, function (s) {
+		return prefix+s;
+	});
+}
+
+
+
 // Tasks
 
 gulp.task('build-less', "Compiles LESS › CSS", function () {
-	gulp.src([
-		PATHS.dev.less+'styles.less',
-		PATHS.dev.less+'styles-test.less'
-	]).pipe(
+	gulp.src(
+		prefixEach([
+			'styles.less',
+			'styles-test.less'
+		], PATHS.dev.less)
+	).pipe(
 		plumber({
 			errorHandler: notify.onError({ message: 'Error: <%= error.message %>' })
 		})
