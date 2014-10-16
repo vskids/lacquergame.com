@@ -6350,7 +6350,16 @@ body {
 .screenheight-400 > .screenheight-400 {
   height: 100%;
 }
+.phase {
+  position: relative;
+}
+.phase > .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 #sky-phase {
+  position: relative;
   background-color: #050c13;
   background-image: -webkit-linear-gradient(top, #050c13 0%, #1a4163 100%);
   background-image: -o-linear-gradient(top, #050c13 0%, #1a4163 100%);
@@ -6359,7 +6368,13 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff050c13', endColorstr='#ff1a4163', GradientType=0);
   color: #6fa8da;
 }
+#sky-phase > .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 #ambitions-phase {
+  position: relative;
   background-color: #352337;
   background-image: -webkit-linear-gradient(top, #815585 0%, #1e5558 100%);
   background-image: -o-linear-gradient(top, #815585 0%, #1e5558 100%);
@@ -6368,7 +6383,13 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff815585', endColorstr='#ff1e5558', GradientType=0);
   color: white;
 }
+#ambitions-phase > .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 #title-phase {
+  position: relative;
   background-color: #accdea;
   background-image: -webkit-linear-gradient(top, #ffffff 0%, #accdea 100%);
   background-image: -o-linear-gradient(top, #ffffff 0%, #accdea 100%);
@@ -6376,6 +6397,38 @@ body {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffaccdea', GradientType=0);
   color: #352337;
+}
+#title-phase > .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.starfield {
+  background-repeat: repeat;
+}
+#starfield1 {
+  background-repeat: repeat;
+  background-image: url('../graphics/starfield1.s512.png');
+  opacity: 0.25;
+  filter: alpha(opacity=25);
+}
+#starfield2 {
+  background-repeat: repeat;
+  background-image: url('../graphics/starfield2.s1024.png');
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+#starfield3 {
+  background-repeat: repeat;
+  background-image: url('../graphics/starfield3.s720.png');
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+#starfield4 {
+  background-repeat: repeat;
+  background-image: url('../graphics/starfield4.s700.png');
+  opacity: 0.5;
+  filter: alpha(opacity=50);
 }
 
 /*# sourceMappingURL=styles.css.map */

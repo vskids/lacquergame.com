@@ -18,6 +18,12 @@ html, body { height: 100%; }
 // phases
 
 .phase {
+	position: relative;
+	
+	> .back {
+		position: absolute;
+		width: 100%; height: 100%;
+	}
 }
 #sky-phase {
 	.phase;
@@ -42,4 +48,28 @@ html, body { height: 100%; }
 	#gradient > .vertical(white, @cobalt-light);
 	
 	color: @purple-darker;
+}
+
+
+
+// starfields
+
+.starfield {
+	background-repeat: repeat;
+}
+#starfield1 { .starfield;
+	background-image: url('../graphics/starfield1.s512.png');
+	.opacity(0.25);
+}
+#starfield2 { .starfield;
+	background-image: url('../graphics/starfield2.s1024.png');
+	.opacity(0.0);
+}
+#starfield3 { .starfield;
+	background-image: url('../graphics/starfield3.s720.png');
+	.opacity(0.0);
+}
+#starfield4 { .starfield;
+	background-image: url('../graphics/starfield4.s700.png');
+	.opacity(0.5);
 }
