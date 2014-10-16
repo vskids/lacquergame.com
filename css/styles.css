@@ -6360,12 +6360,12 @@ body {
 }
 #sky-phase {
   position: relative;
-  background-color: #143150;
-  background-image: -webkit-linear-gradient(top, #143150 0%, #245b8c 100%);
-  background-image: -o-linear-gradient(top, #143150 0%, #245b8c 100%);
-  background-image: linear-gradient(to bottom, #143150 0%, #245b8c 100%);
+  background-color: #0a1828;
+  background-image: -webkit-linear-gradient(top, #0a1828 0%, #1a4163 100%);
+  background-image: -o-linear-gradient(top, #0a1828 0%, #1a4163 100%);
+  background-image: linear-gradient(to bottom, #0a1828 0%, #1a4163 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff143150', endColorstr='#ff245b8c', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0a1828', endColorstr='#ff1a4163', GradientType=0);
   color: #6fa8da;
 }
 #sky-phase > .back {
@@ -6375,12 +6375,12 @@ body {
 }
 #ambitions-phase {
   position: relative;
-  background-color: #5d3d60;
-  background-image: -webkit-linear-gradient(top, #815585 0%, #2b7a7e 100%);
-  background-image: -o-linear-gradient(top, #815585 0%, #2b7a7e 100%);
-  background-image: linear-gradient(to bottom, #815585 0%, #2b7a7e 100%);
+  background-color: #3e2940;
+  background-image: -webkit-linear-gradient(top, #724b75 0%, #1e5558 100%);
+  background-image: -o-linear-gradient(top, #724b75 0%, #1e5558 100%);
+  background-image: linear-gradient(to bottom, #724b75 0%, #1e5558 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff815585', endColorstr='#ff2b7a7e', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff724b75', endColorstr='#ff1e5558', GradientType=0);
   color: white;
 }
 #ambitions-phase > .back {
@@ -6396,7 +6396,7 @@ body {
   background-image: linear-gradient(to bottom, #ffffff 0%, #accdea 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffaccdea', GradientType=0);
-  color: #5d3d60;
+  color: #3e2940;
 }
 #title-phase > .back {
   position: absolute;

@@ -6360,12 +6360,12 @@ body {
 }
 #sky-phase {
   position: relative;
-  background-color: #143150;
-  background-image: -webkit-linear-gradient(top, #143150 0%, #245b8c 100%);
-  background-image: -o-linear-gradient(top, #143150 0%, #245b8c 100%);
-  background-image: linear-gradient(to bottom, #143150 0%, #245b8c 100%);
+  background-color: #0a1828;
+  background-image: -webkit-linear-gradient(top, #0a1828 0%, #1a4163 100%);
+  background-image: -o-linear-gradient(top, #0a1828 0%, #1a4163 100%);
+  background-image: linear-gradient(to bottom, #0a1828 0%, #1a4163 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff143150', endColorstr='#ff245b8c', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0a1828', endColorstr='#ff1a4163', GradientType=0);
   color: #6fa8da;
 }
 #sky-phase > .back {
@@ -6375,12 +6375,12 @@ body {
 }
 #ambitions-phase {
   position: relative;
-  background-color: #5d3d60;
-  background-image: -webkit-linear-gradient(top, #815585 0%, #2b7a7e 100%);
-  background-image: -o-linear-gradient(top, #815585 0%, #2b7a7e 100%);
-  background-image: linear-gradient(to bottom, #815585 0%, #2b7a7e 100%);
+  background-color: #3e2940;
+  background-image: -webkit-linear-gradient(top, #724b75 0%, #1e5558 100%);
+  background-image: -o-linear-gradient(top, #724b75 0%, #1e5558 100%);
+  background-image: linear-gradient(to bottom, #724b75 0%, #1e5558 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff815585', endColorstr='#ff2b7a7e', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff724b75', endColorstr='#ff1e5558', GradientType=0);
   color: white;
 }
 #ambitions-phase > .back {
@@ -6396,7 +6396,7 @@ body {
   background-image: linear-gradient(to bottom, #ffffff 0%, #accdea 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffaccdea', GradientType=0);
-  color: #5d3d60;
+  color: #3e2940;
 }
 #title-phase > .back {
   position: absolute;
@@ -6596,180 +6596,180 @@ h1 {
   color: #dbe01f;
 }
 .color-swatch.blue-dark {
-  background-color: #1f4a79;
+  background-color: #193d65;
 }
 .color-swatch.blue-dark:after {
   color: #ffffff;
-  content: "#1f4a79";
+  content: "#193d65";
 }
 .blue-dark small,
 .blue-dark .small {
-  color: #1f4a79;
+  color: #193d65;
 }
 .color-swatch.cobalt-dark {
-  background-color: #3483c9;
+  background-color: #2e76b5;
 }
 .color-swatch.cobalt-dark:after {
   color: #ffffff;
-  content: "#3483c9";
+  content: "#2e76b5";
 }
 .cobalt-dark small,
 .cobalt-dark .small {
-  color: #3483c9;
+  color: #2e76b5;
 }
 .color-swatch.cyan-dark {
-  background-color: #0ca0d0;
+  background-color: #0b8eb8;
 }
 .color-swatch.cyan-dark:after {
   color: #ffffff;
-  content: "#0ca0d0";
+  content: "#0b8eb8";
 }
 .cyan-dark small,
 .cyan-dark .small {
-  color: #0ca0d0;
+  color: #0b8eb8;
 }
 .color-swatch.green-dark {
-  background-color: #33855a;
+  background-color: #2c734e;
 }
 .color-swatch.green-dark:after {
   color: #ffffff;
-  content: "#33855a";
+  content: "#2c734e";
 }
 .green-dark small,
 .green-dark .small {
-  color: #33855a;
+  color: #2c734e;
 }
 .color-swatch.orange-dark {
-  background-color: #f77733;
+  background-color: #f6661b;
 }
 .color-swatch.orange-dark:after {
   color: #ffffff;
-  content: "#f77733";
+  content: "#f6661b";
 }
 .orange-dark small,
 .orange-dark .small {
-  color: #f77733;
+  color: #f6661b;
 }
 .color-swatch.purple-dark {
-  background-color: #815585;
+  background-color: #724b75;
 }
 .color-swatch.purple-dark:after {
   color: #ffffff;
-  content: "#815585";
+  content: "#724b75";
 }
 .purple-dark small,
 .purple-dark .small {
-  color: #815585;
+  color: #724b75;
 }
 .color-swatch.teal-dark {
-  background-color: #3fb2b7;
+  background-color: #389fa4;
 }
 .color-swatch.teal-dark:after {
   color: #ffffff;
-  content: "#3fb2b7";
+  content: "#389fa4";
 }
 .teal-dark small,
 .teal-dark .small {
-  color: #3fb2b7;
+  color: #389fa4;
 }
 .color-swatch.yellow-dark {
-  background-color: #999d16;
+  background-color: #838613;
 }
 .color-swatch.yellow-dark:after {
   color: #ffffff;
-  content: "#999d16";
+  content: "#838613";
 }
 .yellow-dark small,
 .yellow-dark .small {
-  color: #999d16;
+  color: #838613;
 }
 .color-swatch.blue-darker {
-  background-color: #143150;
+  background-color: #0a1828;
 }
 .color-swatch.blue-darker:after {
   color: #ffffff;
-  content: "#143150";
+  content: "#0a1828";
 }
 .blue-darker small,
 .blue-darker .small {
-  color: #143150;
+  color: #0a1828;
 }
 .color-swatch.cobalt-darker {
-  background-color: #245b8c;
+  background-color: #1a4163;
 }
 .color-swatch.cobalt-darker:after {
   color: #ffffff;
-  content: "#245b8c";
+  content: "#1a4163";
 }
 .cobalt-darker small,
 .cobalt-darker .small {
-  color: #245b8c;
+  color: #1a4163;
 }
 .color-swatch.cyan-darker {
-  background-color: #086988;
+  background-color: #054458;
 }
 .color-swatch.cyan-darker:after {
   color: #ffffff;
-  content: "#086988";
+  content: "#054458";
 }
 .cyan-darker small,
 .cyan-darker .small {
-  color: #086988;
+  color: #054458;
 }
 .color-swatch.green-darker {
-  background-color: #22593c;
+  background-color: #143423;
 }
 .color-swatch.green-darker:after {
   color: #ffffff;
-  content: "#22593c";
+  content: "#143423";
 }
 .green-darker small,
 .green-darker .small {
-  color: #22593c;
+  color: #143423;
 }
 .color-swatch.orange-darker {
-  background-color: #d64f08;
+  background-color: #a53d06;
 }
 .color-swatch.orange-darker:after {
   color: #ffffff;
-  content: "#d64f08";
+  content: "#a53d06";
 }
 .orange-darker small,
 .orange-darker .small {
-  color: #d64f08;
+  color: #a53d06;
 }
 .color-swatch.purple-darker {
-  background-color: #5d3d60;
+  background-color: #3e2940;
 }
 .color-swatch.purple-darker:after {
   color: #ffffff;
-  content: "#5d3d60";
+  content: "#3e2940";
 }
 .purple-darker small,
 .purple-darker .small {
-  color: #5d3d60;
+  color: #3e2940;
 }
 .color-swatch.teal-darker {
-  background-color: #2b7a7e;
+  background-color: #1e5558;
 }
 .color-swatch.teal-darker:after {
   color: #ffffff;
-  content: "#2b7a7e";
+  content: "#1e5558";
 }
 .teal-darker small,
 .teal-darker .small {
-  color: #2b7a7e;
+  color: #1e5558;
 }
 .color-swatch.yellow-darker {
-  background-color: #6d7010;
+  background-color: #424309;
 }
 .color-swatch.yellow-darker:after {
   color: #ffffff;
-  content: "#6d7010";
+  content: "#424309";
 }
 .yellow-darker small,
 .yellow-darker .small {
-  color: #6d7010;
+  color: #424309;
 }
 .color-swatch.blue-light {
   background-color: #5b96d6;
