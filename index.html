@@ -79,6 +79,8 @@
 		<script src="bower_components/skrollr-stylesheets/dist/skrollr.stylesheets.min.js"></script>
 		<script src="bower_components/skrollr/dist/skrollr.min.js"></script>
 		<!--[if lt IE 9]><script type="text/javascript" src="bower_components/skrollr-ie/dist/skrollr.ie.min.js"></script><![endif]-->
-		<script>var s = skrollr.init({ edgeStrategy: 'ease' });</script>
+		<script>
+var s = skrollr.init({ mobileCheck: function () { return false; };, edgeStrategy: 'ease' });
+		</script>
 	</body>
 </html>
