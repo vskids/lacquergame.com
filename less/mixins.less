@@ -37,3 +37,15 @@
 		}
 	}
 }
+
+
+
+// skrollr animation helpers
+
+.-skrollr-dry-animation(@name; @keyframes)
+{
+	-skrollr-animation-name: @name;
+	@-skrollr-keyframes @name {
+		@keyframes();
+	}
+}

@@ -7,7 +7,7 @@
 		<title>Basic Bootstrap Template</title>
 		
 		<!-- Bootstrap -->
-		<link href="css/styles.css" rel="stylesheet" type="text/css">
+		<link href="css/styles.css" rel="stylesheet" type="text/css" data-skrollr-stylesheet>
 		
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,10 +21,10 @@
 
 
 <section id="sky-phase" class="vh-200">
-	<div id="starfield1" class="back"></div>
-	<div id="starfield2" class="back"></div>
-	<div id="starfield3" class="back"></div>
-	<div id="starfield4" class="back"></div>
+	<div id="starfield1" class="back"><div class="back image"></div></div>
+	<div id="starfield2" class="back"><div class="back image"></div></div>
+	<div id="starfield3" class="back"><div class="back image"></div></div>
+	<div id="starfield4" class="back"><div class="back image"></div></div>
 	
 	<div class="container vh-100">
 		<div class="">Oh, there you are.  I missed you.</div>
@@ -76,5 +76,9 @@
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="bower_components/skrollr-stylesheets/dist/skrollr.stylesheets.min.js"></script>
+		<script src="bower_components/skrollr/dist/skrollr.min.js"></script>
+		<!--[if lt IE 9]><script type="text/javascript" src="bower_components/skrollr-ie/dist/skrollr.ie.min.js"></script><![endif]-->
+		<script>var s = skrollr.init({ edgeStrategy: 'ease' });</script>
 	</body>
 </html>
