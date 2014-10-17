@@ -4,14 +4,14 @@
 
 // screenheight macros
 
-.screenheight(@childPerc, @parentPerc) {
+.screenheight(@childPerc; @parentPerc) {
 	@height: percentage(@childPerc / @parentPerc);
 }
 
 /// @based-on: stackoverflow.com/questions/21440789/loop-through-array-of-valuesIn-less#21441220
 /// @arg screenheights: an array of screen height percentages, as integer numbers or percentages.
 /// 	Must be in ascending order (in order to nest properly).
-.generate-screenheights(@screenheights, @classPrefix: screenheight-)
+.generate-screenheights(@screenheights; @classPrefix: screenheight-)
 {
 	.for(length(@screenheights)); .-each(@screenheightI) {
 		@screenheight: unit(extract(@screenheights, @screenheightI), %);
@@ -31,7 +31,7 @@
 				@childClassname: ~"@{classPrefix}@{childScreenheightNum}";
 				> .@{childClassname} {
 					/// @property: calculated child height percentage
-					.screenheight(@childScreenheight, @screenheight); height: @height;
+					.screenheight(@childScreenheight; @screenheight); height: @height;
 				}
 			}
 		}
