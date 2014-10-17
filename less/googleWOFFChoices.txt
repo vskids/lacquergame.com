@@ -1,0 +1,9 @@
+//add this code to website
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300|Indie+Flower|Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+
+//Integrate the fonts into CSS  or .less
+font-family: 'Oswald', sans-serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Dancing Script', cursive;
+
+//I personally like Dancing Script 700 (bold)
