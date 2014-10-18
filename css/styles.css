@@ -6350,6 +6350,9 @@ body {
 .vh-400 > .vh-400 {
   height: 100%;
 }
+.monologue {
+  font: 50px 'Dancing Script';
+}
 .phase {
   position: relative;
 }
