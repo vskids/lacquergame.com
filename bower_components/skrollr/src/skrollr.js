@@ -1014,9 +1014,31 @@
 					for(key in left.props) {
 						if(hasProp.call(left.props, key)) {
 							var progress = (frame - left.frame) / (right.frame - left.frame);
+							var linearValue = _calcInterpolation(left.props[key].value, right.props[key].value, progress);
+							var computedValueGetter = function () {
+								var computedStyle = getStyle(element);
+								var computedValueText = computedStyle.getPropertyValue(key);
+								var computedValue = _parseProp(computedValueText);
+								return computedValue;
+							};
+							var newValueSetter = function (value) {
+								var valueText = _interpolateString(value);
+								if (key.indexOf('@') === 0)
+									element.setAttribute(key.substr(1), value);
+								else
+									skrollr.setStyle(element, key, value);
+							};
+							var domElement = element;
 
 							//Transform the current progress using the given easing function.
-							progress = left.props[key].easing(progress);
+							progress = left.props[key].easing(
+								progress,
+								domElement,
+								key,
+								linearValue,
+								computedValueGetter, newValueSetter,
+								{ left: left.props[key].value, right: right.props[key].value }
+							);
 
 							//Interpolate between the two values
 							value = _calcInterpolation(left.props[key].value, right.props[key].value, progress);
@@ -1422,6 +1444,7 @@
 
 				//Set unprefixed.
 				style[prop] = val;
+				//console.log('set '+prop+' to '+val);
 			} catch(ignore) {}
 		}
 	};

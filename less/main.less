@@ -163,7 +163,7 @@ html, body { height: 100%; }
 		background-position: @initial-background-position;
 		
 		.-skrollr-dry-animation(starfield4pos; {
-			@backgroundPositionProp: ~"background-position[swing]";
+			@backgroundPositionProp: ~"background-position[accelDecel]";
 			start { @{backgroundPositionProp}: @initial-background-position; }
 			top-bottom { @{backgroundPositionProp}: 0px -115px; }
 		});

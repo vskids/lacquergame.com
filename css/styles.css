@@ -6525,10 +6525,10 @@ body {
 }
 @-skrollr-keyframes starfield4pos {
   start {
-    background-position[swing]: 0px 0px;
+    background-position[accelDecel]: 0px 0px;
   }
   top-bottom {
-    background-position[swing]: 0px -115px;
+    background-position[accelDecel]: 0px -115px;
   }
 }
 

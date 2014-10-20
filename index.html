@@ -78,13 +78,92 @@
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script src="bower_components/skrollr-stylesheets/dist/skrollr.stylesheets.min.js"></script>
-		<script src="bower_components/skrollr/dist/skrollr.min.js"></script>
+		<script src="bower_components/skrollr/src/skrollr.js"></script>
 		<!--[if lt IE 9]><script type="text/javascript" src="bower_components/skrollr-ie/dist/skrollr.ie.min.js"></script><![endif]-->
 		<script>
+var accelDecelSkrollrEasing = function (progress, domElement, propertyName, targetValue, currentValueGetter, newValueSetter, keyframeValues) {
+	var currentValue = currentValueGetter();
+	if (currentValue[2] == targetValue[2])
+		return progress;
+	
+	if (domElement['___skrollr_accelDecel'] == undefined)
+		domElement['___skrollr_accelDecel'] = {};
+	
+	var state = domElement.___skrollr_accelDecel[propertyName];
+	if (state === null || state === undefined) {
+		state = domElement.___skrollr_accelDecel[propertyName] = {
+			velocity: 0.0,
+			direction: 0,
+			target: targetValue[2] //.slice(1)
+		};
+		
+		setTimeout(function () {
+			_step(state, currentValueGetter);
+		}, 10);
+	}
+	else {
+		state.target = targetValue[2]; //.slice(1)
+	}
+	
+	var leftRightDelta = keyframeValues.right[2] - keyframeValues.left[2];
+	var newValueLeftOffset = currentValue - keyframeValues.left[2];
+	var newProgress = newValueLeftOffset / leftRightDelta;
+	return newProgress;
+	
+	var state = domElement.___skrollr_accelDecel[propertyName];
+	
+	function _step(state) {
+		if (state === null || state === undefined)
+			return;
+		
+		var currentValue = currentValueGetter();
+		
+		var deltaValue = state.target - currentValue[2];
+		if (Math.abs(deltaValue) < 1.0) {
+			newValueSetter([targetValue[0], targetValue[1], state.target]);
+			
+			domElement.___skrollr_accelDecel[propertyName] = null;
+			return;
+		}
+		
+		var direction = (deltaValue > 0) ? 1 : -1;
+		var accelAmount = (direction != state.direction) ? 0.5 : 2.0;
+		var accelVelocity = (state.velocity + direction) * accelAmount;
+		var decelVelocity = deltaValue * 0.5;
+		var newVelocity = (Math.abs(accelVelocity) < Math.abs(decelVelocity)) ? accelVelocity : decelVelocity;
+		
+		var newValue = currentValue[2] + newVelocity;
+		
+		var currentValue_beforeSet = currentValueGetter();
+		newValueSetter([targetValue[0], targetValue[1], newValue]);
+		var currentValue_afterSet = currentValueGetter();
+		
+		console.log(
+			'velocity: '+state.velocity+'->'+newVelocity+', ' +
+			'delta: '+deltaValue+', ' +
+			'dir: '+direction+', ' +
+			'accel: '+accelVelocity+', ' +
+			'decel: '+decelVelocity+', ' +
+			'value: '+currentValue_beforeSet+'->'+currentValue_afterSet
+		);
+		
+		state.velocity = newVelocity;
+		
+		setTimeout(function () {
+			_step(state);
+		}, 10);
+	}
+};
+
+
 var s = skrollr.init({
 	mobileCheck: function () { return false; },
 	edgeStrategy: 'ease',
-	forceHeight: false
+	forceHeight: false,
+	smoothScrolling: false,
+	easing: {
+		accelDecel: accelDecelSkrollrEasing
+	}
 });
 		</script>
 	</body>
