@@ -1,0 +1,22 @@
+@font-family-list_indie-flower: "Indie Flower", cursive;
+
+.font-face_indie-flower() {
+	@font-face {
+		font-family: "Indie Flower";
+		font-style: normal;
+		font-weight: 400;
+		src: local("Indie Flower"),
+			local("IndieFlower"),
+			url("/fonts/assets/IndieFlower.woff") format("woff"),
+			url("/fonts/assets/IndieFlower.ttf") format("truetype");
+	}
+}
+
+.font_indie-flower() {
+	.font-face_indie-flower();
+	font-family: @font-family-list_indie-flower;
+}
+.font_indie-flower(@properties) {
+	.font-face_indie-flower();
+	font: @properties @font-family-list_indie-flower;
+}

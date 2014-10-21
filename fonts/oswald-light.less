@@ -1,0 +1,25 @@
+@font-family-list_oswald-light: "Oswald", sans-serif;
+@font-weight_oswald-light: 300;
+
+.font-face_oswald-light() {
+	@font-face {
+		font-family: "Oswald";
+		font-style: normal;
+		font-weight: @font-weight_oswald-light;
+		src: local("Oswald Light"),
+			local("Oswald-Light"),
+			url("/fonts/assets/Oswald-Light.woff") format("woff"),
+			url("/fonts/assets/Oswald-Light.ttf") format("truetype");
+	}
+}
+
+.font_oswald-light() {
+	.font-face_oswald-light();
+	font-family: @font-family-list_oswald-light;
+	font-weight: @font-weight_oswald-light;
+}
+.font_oswald-light(@properties) {
+	.font-face_oswald-light();
+	font: @properties @font-family-list_oswald-light;
+	font-weight: @font-weight_oswald-light;
+}
