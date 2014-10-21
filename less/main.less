@@ -84,8 +84,9 @@ html, body { height: 100%; }
 		background-position: @initial-background-position;
 		
 		.-skrollr-dry-animation(starfield1pos; {
-			start { background-position: @initial-background-position; }
-			top-bottom { background-position: 0px -150px; }
+			@backgroundPositionProp: ~"background-position[swing]";
+			start { @{backgroundPositionProp}: @initial-background-position; }
+			top-bottom { @{backgroundPositionProp}: 0px -150px; }
 		});
 	}
 }
@@ -108,8 +109,9 @@ html, body { height: 100%; }
 		background-position: @initial-background-position;
 		
 		.-skrollr-dry-animation(starfield2pos; {
-			start { background-position: @initial-background-position; }
-			top-bottom { background-position: 0px -100px; }
+			@backgroundPositionProp: ~"background-position[swing]";
+			start { @{backgroundPositionProp}: @initial-background-position; }
+			top-bottom { @{backgroundPositionProp}: 0px -100px; }
 		});
 	}
 }
@@ -134,8 +136,9 @@ html, body { height: 100%; }
 		background-position: @initial-background-position;
 		
 		.-skrollr-dry-animation(starfield3pos; {
-			start { background-position: @initial-background-position; }
-			top-bottom { background-position: 0px -125px; }
+			@backgroundPositionProp: ~"background-position[swing]";
+			start { @{backgroundPositionProp}: @initial-background-position; }
+			top-bottom { @{backgroundPositionProp}: 0px -125px; }
 		});
 	}
 }
@@ -146,7 +149,7 @@ html, body { height: 100%; }
 	.opacity(@initial-opacity);
 	
 	.-skrollr-dry-animation(starfield4op; {
-		@opacityProp: ~"opacity[linear]";
+		@opacityProp: ~"opacity[quadratic]";
 		start { @{opacityProp}: @initial-opacity; }
 		center { @{opacityProp}: 1.0; }
 	});
@@ -160,8 +163,9 @@ html, body { height: 100%; }
 		background-position: @initial-background-position;
 		
 		.-skrollr-dry-animation(starfield4pos; {
-			start { background-position: @initial-background-position; }
-			top-bottom { background-position: 0px -115px; }
+			@backgroundPositionProp: ~"background-position[swing]";
+			start { @{backgroundPositionProp}: @initial-background-position; }
+			top-bottom { @{backgroundPositionProp}: 0px -115px; }
 		});
 	}
 }
