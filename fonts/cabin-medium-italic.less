@@ -1,9 +1,29 @@
-@font-face {
-	font-family: "Cabin";
-	font-style: italic;
-	font-weight: 500;
-	src: local("Cabin Medium Italic"),
-		local("Cabin-MediumItalic"),
-		url("/fonts/assets/Cabin-MediumItalic.woff") format("woff"),
-		url("/fonts/assets/Cabin-MediumItalic.ttf") format("truetype");
+@font-family-list_cabin-medium-italic: "Cabin", sans-serif;
+@font-style_cabin-medium-italic: italic;
+@font-weight_cabin-medium-italic: 700;
+
+.font-face_cabin-medium-italic() {
+	@font-face {
+		font-family: "Cabin";
+		font-style: @font-style_cabin-medium-italic;
+		font-weight: @font-weight_cabin-medium-italic;
+		src: local("Cabin Medium Italic"),
+			local("Cabin MediumItalic"),
+			local("Cabin-MediumItalic"),
+			url("/fonts/assets/Cabin-MediumItalic.woff") format("woff"),
+			url("/fonts/assets/Cabin-MediumItalic.ttf") format("truetype");
+	}
+}
+
+.font_cabin-medium-italic() {
+	.font-face_cabin-medium-italic();
+	font-family: @font-family-list_cabin-medium-italic;
+	font-style: @font-style_cabin-medium-italic;
+	font-weight: @font-weight_cabin-medium-italic;
+}
+.font_cabin-medium-italic(@properties) {
+	.font-face_cabin-medium-italic();
+	font: @properties @font-family-list_cabin-medium-italic;
+	font-style: @font-style_cabin-medium-italic;
+	font-weight: @font-weight_cabin-medium-italic;
 }

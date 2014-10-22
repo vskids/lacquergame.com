@@ -1,9 +1,26 @@
-@font-face {
-	font-family: "Cabin";
-	font-style: normal;
-	font-weight: 700;
-	src: local("Cabin Bold"),
-		local("Cabin-Bold"),
-		url("/fonts/assets/Cabin-Bold.woff") format("woff"),
-		url("/fonts/assets/Cabin-Bold.ttf") format("truetype");
+@font-family-list_cabin-bold: "Cabin", sans-serif;
+@font-weight_cabin-bold: 700;
+
+.font-face_cabin-bold() {
+	@font-face {
+		font-family: "Cabin";
+		font-style: normal;
+		font-weight: @font-weight_cabin-bold;
+		src: local("Cabin Bold"),
+			local("Cabin Bold"),
+			local("Cabin-Bold"),
+			url("/fonts/assets/Cabin-Bold.woff") format("woff"),
+			url("/fonts/assets/Cabin-Bold.ttf") format("truetype");
+	}
+}
+
+.font_cabin-bold() {
+	.font-face_cabin-bold();
+	font-family: @font-family-list_cabin-bold;
+	font-weight: @font-weight_cabin-bold;
+}
+.font_cabin-bold(@properties) {
+	.font-face_cabin-bold();
+	font: @properties @font-family-list_cabin-bold;
+	font-weight: @font-weight_cabin-bold;
 }

@@ -1,9 +1,28 @@
-@font-face {
-	font-family: "Cabin Condensed";
-	font-style: normal;
-	font-weight: 400;
-	src: local("Cabin Condensed"),
-		local("CabinCondensed"),
-		url("/fonts/assets/CabinCondensed-Regular.woff") format("woff"),
-		url("/fonts/assets/CabinCondensed-Regular.ttf") format("truetype");
+@font-family-list_cabin-condensed-regular: "Cabin Condensed", sans-serif;
+@font-weight_cabin-condensed-regular: 400;
+
+.font-face_cabin-condensed-regular() {
+	@font-face {
+		font-family: "Cabin Condensed";
+		font-style: normal;
+		font-weight: @font-weight_cabin-condensed-regular;
+		src: local("Cabin Condensed"),
+			local("CabinCondensed"),
+			local("Cabin Condensed Regular"),
+			local("CabinCondensed Regular"),
+			local("CabinCondensed-Regular"),
+			url("/fonts/assets/CabinCondensed-Regular.woff") format("woff"),
+			url("/fonts/assets/CabinCondensed-Regular.ttf") format("truetype");
+	}
+}
+
+.font_cabin-condensed-regular() {
+	.font-face_cabin-condensed-regular();
+	font-family: @font-family-list_cabin-condensed-regular;
+	font-weight: @font-weight_cabin-condensed-regular;
+}
+.font_cabin-condensed-regular(@properties) {
+	.font-face_cabin-condensed-regular();
+	font: @properties @font-family-list_cabin-condensed-regular;
+	font-weight: @font-weight_cabin-condensed-regular;
 }

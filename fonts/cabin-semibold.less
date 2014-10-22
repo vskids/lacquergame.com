@@ -1,9 +1,26 @@
-@font-face {
-	font-family: "Cabin";
-	font-style: normal;
-	font-weight: 600;
-	src: local("Cabin SemiBold"),
-		local("Cabin-SemiBold"),
-		url("/fonts/assets/Cabin-SemiBold.woff") format("woff"),
-		url("/fonts/assets/Cabin-SemiBold.ttf") format("truetype");
+@font-family-list_cabin-semibold: "Cabin", sans-serif;
+@font-weight_cabin-semibold: 700;
+
+.font-face_cabin-semibold() {
+	@font-face {
+		font-family: "Cabin";
+		font-style: normal;
+		font-weight: @font-weight_cabin-semibold;
+		src: local("Cabin SemiBold"),
+			local("Cabin SemiBold"),
+			local("Cabin-SemiBold"),
+			url("/fonts/assets/Cabin-SemiBold.woff") format("woff"),
+			url("/fonts/assets/Cabin-SemiBold.ttf") format("truetype");
+	}
+}
+
+.font_cabin-semibold() {
+	.font-face_cabin-semibold();
+	font-family: @font-family-list_cabin-semibold;
+	font-weight: @font-weight_cabin-semibold;
+}
+.font_cabin-semibold(@properties) {
+	.font-face_cabin-semibold();
+	font: @properties @font-family-list_cabin-semibold;
+	font-weight: @font-weight_cabin-semibold;
 }

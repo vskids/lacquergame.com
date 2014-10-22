@@ -1,9 +1,28 @@
-@font-face {
-	font-family: "Cabin";
-	font-style: italic;
-	font-weight: 400;
-	src: local("Cabin Italic"),
-		local("Cabin-Italic"),
-		url("/fonts/assets/Cabin-Italic.woff") format("woff"),
-		url("/fonts/assets/Cabin-Italic.ttf") format("truetype");
+@font-family-list_cabin-italic: "Cabin", sans-serif;
+@font-style_cabin-italic: italic;
+@font-weight_cabin-italic: 700;
+
+.font-face_cabin-italic() {
+	@font-face {
+		font-family: "Cabin";
+		font-style: @font-style_cabin-italic;
+		font-weight: @font-weight_cabin-italic;
+		src: local("Cabin Italic"),
+			local("Cabin-Italic"),
+			url("/fonts/assets/Cabin-Italic.woff") format("woff"),
+			url("/fonts/assets/Cabin-Italic.ttf") format("truetype");
+	}
+}
+
+.font_cabin-italic() {
+	.font-face_cabin-italic();
+	font-family: @font-family-list_cabin-italic;
+	font-style: @font-style_cabin-italic;
+	font-weight: @font-weight_cabin-italic;
+}
+.font_cabin-italic(@properties) {
+	.font-face_cabin-italic();
+	font: @properties @font-family-list_cabin-italic;
+	font-style: @font-style_cabin-italic;
+	font-weight: @font-weight_cabin-italic;
 }
