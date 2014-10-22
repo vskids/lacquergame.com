@@ -1,7 +1,7 @@
 @font-family-list_cabin-condensed-semibold: "Cabin Condensed", sans-serif;
 @font-weight_cabin-condensed-semibold: 600;
 
-.font-face_cabin-condensed-semibold() {
+.font-face_cabin-condensed-semibold {
 	@font-face {
 		font-family: "Cabin Condensed";
 		font-style: normal;
@@ -15,12 +15,14 @@
 }
 
 .font_cabin-condensed-semibold() {
-	.font-face_cabin-condensed-semibold();
+	&:extend(.font-face_cabin-condensed-semibold);
+	
 	font-family: @font-family-list_cabin-condensed-semibold;
 	font-weight: @font-weight_cabin-condensed-semibold;
 }
 .font_cabin-condensed-semibold(@properties) {
-	.font-face_cabin-condensed-semibold();
+	&:extend(.font-face_cabin-condensed-semibold);
+	
 	font: @properties @font-family-list_cabin-condensed-semibold;
 	font-weight: @font-weight_cabin-condensed-semibold;
 }

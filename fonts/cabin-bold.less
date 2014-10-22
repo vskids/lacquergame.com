@@ -1,7 +1,7 @@
 @font-family-list_cabin-bold: "Cabin", sans-serif;
 @font-weight_cabin-bold: 700;
 
-.font-face_cabin-bold() {
+.font-face_cabin-bold {
 	@font-face {
 		font-family: "Cabin";
 		font-style: normal;
@@ -15,12 +15,14 @@
 }
 
 .font_cabin-bold() {
-	.font-face_cabin-bold();
+	&:extend(.font-face_cabin-bold);
+	
 	font-family: @font-family-list_cabin-bold;
 	font-weight: @font-weight_cabin-bold;
 }
 .font_cabin-bold(@properties) {
-	.font-face_cabin-bold();
+	&:extend(.font-face_cabin-bold);
+	
 	font: @properties @font-family-list_cabin-bold;
 	font-weight: @font-weight_cabin-bold;
 }

@@ -1,7 +1,7 @@
 @font-family-list_cabin-medium: "Cabin", sans-serif;
 @font-weight_cabin-medium: 700;
 
-.font-face_cabin-medium() {
+.font-face_cabin-medium {
 	@font-face {
 		font-family: "Cabin";
 		font-style: normal;
@@ -14,12 +14,14 @@
 }
 
 .font_cabin-medium() {
-	.font-face_cabin-medium();
+	&:extend(.font-face_cabin-medium);
+	
 	font-family: @font-family-list_cabin-medium;
 	font-weight: @font-weight_cabin-medium;
 }
 .font_cabin-medium(@properties) {
-	.font-face_cabin-medium();
+	&:extend(.font-face_cabin-medium);
+	
 	font: @properties @font-family-list_cabin-medium;
 	font-weight: @font-weight_cabin-medium;
 }

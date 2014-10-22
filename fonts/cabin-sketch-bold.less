@@ -1,7 +1,7 @@
 @font-family-list_cabin-sketch-bold: "Cabin Sketch", sans-serif;
 @font-weight_cabin-sketch-bold: 700;
 
-.font-face_cabin-sketch-bold() {
+.font-face_cabin-sketch-bold {
 	@font-face {
 		font-family: "Cabin Sketch";
 		font-style: normal;
@@ -15,12 +15,14 @@
 }
 
 .font_cabin-sketch-bold() {
-	.font-face_cabin-sketch-bold();
+	&:extend(.font-face_cabin-sketch-bold);
+	
 	font-family: @font-family-list_cabin-sketch-bold;
 	font-weight: @font-weight_cabin-sketch-bold;
 }
 .font_cabin-sketch-bold(@properties) {
-	.font-face_cabin-sketch-bold();
+	&:extend(.font-face_cabin-sketch-bold);
+	
 	font: @properties @font-family-list_cabin-sketch-bold;
 	font-weight: @font-weight_cabin-sketch-bold;
 }

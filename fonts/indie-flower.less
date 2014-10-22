@@ -1,6 +1,6 @@
 @font-family-list_indie-flower: "Indie Flower", cursive;
 
-.font-face_indie-flower() {
+.font-face_indie-flower {
 	@font-face {
 		font-family: "Indie Flower";
 		font-style: normal;
@@ -13,10 +13,12 @@
 }
 
 .font_indie-flower() {
-	.font-face_indie-flower();
+	&:extend(.font-face_indie-flower);
+	
 	font-family: @font-family-list_indie-flower;
 }
 .font_indie-flower(@properties) {
-	.font-face_indie-flower();
+	&:extend(.font-face_indie-flower);
+	
 	font: @properties @font-family-list_indie-flower;
 }

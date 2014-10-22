@@ -1,7 +1,7 @@
 @font-family-list_oswald-regular: "Oswald", sans-serif;
 @font-weight_oswald-regular: 400;
 
-.font-face_oswald-regular() {
+.font-face_oswald-regular {
 	@font-face {
 		font-family: "Oswald";
 		font-style: normal;
@@ -14,12 +14,14 @@
 }
 
 .font_oswald-regular() {
-	.font-face_oswald-regular();
+	&:extend(.font-face_oswald-regular);
+	
 	font-family: @font-family-list_oswald-regular;
 	font-weight: @font-weight_oswald-regular;
 }
 .font_oswald-regular(@properties) {
-	.font-face_oswald-regular();
+	&:extend(.font-face_oswald-regular);
+	
 	font: @properties @font-family-list_oswald-regular;
 	font-weight: @font-weight_oswald-regular;
 }

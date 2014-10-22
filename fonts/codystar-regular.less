@@ -1,7 +1,7 @@
 @font-family-list_codystar-regular: "Codystar", sans-serif;
 @font-weight_codystar-regular: 400;
 
-.font-face_codystar-regular() {
+.font-face_codystar-regular {
 	@font-face {
 		font-family: "Codystar";
 		font-style: normal;
@@ -13,12 +13,14 @@
 }
 
 .font_codystar-regular() {
-	.font-face_codystar-regular();
+	&:extend(.font-face_codystar-regular);
+	
 	font-family: @font-family-list_codystar-regular;
 	font-weight: @font-weight_codystar-regular;
 }
 .font_codystar-regular(@properties) {
-	.font-face_codystar-regular();
+	&:extend(.font-face_codystar-regular);
+	
 	font: @properties @font-family-list_codystar-regular;
 	font-weight: @font-weight_codystar-regular;
 }

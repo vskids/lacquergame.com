@@ -1,7 +1,7 @@
 @font-family-list_oswald-bold: "Oswald", sans-serif;
 @font-weight_oswald-bold: 700;
 
-.font-face_oswald-bold() {
+.font-face_oswald-bold {
 	@font-face {
 		font-family: "Oswald";
 		font-style: normal;
@@ -14,12 +14,14 @@
 }
 
 .font_oswald-bold() {
-	.font-face_oswald-bold();
+	&:extend(.font-face_oswald-bold);
+	
 	font-family: @font-family-list_oswald-bold;
 	font-weight: @font-weight_oswald-bold;
 }
 .font_oswald-bold(@properties) {
-	.font-face_oswald-bold();
+	&:extend(.font-face_oswald-bold);
+	
 	font: @properties @font-family-list_oswald-bold;
 	font-weight: @font-weight_oswald-bold;
 }

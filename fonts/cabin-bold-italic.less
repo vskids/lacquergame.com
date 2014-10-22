@@ -2,7 +2,7 @@
 @font-style_cabin-bold-italic: italic;
 @font-weight_cabin-bold-italic: 700;
 
-.font-face_cabin-bold-italic() {
+.font-face_cabin-bold-italic {
 	@font-face {
 		font-family: "Cabin";
 		font-style: @font-style_cabin-bold-italic;
@@ -16,13 +16,15 @@
 }
 
 .font_cabin-bold-italic() {
-	.font-face_cabin-bold-italic();
+	&:extend(.font-face_cabin-bold-italic);
+	
 	font-family: @font-family-list_cabin-bold-italic;
 	font-style: @font-style_cabin-bold-italic;
 	font-weight: @font-weight_cabin-bold-italic;
 }
 .font_cabin-bold-italic(@properties) {
-	.font-face_cabin-bold-italic();
+	&:extend(.font-face_cabin-bold-italic);
+	
 	font: @properties @font-family-list_cabin-bold-italic;
 	font-style: @font-style_cabin-bold-italic;
 	font-weight: @font-weight_cabin-bold-italic;

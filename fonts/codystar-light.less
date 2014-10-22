@@ -1,7 +1,7 @@
 @font-family-list_codystar-light: "Codystar", sans-serif;
 @font-weight_codystar-light: 300;
 
-.font-face_codystar-light() {
+.font-face_codystar-light {
 	@font-face {
 		font-family: "Codystar";
 		font-style: normal;
@@ -14,12 +14,14 @@
 }
 
 .font_codystar-light() {
-	.font-face_codystar-light();
+	&:extend(.font-face_codystar-light);
+	
 	font-family: @font-family-list_codystar-light;
 	font-weight: @font-weight_codystar-light;
 }
 .font_codystar-light(@properties) {
-	.font-face_codystar-light();
+	&:extend(.font-face_codystar-light);
+	
 	font: @properties @font-family-list_codystar-light;
 	font-weight: @font-weight_codystar-light;
 }

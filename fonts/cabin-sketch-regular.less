@@ -1,7 +1,7 @@
 @font-family-list_cabin-sketch-regular: "Cabin Sketch", sans-serif;
 @font-weight_cabin-sketch-regular: 400;
 
-.font-face_cabin-sketch-regular() {
+.font-face_cabin-sketch-regular {
 	@font-face {
 		font-family: "Cabin Sketch";
 		font-style: normal;
@@ -15,12 +15,14 @@
 }
 
 .font_cabin-sketch-regular() {
-	.font-face_cabin-sketch-regular();
+	&:extend(.font-face_cabin-sketch-regular);
+	
 	font-family: @font-family-list_cabin-sketch-regular;
 	font-weight: @font-weight_cabin-sketch-regular;
 }
 .font_cabin-sketch-regular(@properties) {
-	.font-face_cabin-sketch-regular();
+	&:extend(.font-face_cabin-sketch-regular);
+	
 	font: @properties @font-family-list_cabin-sketch-regular;
 	font-weight: @font-weight_cabin-sketch-regular;
 }

@@ -1,7 +1,7 @@
 @font-family-list_oswald-light: "Oswald", sans-serif;
 @font-weight_oswald-light: 300;
 
-.font-face_oswald-light() {
+.font-face_oswald-light {
 	@font-face {
 		font-family: "Oswald";
 		font-style: normal;
@@ -14,12 +14,14 @@
 }
 
 .font_oswald-light() {
-	.font-face_oswald-light();
+	&:extend(.font-face_oswald-light);
+	
 	font-family: @font-family-list_oswald-light;
 	font-weight: @font-weight_oswald-light;
 }
 .font_oswald-light(@properties) {
-	.font-face_oswald-light();
+	&:extend(.font-face_oswald-light);
+	
 	font: @properties @font-family-list_oswald-light;
 	font-weight: @font-weight_oswald-light;
 }

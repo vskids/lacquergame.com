@@ -1,7 +1,7 @@
 @font-family-list_dancing-script-bold: "Dancing Script", cursive;
 @font-weight_dancing-script-bold: 700;
 
-.font-face_dancing-script-bold() {
+.font-face_dancing-script-bold {
 	@font-face {
 		font-family: "Dancing Script";
 		font-style: normal;
@@ -14,12 +14,14 @@
 }
 
 .font_dancing-script-bold() {
-	.font-face_dancing-script-bold();
+	&:extend(.font-face_dancing-script-bold);
+	
 	font-family: @font-family-list_dancing-script-bold;
 	font-weight: @font-weight_dancing-script-bold;
 }
 .font_dancing-script-bold(@properties) {
-	.font-face_dancing-script-bold();
+	&:extend(.font-face_dancing-script-bold);
+	
 	font: @properties @font-family-list_dancing-script-bold;
 	font-weight: @font-weight_dancing-script-bold;
 }
