@@ -6262,6 +6262,78 @@ button.close {
   background-color: transparent !important;
 }
 
+@font-face {
+  font-family: "Cabin";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Cabin Regular"), local("Cabin-Regular"), url("/fonts/assets/Cabin-Regular.woff") format("woff"), url("/fonts/assets/Cabin-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cabin";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Cabin Medium"), local("Cabin-Medium"), url("/fonts/assets/Cabin-Medium.woff") format("woff"), url("/fonts/assets/Cabin-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cabin";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Cabin SemiBold"), local("Cabin-SemiBold"), url("/fonts/assets/Cabin-SemiBold.woff") format("woff"), url("/fonts/assets/Cabin-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cabin";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Cabin Bold"), local("Cabin-Bold"), url("/fonts/assets/Cabin-Bold.woff") format("woff"), url("/fonts/assets/Cabin-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cabin";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Cabin Italic"), local("Cabin-Italic"), url("/fonts/assets/Cabin-Italic.woff") format("woff"), url("/fonts/assets/Cabin-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cabin";
+  font-style: italic;
+  font-weight: 500;
+  src: local("Cabin Medium Italic"), local("Cabin-MediumItalic"), url("/fonts/assets/Cabin-MediumItalic.woff") format("woff"), url("/fonts/assets/Cabin-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cabin";
+  font-style: italic;
+  font-weight: 600;
+  src: local("Cabin SemiBold Italic"), local("Cabin-SemiBoldItalic"), url("/fonts/assets/Cabin-SemiBoldItalic.woff") format("woff"), url("/fonts/assets/Cabin-SemiBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cabin";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Cabin Bold Italic"), local("Cabin-BoldItalic"), url("/fonts/assets/Cabin-BoldItalic.woff") format("woff"), url("/fonts/assets/Cabin-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cabin Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Cabin Condensed"), local("CabinCondensed"), url("/fonts/assets/CabinCondensed-Regular.woff") format("woff"), url("/fonts/assets/CabinCondensed-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cabin Condensed";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Cabin Condensed Medium"), local("CabinCondensed-Medium"), url("/fonts/assets/CabinCondensed-Medium.woff") format("woff"), url("/fonts/assets/CabinCondensed-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cabin Condensed";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Cabin Condensed SemiBold"), local("CabinCondensed-SemiBold"), url("/fonts/assets/CabinCondensed-SemiBold.woff") format("woff"), url("/fonts/assets/CabinCondensed-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cabin Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Cabin Condensed Bold"), local("CabinCondensed-Bold"), url("/fonts/assets/CabinCondensed-Bold.woff") format("woff"), url("/fonts/assets/CabinCondensed-Bold.ttf") format("truetype");
+}
 body {
   min-width: 970px !important;
 }
