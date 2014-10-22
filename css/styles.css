@@ -6347,6 +6347,12 @@ button.close {
   src: local("Cabin Sketch Bold"), local("CabinSketch Bold"), local("CabinSketch-Bold"), url("/fonts/assets/CabinSketch-Bold.woff") format("woff"), url("/fonts/assets/CabinSketch-Bold.ttf") format("truetype");
 }
 @font-face {
+  font-family: "Calligraffitti";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Calligraffitti"), local("Calligraffitti-Regular"), url("/fonts/assets/Calligraffitti-Regular.woff") format("woff"), url("/fonts/assets/Calligraffitti-Regular.ttf") format("truetype");
+}
+@font-face {
   font-family: "Codystar";
   font-style: normal;
   font-weight: 400;
@@ -6371,10 +6377,22 @@ button.close {
   src: local("Dancing Script Bold"), local("DancingScript-Bold"), url("/fonts/assets/DancingScript-Bold.woff") format("woff"), url("/fonts/assets/DancingScript-Bold.ttf") format("truetype");
 }
 @font-face {
+  font-family: "Fredericka the Great";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Fredericka the Great"), local("FrederickatheGreat"), local("FrederickatheGreat-Regular"), url("/fonts/assets/FrederickatheGreat-Regular.woff") format("woff"), url("/fonts/assets/FrederickatheGreat-Regular.ttf") format("truetype");
+}
+@font-face {
   font-family: "Indie Flower";
   font-style: normal;
   font-weight: 400;
   src: local("Indie Flower"), local("IndieFlower"), url("/fonts/assets/IndieFlower.woff") format("woff"), url("/fonts/assets/IndieFlower.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Megrim";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Megrim"), url("/fonts/assets/Megrim.woff") format("woff"), url("/fonts/assets/Megrim.ttf") format("truetype");
 }
 @font-face {
   font-family: "Oswald";

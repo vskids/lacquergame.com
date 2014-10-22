@@ -1,0 +1,25 @@
+@font-family-list_fredericka-the-great: "Fredericka the Great", serif;
+
+.font-face_fredericka-the-great {
+	@font-face {
+		font-family: "Fredericka the Great";
+		font-style: normal;
+		font-weight: 400;
+		src: local("Fredericka the Great"),
+			local("FrederickatheGreat"),
+			local("FrederickatheGreat-Regular"),
+			url("/fonts/assets/FrederickatheGreat-Regular.woff") format("woff"),
+			url("/fonts/assets/FrederickatheGreat-Regular.ttf") format("truetype");
+	}
+}
+
+.font_fredericka-the-great() {
+	&:extend(.font-face_fredericka-the-great);
+	
+	font-family: @font-family-list_fredericka-the-great;
+}
+.font_fredericka-the-great(@properties) {
+	&:extend(.font-face_fredericka-the-great);
+	
+	font: @properties @font-family-list_fredericka-the-great;
+}
