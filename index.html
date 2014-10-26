@@ -166,5 +166,38 @@ var s = skrollr.init({
 	}
 });
 		</script>
+		<script>
+var $unscaleBackgrounds_closeEnoughDifference = 20;
+function unscaleBackgrounds(jQElements, lastStateObject) {
+	// according to: http://www.quirksmode.org/mobile/viewports2.html
+	var layoutViewportWidth = document.documentElement.clientWidth;
+	var visualViewportWidth = window.innerWidth;
+	var screenWidth = screen.width;
+	if (layoutViewportWidth == lastStateObject.layoutViewportWidth && visualViewportWidth == lastStateObject.visualViewportWidth) {
+		return;
+	} else {
+		lastStateObject.layoutViewportWidth = layoutViewportWidth;
+		lastStateObject.visualViewportWidth = visualViewportWidth;
+	}
+	
+	var isCloseEnoguhToAssume1To1Scale = Math.abs(visualViewportWidth - layoutViewportWidth) < $unscaleBackgrounds_closeEnoughDifference;
+	var viewportInverseZoom = isCloseEnoguhToAssume1To1Scale ? 1.0 : (visualViewportWidth / layoutViewportWidth);
+	if (viewportInverseZoom == lastStateObject.viewportInverseZoom)
+		return;
+	else
+		lastStateObject.viewportInverseZoom = viewportInverseZoom;
+	
+	jQElements.css({ zoom: viewportInverseZoom });
+}
+
+$(document).ready(function() {
+	$lastState_unscaleSkyBackImages = {};
+	var unscaleSkyBackImages = function () {
+		unscaleBackgrounds($('#sky-phase > .back.image, #sky-phase > .back .image'), $lastState_unscaleSkyBackImages);
+	};
+	unscaleSkyBackImages();
+	$(window).on('scroll resize', unscaleSkyBackImages);
+});
+		</script>
 	</body>
 </html>
