@@ -49,3 +49,17 @@
 		@keyframes();
 	}
 }
+
+.color-as-rgb(@color) {
+	@red: red(@color);
+	@green: green(@color);
+	@blue: blue(@color);
+	@as-rgb: ~"rgb(@{red}, @{green}, @{blue})";
+}
+
+.color-as-hsl(@color) {
+	@hue: hue(@color);
+	@saturation: saturation(@color);
+	@lightness: lightness(@color);
+	@as-hsl: ~"hsl(@{hue}, @{saturation}, @{lightness})";
+}
