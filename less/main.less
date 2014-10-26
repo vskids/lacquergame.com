@@ -11,6 +11,12 @@
 
 
 
+/// Bootstrap default overrides
+
+@font-size-base: 20px;
+
+
+
 // full-screen-height adjustments, rules
 
 html, body { height: 100%; }
@@ -19,7 +25,8 @@ html, body { height: 100%; }
 .generate-screenheights(@screenheights, vh-);
 
 .monologue {
-	.font_dancing-script(50px);
+	@font-size: @font-size-base * 2.5;
+	.font_dancing-script(@font-size);
 }
 
 
