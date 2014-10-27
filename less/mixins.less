@@ -2,46 +2,6 @@
 
 
 
-// screenheight macros
-
-.screenheight(@childPerc; @parentPerc) {
-	@height: percentage(
-		(@childPerc / @parentPerc)
-	);
-}
-
-/// @based-on: stackoverflow.com/questions/21440789/loop-through-array-of-valuesIn-less#21441220
-/// @arg screenheights: an array of screen height percentages, as integer numbers or percentages.
-/// 	Must be in ascending order (in order to nest properly).
-.generate-screenheights(@screenheights; @classPrefix: screenheight-)
-{
-	.for(length(@screenheights)); .-each(@screenheightI) {
-		@screenheight: unit(extract(@screenheights, @screenheightI), %);
-		@screenheightNum: unit(@screenheight);
-		
-		/// @rule: base `screenheight*`
-		@classname: ~"@{classPrefix}@{screenheightNum}";
-		.@{classname} {
-			/// @property: base (parent) height percentage
-			height: @screenheight;
-			
-			.for(@screenheightI); .-each(@childScreenheightI) {
-				@childScreenheight: unit(extract(@screenheights, @childScreenheightI), %);
-				@childScreenheightNum: unit(@childScreenheight);
-				
-				/// @rule: child `screenheight* > screenheight*`
-				@childClassname: ~"@{classPrefix}@{childScreenheightNum}";
-				> .@{childClassname} {
-					/// @property: calculated child height percentage
-					.screenheight(@childScreenheight; @screenheight); height: @height;
-				}
-			}
-		}
-	}
-}
-
-
-
 // skrollr animation helpers
 
 .-skrollr-dry-animation(@name; @keyframes)
