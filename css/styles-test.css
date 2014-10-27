@@ -6505,10 +6505,10 @@ body {
 }
 @-skrollr-keyframes starfield1pos {
   start {
-    background-position[swing]: 0px 0px;
+    background-position[linear]: 0px 0px;
   }
   top-bottom {
-    background-position[swing]: 0px -150px;
+    background-position[linear]: 0px -150px;
   }
 }
 #starfield2 {
@@ -6534,10 +6534,10 @@ body {
 }
 @-skrollr-keyframes starfield2pos {
   start {
-    background-position[swing]: 0px 0px;
+    background-position[linear]: 0px 0px;
   }
   top-bottom {
-    background-position[swing]: 0px -100px;
+    background-position[linear]: 0px -100px;
   }
 }
 #starfield3 {
@@ -6563,10 +6563,10 @@ body {
 }
 @-skrollr-keyframes starfield3pos {
   start {
-    background-position[swing]: 0px 0px;
+    background-position[linear]: 0px 0px;
   }
   top-bottom {
-    background-position[swing]: 0px -125px;
+    background-position[linear]: 0px -125px;
   }
 }
 #starfield4 {
@@ -6592,10 +6592,10 @@ body {
 }
 @-skrollr-keyframes starfield4pos {
   start {
-    background-position[accelDecel]: 0px 0px;
+    background-position[linear]: 0px 0px;
   }
   top-bottom {
-    background-position[accelDecel]: 0px -115px;
+    background-position[linear]: 0px -115px;
   }
 }
 #wrapper {
