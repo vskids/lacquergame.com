@@ -6420,6 +6420,7 @@ body {
 }
 #sky-phase {
   position: relative;
+  z-index: 100;
   color: #6fa8da;
 }
 #sky-phase > .back {
@@ -6446,6 +6447,7 @@ body {
 }
 #ambitions-phase {
   position: relative;
+  z-index: 200;
   color: white;
 }
 #ambitions-phase > .back {
@@ -6472,6 +6474,7 @@ body {
 }
 #title-phase {
   position: relative;
+  z-index: 300;
   color: #3e2940;
 }
 #title-phase > .back {
