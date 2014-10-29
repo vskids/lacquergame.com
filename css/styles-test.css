@@ -6514,10 +6514,9 @@ body {
 #starfield1.image,
 #starfield1 .image {
   background-position: 0px 0px;
-  background: url('../graphics/starfield1.s512.png');
-  -skrollr-animation-name: starfield1pos;
+  -skrollr-animation-name: starfield1-pos;
 }
-@-skrollr-keyframes starfield1pos {
+@-skrollr-keyframes starfield1-pos {
   _sky_phase_start {
     background-position[linear]: 0px 0px;
   }
@@ -6525,12 +6524,16 @@ body {
     background-position[linear]: 0px -150px;
   }
 }
+#starfield1.image,
+#starfield1 .image {
+  background-image: url('../graphics/starfield1.s512.png');
+}
 #starfield2 {
   opacity: 0;
   filter: alpha(opacity=0);
-  -skrollr-animation-name: starfield2op;
+  -skrollr-animation-name: starfield2-op;
 }
-@-skrollr-keyframes starfield2op {
+@-skrollr-keyframes starfield2-op {
   _sky_phase_start {
     opacity[linearMidToEnd]: 0;
   }
@@ -6541,10 +6544,9 @@ body {
 #starfield2.image,
 #starfield2 .image {
   background-position: 0px 0px;
-  background: url('../graphics/starfield2.s1024.png');
-  -skrollr-animation-name: starfield2pos;
+  -skrollr-animation-name: starfield2-pos;
 }
-@-skrollr-keyframes starfield2pos {
+@-skrollr-keyframes starfield2-pos {
   _sky_phase_start {
     background-position[linear]: 0px 0px;
   }
@@ -6552,12 +6554,16 @@ body {
     background-position[linear]: 0px -100px;
   }
 }
+#starfield2.image,
+#starfield2 .image {
+  background-image: url('../graphics/starfield2.s1024.png');
+}
 #starfield3 {
   opacity: 0;
   filter: alpha(opacity=0);
-  -skrollr-animation-name: starfield3op;
+  -skrollr-animation-name: starfield3-op;
 }
-@-skrollr-keyframes starfield3op {
+@-skrollr-keyframes starfield3-op {
   _sky_phase_start {
     opacity[linearMidToEnd]: 0;
   }
@@ -6568,10 +6574,9 @@ body {
 #starfield3.image,
 #starfield3 .image {
   background-position: 0px 0px;
-  background: url('../graphics/starfield3.s720.png');
-  -skrollr-animation-name: starfield3pos;
+  -skrollr-animation-name: starfield3-pos;
 }
-@-skrollr-keyframes starfield3pos {
+@-skrollr-keyframes starfield3-pos {
   _sky_phase_start {
     background-position[linear]: 0px 0px;
   }
@@ -6579,12 +6584,16 @@ body {
     background-position[linear]: 0px -125px;
   }
 }
+#starfield3.image,
+#starfield3 .image {
+  background-image: url('../graphics/starfield3.s720.png');
+}
 #starfield4 {
   opacity: 0.25;
   filter: alpha(opacity=25);
-  -skrollr-animation-name: starfield4op;
+  -skrollr-animation-name: starfield4-op;
 }
-@-skrollr-keyframes starfield4op {
+@-skrollr-keyframes starfield4-op {
   _sky_phase_start {
     opacity[linearStartToMid]: 0.25;
   }
@@ -6595,16 +6604,19 @@ body {
 #starfield4.image,
 #starfield4 .image {
   background-position: 0px 0px;
-  background: url('../graphics/starfield4.s700.png');
-  -skrollr-animation-name: starfield4pos;
+  -skrollr-animation-name: starfield4-pos;
 }
-@-skrollr-keyframes starfield4pos {
+@-skrollr-keyframes starfield4-pos {
   _sky_phase_start {
     background-position[linear]: 0px 0px;
   }
   _sky_phase_end {
     background-position[linear]: 0px -115px;
   }
+}
+#starfield4.image,
+#starfield4 .image {
+  background-image: url('../graphics/starfield4.s700.png');
 }
 #wrapper {
   position: relative;

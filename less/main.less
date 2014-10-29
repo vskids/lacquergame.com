@@ -99,116 +99,57 @@ html, body { height: 100%; }
 
 // starfields
 
-.starfield {
-	&.image, & .image {
-		background-repeat: repeat;
-	}
-}
-#starfield1 {
+.generateStarfieldRules(@uniqueName; @initialOpacity; @endOpacity; @initialBGOffset; @endBGOffset; @opacityEasing; @bgEasing) {
 	&:extend(.starfield all);
 	
-	@initialOpacity: 1.0;
-	@endOpacity: 1.0;
 	& when not (@initialOpacity = 1.0) and (@endOpacity = 1.0) {
 		.opacity(@initialOpacity);
 		
-		.-skrollr-dry-animation(starfield1op; {
-			@opacityProp: ~"opacity[linear]";
+		.-skrollr-dry-animation(~"@{uniqueName}-op"; {
+			@opacityProp: ~"opacity[@{opacityEasing}]";
 			_sky_phase_start { @{opacityProp}: @initialOpacity; }
 			_sky_phase_end { @{opacityProp}: @endOpacity }
 		});
 	}
 	
 	&.image, & .image {
-		@initial-background-position: 0px 0px;
-		background-position: @initial-background-position;
-		background: url('../graphics/starfield1.s512.png');
+		background-position: 0px @initialBGOffset;
 		
-		.-skrollr-dry-animation(starfield1pos; {
-			@backgroundPositionProp: ~"background-position[linear]";
-			_sky_phase_start { @{backgroundPositionProp}: @initial-background-position; }
-			_sky_phase_end { @{backgroundPositionProp}: 0px -150px; }
+		.-skrollr-dry-animation(~"@{uniqueName}-pos"; {
+			@backgroundPositionProp: ~"background-position[@{bgEasing}]";
+			_sky_phase_start { @{backgroundPositionProp}: 0px @initialBGOffset; }
+			_sky_phase_end { @{backgroundPositionProp}: 0px @endBGOffset; }
 		});
+	}
+}
+
+.starfield {
+	&.image, & .image {
+		background-repeat: repeat;
+	}
+}
+
+#starfield1 {
+	.generateStarfieldRules(starfield1; 1.0; 1.0; 0px; -150px; linear; linear);
+	&.image, & .image {
+		background-image: url('../graphics/starfield1.s512.png');
 	}
 }
 #starfield2 {
-	&:extend(.starfield all);
-	
-	@initialOpacity: 0.0;
-	@endOpacity: 1.0;
-	& when not (@initialOpacity = 1.0) and (@endOpacity = 1.0) {
-		.opacity(@initialOpacity);
-		
-		.-skrollr-dry-animation(starfield2op; {
-			@opacityProp: ~"opacity[linearMidToEnd]";
-			_sky_phase_start { @{opacityProp}: @initialOpacity; }
-			_sky_phase_end { @{opacityProp}: @endOpacity; }
-		});
-	}
-	
+	.generateStarfieldRules(starfield2; 0.0; 1.0; 0px; -100px; linearMidToEnd; linear);
 	&.image, & .image {
-		@initial-background-position: 0px 0px;
-		background-position: @initial-background-position;
-		background: url('../graphics/starfield2.s1024.png');
-		
-		.-skrollr-dry-animation(starfield2pos; {
-			@backgroundPositionProp: ~"background-position[linear]";
-			_sky_phase_start { @{backgroundPositionProp}: @initial-background-position; }
-			_sky_phase_end { @{backgroundPositionProp}: 0px -100px; }
-		});
+		background-image: url('../graphics/starfield2.s1024.png');
 	}
 }
 #starfield3 {
-	&:extend(.starfield all);
-	
-	@initialOpacity: 0.0;
-	@endOpacity: 1.0;
-	& when not (@initialOpacity = 1.0) and (@endOpacity = 1.0) {
-		.opacity(@initialOpacity);
-		
-		.-skrollr-dry-animation(starfield3op; {
-			@opacityProp: ~"opacity[linearMidToEnd]";
-			_sky_phase_start { @{opacityProp}: @initialOpacity; }
-			_sky_phase_end { @{opacityProp}: @endOpacity; }
-		});
-	}
-	
+	.generateStarfieldRules(starfield3; 0.0; 1.0; 0px; -125px; linearMidToEnd; linear);
 	&.image, & .image {
-		@initial-background-position: 0px 0px;
-		background-position: @initial-background-position;
-		background: url('../graphics/starfield3.s720.png');
-		
-		.-skrollr-dry-animation(starfield3pos; {
-			@backgroundPositionProp: ~"background-position[linear]";
-			_sky_phase_start { @{backgroundPositionProp}: @initial-background-position; }
-			_sky_phase_end { @{backgroundPositionProp}: 0px -125px; }
-		});
+		background-image: url('../graphics/starfield3.s720.png');
 	}
 }
 #starfield4 {
-	&:extend(.starfield all);
-	
-	@initialOpacity: 0.25;
-	@endOpacity: 1.0;
-	& when not (@initialOpacity = 1.0) and (@endOpacity = 1.0) {
-		.opacity(@initialOpacity);
-		
-		.-skrollr-dry-animation(starfield4op; {
-			@opacityProp: ~"opacity[linearStartToMid]";
-			_sky_phase_start { @{opacityProp}: @initialOpacity; }
-			_sky_phase_end { @{opacityProp}: @endOpacity; }
-		});
-	}
-	
+	.generateStarfieldRules(starfield4; 0.25; 1.0; 0px; -115px; linearStartToMid; linear);
 	&.image, & .image {
-		@initial-background-position: 0px 0px;
-		background-position: @initial-background-position;
-		background: url('../graphics/starfield4.s700.png');
-		
-		.-skrollr-dry-animation(starfield4pos; {
-			@backgroundPositionProp: ~"background-position[linear]";
-			_sky_phase_start { @{backgroundPositionProp}: @initial-background-position; }
-			_sky_phase_end { @{backgroundPositionProp}: 0px -115px; }
-		});
+		background-image: url('../graphics/starfield4.s700.png');
 	}
 }
