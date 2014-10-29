@@ -162,52 +162,24 @@ var accelDecelSkrollrEasing = function (progress, domElement, propertyName, targ
 	}
 };
 
+/// @source: http://stackoverflow.com/questions/10425287/convert-string-to-camelcase-with-regular-expression#10425344
+function camelCase(input) { 
+	return input.toLowerCase().replace(/-(.)/g, function(match, group1) {
+		return group1.toUpperCase();
+	});
+}
 
-function getSkyPhaseScrollStart() {
-	var skyPhaseScrollStart = skrollr.get().relativeToAbsolute($('#sky-phase')[0], 'top', 'top');
-	console.log("skyPhaseScrollStart: "+skyPhaseScrollStart);
-	return skyPhaseScrollStart;
+function cacheIdElement(elementId) {
+	var element = document.getElementById(elementId);
+	if (element == null)
+		throw "Could not find required element with id #"+elementId+".  Aborting cacheIdElement().";
+	
+	var idVarName = '$'+camelCase(elementId)+'Element';
+	window[idVarName] = element;
 }
-function getSkyPhaseScrollCenter() {
-	var skyPhaseScrollCenter = skrollr.get().relativeToAbsolute($('#sky-phase')[0], 'top', 'center');
-	console.log("skyPhaseScrollCenter: "+skyPhaseScrollCenter);
-	return skyPhaseScrollCenter;
-}
-function getSkyPhaseScrollEnd() {
-	var skyPhaseScrollEnd = skrollr.get().relativeToAbsolute($('#sky-phase')[0], 'top', 'bottom');
-	console.log("skyPhaseScrollEnd: "+skyPhaseScrollEnd);
-	return skyPhaseScrollEnd;
-}
-function getAmbitionsPhaseScrollStart() {
-	var ambitionsPhaseScrollStart = skrollr.get().relativeToAbsolute($('#ambitions-phase')[0], 'bottom', 'top');
-	console.log("ambitionsPhaseScrollStart: "+ambitionsPhaseScrollStart);
-	return ambitionsPhaseScrollStart;
-}
-function getAmbitionsPhaseScrollCenter() {
-	var ambitionsPhaseScrollCenter = skrollr.get().relativeToAbsolute($('#ambitions-phase')[0], 'center', 'center');
-	console.log("ambitionsPhaseScrollCenter: "+ambitionsPhaseScrollCenter);
-	return ambitionsPhaseScrollCenter;
-}
-function getAmbitionsPhaseScrollEnd() {
-	var ambitionsPhaseScrollEnd = skrollr.get().relativeToAbsolute($('#ambitions-phase')[0], 'top', 'bottom');
-	console.log("ambitionsPhaseScrollEnd: "+ambitionsPhaseScrollEnd);
-	return ambitionsPhaseScrollEnd;
-}
-function getTitlePhaseScrollStart() {
-	var titlePhaseScrollStart = skrollr.get().relativeToAbsolute($('#title-phase')[0], 'bottom', 'top');
-	console.log("titlePhaseScrollStart: "+titlePhaseScrollStart);
-	return titlePhaseScrollStart;
-}
-function getTitlePhaseScrollCenter() {
-	var titlePhaseScrollCenter = skrollr.get().relativeToAbsolute($('#title-phase')[0], 'center', 'center');
-	console.log("titlePhaseScrollCenter: "+titlePhaseScrollCenter);
-	return titlePhaseScrollCenter;
-}
-function getTitlePhaseScrollEnd() {
-	var titlePhaseScrollEnd = skrollr.get().relativeToAbsolute($('#title-phase')[0], 'top', 'bottom');
-	console.log("titlePhaseScrollEnd: "+titlePhaseScrollEnd);
-	return titlePhaseScrollEnd;
-}
+cacheIdElement('sky-phase');
+cacheIdElement('ambitions-phase');
+cacheIdElement('title-phase');
 
 var $s = skrollr.init({
 	mobileCheck: function () { return false; },
@@ -218,15 +190,15 @@ var $s = skrollr.init({
 		accelDecel: accelDecelSkrollrEasing
 	},
 	constants: {
-		sky_phase_start: getSkyPhaseScrollStart,
-		sky_phase_center: getSkyPhaseScrollCenter,
-		sky_phase_end: getSkyPhaseScrollEnd,
-		ambitions_phase_start: getAmbitionsPhaseScrollStart,
-		ambitions_phase_center: getAmbitionsPhaseScrollCenter,
-		ambitions_phase_end: getAmbitionsPhaseScrollEnd,
-		title_phase_start: getTitlePhaseScrollStart,
-		title_phase_center: getTitlePhaseScrollCenter,
-		title_phase_end: getTitlePhaseScrollEnd,
+		sky_phase_start: function () { return skrollr.get().relativeToAbsolute($skyPhaseElement, 'top', 'top'); },
+		sky_phase_center: function () { return skrollr.get().relativeToAbsolute($skyPhaseElement, 'top', 'center'); },
+		sky_phase_end: function () { return skrollr.get().relativeToAbsolute($skyPhaseElement, 'top', 'bottom'); },
+		ambitions_phase_start: function () { return skrollr.get().relativeToAbsolute($ambitionsPhaseElement, 'bottom', 'top'); },
+		ambitions_phase_center: function () { return skrollr.get().relativeToAbsolute($ambitionsPhaseElement, 'center', 'center'); },
+		ambitions_phase_end: function () { return skrollr.get().relativeToAbsolute($ambitionsPhaseElement, 'top', 'bottom'); },
+		title_phase_start: function () { return skrollr.get().relativeToAbsolute($titlePhaseElement, 'bottom', 'top'); },
+		title_phase_center: function () { return skrollr.get().relativeToAbsolute($titlePhaseElement, 'center', 'center'); },
+		title_phase_end: function () { return skrollr.get().relativeToAbsolute($titlePhaseElement, 'top', 'bottom'); },
 	}
 });
 		</script>
