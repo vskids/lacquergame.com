@@ -100,12 +100,12 @@ html, body { height: 100%; }
 // starfields
 
 .starfield {
-	.image {
+	&.image, & .image {
 		background-repeat: repeat;
 	}
 }
 #starfield1 {
-	.starfield;
+	&:extend(.starfield all);
 	
 	@initialOpacity: 1.0;
 	@endOpacity: 1.0;
@@ -113,14 +113,13 @@ html, body { height: 100%; }
 		.opacity(@initialOpacity);
 		
 		.-skrollr-dry-animation(starfield1op; {
-			@opacityProp: ~"opacity[quadratic]";
+			@opacityProp: ~"opacity[linear]";
 			_sky_phase_start { @{opacityProp}: @initialOpacity; }
 			_sky_phase_end { @{opacityProp}: @endOpacity }
 		});
 	}
 	
-	.image {
-	
+	&.image, & .image {
 		@initial-background-position: 0px 0px;
 		background-position: @initial-background-position;
 		background: url('../graphics/starfield1.s512.png');
@@ -133,7 +132,7 @@ html, body { height: 100%; }
 	}
 }
 #starfield2 {
-	.starfield;
+	&:extend(.starfield all);
 	
 	@initialOpacity: 0.0;
 	@endOpacity: 1.0;
@@ -141,14 +140,13 @@ html, body { height: 100%; }
 		.opacity(@initialOpacity);
 		
 		.-skrollr-dry-animation(starfield2op; {
-			@opacityProp: ~"opacity[quadratic]";
-			_sky_phase_center { @{opacityProp}: @initialOpacity; }
+			@opacityProp: ~"opacity[linearMidToEnd]";
+			_sky_phase_start { @{opacityProp}: @initialOpacity; }
 			_sky_phase_end { @{opacityProp}: @endOpacity; }
 		});
 	}
 	
-	.image {
-	
+	&.image, & .image {
 		@initial-background-position: 0px 0px;
 		background-position: @initial-background-position;
 		background: url('../graphics/starfield2.s1024.png');
@@ -161,7 +159,7 @@ html, body { height: 100%; }
 	}
 }
 #starfield3 {
-	.starfield;
+	&:extend(.starfield all);
 	
 	@initialOpacity: 0.0;
 	@endOpacity: 1.0;
@@ -169,16 +167,13 @@ html, body { height: 100%; }
 		.opacity(@initialOpacity);
 		
 		.-skrollr-dry-animation(starfield3op; {
-			@opacityProp: ~"opacity[quadratic]";
-			_sky_phase_center { @{opacityProp}: @initialOpacity; }
+			@opacityProp: ~"opacity[linearMidToEnd]";
+			_sky_phase_start { @{opacityProp}: @initialOpacity; }
 			_sky_phase_end { @{opacityProp}: @endOpacity; }
 		});
 	}
 	
-	.image {
-		&:extend(.starfield .image);
-		
-	
+	&.image, & .image {
 		@initial-background-position: 0px 0px;
 		background-position: @initial-background-position;
 		background: url('../graphics/starfield3.s720.png');
@@ -191,7 +186,7 @@ html, body { height: 100%; }
 	}
 }
 #starfield4 {
-	.starfield;
+	&:extend(.starfield all);
 	
 	@initialOpacity: 0.25;
 	@endOpacity: 1.0;
@@ -199,16 +194,13 @@ html, body { height: 100%; }
 		.opacity(@initialOpacity);
 		
 		.-skrollr-dry-animation(starfield4op; {
-			@opacityProp: ~"opacity[quadratic]";
+			@opacityProp: ~"opacity[linearStartToMid]";
 			_sky_phase_start { @{opacityProp}: @initialOpacity; }
-			_sky_phase_center { @{opacityProp}: @endOpacity; }
+			_sky_phase_end { @{opacityProp}: @endOpacity; }
 		});
 	}
 	
-	.image {
-		&:extend(.starfield .image);
-		
-	
+	&.image, & .image {
 		@initial-background-position: 0px 0px;
 		background-position: @initial-background-position;
 		background: url('../graphics/starfield4.s700.png');

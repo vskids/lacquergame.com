@@ -6499,14 +6499,19 @@ body {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffaccdea', GradientType=0);
 }
+.starfield.image,
 .starfield .image,
+#starfield1.image,
+#starfield1 .image,
+#starfield2.image,
+#starfield2 .image,
+#starfield3.image,
 #starfield3 .image,
+#starfield4.image,
 #starfield4 .image {
   background-repeat: repeat;
 }
-#starfield1 .image {
-  background-repeat: repeat;
-}
+#starfield1.image,
 #starfield1 .image {
   background-position: 0px 0px;
   background: url('../graphics/starfield1.s512.png');
@@ -6525,17 +6530,15 @@ body {
   filter: alpha(opacity=0);
   -skrollr-animation-name: starfield2op;
 }
-#starfield2 .image {
-  background-repeat: repeat;
-}
 @-skrollr-keyframes starfield2op {
-  _sky_phase_center {
-    opacity[quadratic]: 0;
+  _sky_phase_start {
+    opacity[linearMidToEnd]: 0;
   }
   _sky_phase_end {
-    opacity[quadratic]: 1;
+    opacity[linearMidToEnd]: 1;
   }
 }
+#starfield2.image,
 #starfield2 .image {
   background-position: 0px 0px;
   background: url('../graphics/starfield2.s1024.png');
@@ -6554,17 +6557,15 @@ body {
   filter: alpha(opacity=0);
   -skrollr-animation-name: starfield3op;
 }
-#starfield3 .image {
-  background-repeat: repeat;
-}
 @-skrollr-keyframes starfield3op {
-  _sky_phase_center {
-    opacity[quadratic]: 0;
+  _sky_phase_start {
+    opacity[linearMidToEnd]: 0;
   }
   _sky_phase_end {
-    opacity[quadratic]: 1;
+    opacity[linearMidToEnd]: 1;
   }
 }
+#starfield3.image,
 #starfield3 .image {
   background-position: 0px 0px;
   background: url('../graphics/starfield3.s720.png');
@@ -6583,17 +6584,15 @@ body {
   filter: alpha(opacity=25);
   -skrollr-animation-name: starfield4op;
 }
-#starfield4 .image {
-  background-repeat: repeat;
-}
 @-skrollr-keyframes starfield4op {
   _sky_phase_start {
-    opacity[quadratic]: 0.25;
+    opacity[linearStartToMid]: 0.25;
   }
-  _sky_phase_center {
-    opacity[quadratic]: 1;
+  _sky_phase_end {
+    opacity[linearStartToMid]: 1;
   }
 }
+#starfield4.image,
 #starfield4 .image {
   background-position: 0px 0px;
   background: url('../graphics/starfield4.s700.png');

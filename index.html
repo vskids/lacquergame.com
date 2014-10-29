@@ -24,10 +24,10 @@
 <section id="sky-phase" class="vh-200">
 	<div class="back fixed">
 		<div class="back fill"></div>
-		<div id="starfield1" class="back"><div class="back image"></div></div>
-		<div id="starfield2" class="back"><div class="back image"></div></div>
-		<div id="starfield3" class="back"><div class="back image"></div></div>
-		<div id="starfield4" class="back"><div class="back image"></div></div>
+		<div id="starfield1" class="back image"></div>
+		<div id="starfield2" class="back image"></div>
+		<div id="starfield3" class="back image"></div>
+		<div id="starfield4" class="back image"></div>
 	</div>
 	
 	<div class="container vh-100">
@@ -187,6 +187,18 @@ var $s = skrollr.init({
 	forceHeight: false,
 	smoothScrolling: false,
 	easing: {
+		linearMidToEnd: function (p) {
+			if (p <= 0.5)
+				return 0.0;
+			else
+				return (p - 0.5) * 2;
+		},
+		linearStartToMid: function (p) {
+			if (p < 0.5)
+				return p * 2;
+			else
+				return 1.0;
+			},
 		accelDecel: accelDecelSkrollrEasing
 	},
 	constants: {
