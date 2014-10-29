@@ -107,14 +107,17 @@ html, body { height: 100%; }
 #starfield1 {
 	.starfield;
 	
-	@initial-opacity: 1.0;
-	.opacity(@initial-opacity);
-	
-	.-skrollr-dry-animation(starfield1op; {
-		@opacityProp: ~"opacity[quadratic]";
-		_sky_phase_start { @{opacityProp}: @initial-opacity; }
-		_sky_phase_end { @{opacityProp}: 1.0; }
-	});
+	@initialOpacity: 1.0;
+	@endOpacity: 1.0;
+	& when not (@initialOpacity = 1.0) and (@endOpacity = 1.0) {
+		.opacity(@initialOpacity);
+		
+		.-skrollr-dry-animation(starfield1op; {
+			@opacityProp: ~"opacity[quadratic]";
+			_sky_phase_start { @{opacityProp}: @initialOpacity; }
+			_sky_phase_end { @{opacityProp}: @endOpacity }
+		});
+	}
 	
 	.image {
 	
@@ -132,14 +135,17 @@ html, body { height: 100%; }
 #starfield2 {
 	.starfield;
 	
-	@initial-opacity: 0.0;
-	.opacity(@initial-opacity);
-	
-	.-skrollr-dry-animation(starfield2op; {
-		@opacityProp: ~"opacity[quadratic]";
-		_sky_phase_center { @{opacityProp}: @initial-opacity; }
-		_sky_phase_end { @{opacityProp}: 1.0; }
-	});
+	@initialOpacity: 0.0;
+	@endOpacity: 1.0;
+	& when not (@initialOpacity = 1.0) and (@endOpacity = 1.0) {
+		.opacity(@initialOpacity);
+		
+		.-skrollr-dry-animation(starfield2op; {
+			@opacityProp: ~"opacity[quadratic]";
+			_sky_phase_center { @{opacityProp}: @initialOpacity; }
+			_sky_phase_end { @{opacityProp}: @endOpacity; }
+		});
+	}
 	
 	.image {
 	
@@ -157,14 +163,17 @@ html, body { height: 100%; }
 #starfield3 {
 	.starfield;
 	
-	@initial-opacity: 0.0;
-	.opacity(@initial-opacity);
-	
-	.-skrollr-dry-animation(starfield3op; {
-		@opacityProp: ~"opacity[quadratic]";
-		_sky_phase_center { @{opacityProp}: @initial-opacity; }
-		_sky_phase_end { @{opacityProp}: 1.0; }
-	});
+	@initialOpacity: 0.0;
+	@endOpacity: 1.0;
+	& when not (@initialOpacity = 1.0) and (@endOpacity = 1.0) {
+		.opacity(@initialOpacity);
+		
+		.-skrollr-dry-animation(starfield3op; {
+			@opacityProp: ~"opacity[quadratic]";
+			_sky_phase_center { @{opacityProp}: @initialOpacity; }
+			_sky_phase_end { @{opacityProp}: @endOpacity; }
+		});
+	}
 	
 	.image {
 		&:extend(.starfield .image);
@@ -184,14 +193,17 @@ html, body { height: 100%; }
 #starfield4 {
 	.starfield;
 	
-	@initial-opacity: 0.25;
-	.opacity(@initial-opacity);
-	
-	.-skrollr-dry-animation(starfield4op; {
-		@opacityProp: ~"opacity[quadratic]";
-		_sky_phase_start { @{opacityProp}: @initial-opacity; }
-		_sky_phase_center { @{opacityProp}: 1.0; }
-	});
+	@initialOpacity: 0.25;
+	@endOpacity: 1.0;
+	& when not (@initialOpacity = 1.0) and (@endOpacity = 1.0) {
+		.opacity(@initialOpacity);
+		
+		.-skrollr-dry-animation(starfield4op; {
+			@opacityProp: ~"opacity[quadratic]";
+			_sky_phase_start { @{opacityProp}: @initialOpacity; }
+			_sky_phase_center { @{opacityProp}: @endOpacity; }
+		});
+	}
 	
 	.image {
 		&:extend(.starfield .image);

@@ -6504,21 +6504,8 @@ body {
 #starfield4 .image {
   background-repeat: repeat;
 }
-#starfield1 {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -skrollr-animation-name: starfield1op;
-}
 #starfield1 .image {
   background-repeat: repeat;
-}
-@-skrollr-keyframes starfield1op {
-  _sky_phase_start {
-    opacity[quadratic]: 1;
-  }
-  _sky_phase_end {
-    opacity[quadratic]: 1.0;
-  }
 }
 #starfield1 .image {
   background-position: 0px 0px;
@@ -6546,7 +6533,7 @@ body {
     opacity[quadratic]: 0;
   }
   _sky_phase_end {
-    opacity[quadratic]: 1.0;
+    opacity[quadratic]: 1;
   }
 }
 #starfield2 .image {
@@ -6575,7 +6562,7 @@ body {
     opacity[quadratic]: 0;
   }
   _sky_phase_end {
-    opacity[quadratic]: 1.0;
+    opacity[quadratic]: 1;
   }
 }
 #starfield3 .image {
@@ -6604,7 +6591,7 @@ body {
     opacity[quadratic]: 0.25;
   }
   _sky_phase_center {
-    opacity[quadratic]: 1.0;
+    opacity[quadratic]: 1;
   }
 }
 #starfield4 .image {
