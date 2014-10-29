@@ -6513,15 +6513,15 @@ body {
 }
 #starfield1.image,
 #starfield1 .image {
-  background-position: 0px 0px;
+  background-position: 0px 0%;
   -skrollr-animation-name: starfield1-pos;
 }
 @-skrollr-keyframes starfield1-pos {
   _sky_phase_start {
-    background-position[linear]: 0px 0px;
+    background-position[linear]: 0px 0%;
   }
   _sky_phase_end {
-    background-position[linear]: 0px -150px;
+    background-position[linear]: 0px 75%;
   }
 }
 #starfield1.image,
@@ -6543,15 +6543,15 @@ body {
 }
 #starfield2.image,
 #starfield2 .image {
-  background-position: 0px 0px;
+  background-position: 0px 0%;
   -skrollr-animation-name: starfield2-pos;
 }
 @-skrollr-keyframes starfield2-pos {
   _sky_phase_start {
-    background-position[linear]: 0px 0px;
+    background-position[linear]: 0px 0%;
   }
   _sky_phase_end {
-    background-position[linear]: 0px -100px;
+    background-position[linear]: 0px 166.5%;
   }
 }
 #starfield2.image,
@@ -6573,15 +6573,15 @@ body {
 }
 #starfield3.image,
 #starfield3 .image {
-  background-position: 0px 0px;
+  background-position: 0px 0%;
   -skrollr-animation-name: starfield3-pos;
 }
 @-skrollr-keyframes starfield3-pos {
   _sky_phase_start {
-    background-position[linear]: 0px 0px;
+    background-position[linear]: 0px 0%;
   }
   _sky_phase_end {
-    background-position[linear]: 0px -125px;
+    background-position[linear]: 0px 250%;
   }
 }
 #starfield3.image,
@@ -6603,15 +6603,15 @@ body {
 }
 #starfield4.image,
 #starfield4 .image {
-  background-position: 0px 0px;
+  background-position: 0px 0%;
   -skrollr-animation-name: starfield4-pos;
 }
 @-skrollr-keyframes starfield4-pos {
   _sky_phase_start {
-    background-position[linear]: 0px 0px;
+    background-position[linear]: 0px 0%;
   }
   _sky_phase_end {
-    background-position[linear]: 0px -115px;
+    background-position[linear]: 0px 125%;
   }
 }
 #starfield4.image,

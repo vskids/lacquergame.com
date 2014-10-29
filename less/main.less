@@ -99,7 +99,9 @@ html, body { height: 100%; }
 
 // starfields
 
-.generateStarfieldRules(@uniqueName; @initialOpacity; @endOpacity; @initialBGOffset; @endBGOffset; @opacityEasing; @bgEasing) {
+@starfieldScrollOffsetBase: 500%;
+
+.generateStarfieldRules(@uniqueName; @initialOpacity; @endOpacity; @initialScrollOffsetFactor; @endScrollOffsetFactor; @opacityEasing; @bgEasing) {
 	&:extend(.starfield all);
 	
 	& when not (@initialOpacity = 1.0) and (@endOpacity = 1.0) {
@@ -113,12 +115,14 @@ html, body { height: 100%; }
 	}
 	
 	&.image, & .image {
-		background-position: 0px @initialBGOffset;
+		@initialScrollOffset: (@starfieldScrollOffsetBase * @initialScrollOffsetFactor);
+		@endScrollOffset: (@starfieldScrollOffsetBase * @endScrollOffsetFactor);
+		background-position: 0px @initialScrollOffset;
 		
 		.-skrollr-dry-animation(~"@{uniqueName}-pos"; {
 			@backgroundPositionProp: ~"background-position[@{bgEasing}]";
-			_sky_phase_start { @{backgroundPositionProp}: 0px @initialBGOffset; }
-			_sky_phase_end { @{backgroundPositionProp}: 0px @endBGOffset; }
+			_sky_phase_start { @{backgroundPositionProp}: 0px @initialScrollOffset; }
+			_sky_phase_end { @{backgroundPositionProp}: 0px @endScrollOffset; }
 		});
 	}
 }
@@ -130,25 +134,45 @@ html, body { height: 100%; }
 }
 
 #starfield1 {
-	.generateStarfieldRules(starfield1; 1.0; 1.0; 0px; -150px; linear; linear);
+	.generateStarfieldRules(
+		starfield1;
+		1.0; 1.0;
+		0.0; 0.15;
+		linear; linear
+	);
 	&.image, & .image {
 		background-image: url('../graphics/starfield1.s512.png');
 	}
 }
 #starfield2 {
-	.generateStarfieldRules(starfield2; 0.0; 1.0; 0px; -100px; linearMidToEnd; linear);
+	.generateStarfieldRules(
+		starfield2;
+		0.0; 1.0;
+		0.0; 0.333;
+		linearMidToEnd; linear
+	);
 	&.image, & .image {
 		background-image: url('../graphics/starfield2.s1024.png');
 	}
 }
 #starfield3 {
-	.generateStarfieldRules(starfield3; 0.0; 1.0; 0px; -125px; linearMidToEnd; linear);
+	.generateStarfieldRules(
+		starfield3;
+		0.0; 1.0;
+		0.0; 0.5;
+		linearMidToEnd; linear
+	);
 	&.image, & .image {
 		background-image: url('../graphics/starfield3.s720.png');
 	}
 }
 #starfield4 {
-	.generateStarfieldRules(starfield4; 0.25; 1.0; 0px; -115px; linearStartToMid; linear);
+	.generateStarfieldRules(
+		starfield4;
+		0.25; 1.0;
+		0.0; 0.25;
+		linearStartToMid; linear
+	);
 	&.image, & .image {
 		background-image: url('../graphics/starfield4.s700.png');
 	}
