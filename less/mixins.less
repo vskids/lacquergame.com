@@ -5,7 +5,9 @@
 // screenheight macros
 
 .screenheight(@childPerc; @parentPerc) {
-	@height: percentage(@childPerc / @parentPerc);
+	@height: percentage(
+		(@childPerc / @parentPerc)
+	);
 }
 
 /// @based-on: stackoverflow.com/questions/21440789/loop-through-array-of-valuesIn-less#21441220

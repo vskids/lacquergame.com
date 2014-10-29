@@ -50,7 +50,10 @@ gulp.task('build-less', "Compiles LESS › CSS", function () {
 	).pipe(
 		notify({ message: "Rebuilt LESS: <%= file.relative %>", emitError: false })
 	).pipe(
-		less()
+		less({
+			strictMath: true,
+			strictUnits: true
+		})
 	).pipe(
 		sourcemaps.write('./')
 	).pipe(
