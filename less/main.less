@@ -42,6 +42,10 @@ html, body { height: 100%; }
 		&, & .back {
 			position: absolute;
 			width: 100%; height: 100%;
+			
+			&.fixed {
+				position: fixed;
+			}
 		}
 	}
 }
@@ -50,9 +54,13 @@ html, body { height: 100%; }
 	
 	color: @cobalt;
 	
-	> .fill {
-		background-color: @blue-darker;
-		#gradient > .vertical(@cobalt-darker, @blue-darker);
+	> .back {
+		&, & .back {
+			&.fill {
+				background-color: @blue-darker;
+				#gradient > .vertical(@cobalt-darker, @blue-darker);
+			}
+		}
 	}
 }
 #ambitions-phase {
@@ -60,9 +68,13 @@ html, body { height: 100%; }
 	
 	color: white;
 	
-	> .fill {
-		background-color: @purple-darker;
-		#gradient > .vertical(@purple-dark, @teal-darker);
+	> .back {
+		&, & .back {
+			&.fill {
+				background-color: @purple-darker;
+				#gradient > .vertical(@purple-dark, @teal-darker);
+			}
+		}
 	}
 }
 #title-phase {
@@ -70,9 +82,13 @@ html, body { height: 100%; }
 	
 	color: @purple-darker;
 	
-	> .fill {
-		background-color: @cobalt-light;
-		#gradient > .vertical(white, @cobalt-light);
+	> .back {
+		&, & .back {
+			&.fill {
+				background-color: @cobalt-light;
+				#gradient > .vertical(white, @cobalt-light);
+			}
+		}
 	}
 }
 
@@ -93,20 +109,20 @@ html, body { height: 100%; }
 	
 	.-skrollr-dry-animation(starfield1op; {
 		@opacityProp: ~"opacity[quadratic]";
-		start { @{opacityProp}: @initial-opacity; }
-		top-bottom { @{opacityProp}: 1.0; }
+		_sky_phase_start { @{opacityProp}: @initial-opacity; }
+		_sky_phase_end { @{opacityProp}: 1.0; }
 	});
 	
 	.image {
-		background: url('../graphics/starfield1.s512.png') fixed;
 	
 		@initial-background-position: 0px 0px;
 		background-position: @initial-background-position;
+		background: url('../graphics/starfield1.s512.png');
 		
 		.-skrollr-dry-animation(starfield1pos; {
 			@backgroundPositionProp: ~"background-position[linear]";
-			start { @{backgroundPositionProp}: @initial-background-position; }
-			top-bottom { @{backgroundPositionProp}: 0px -150px; }
+			_sky_phase_start { @{backgroundPositionProp}: @initial-background-position; }
+			_sky_phase_end { @{backgroundPositionProp}: 0px -150px; }
 		});
 	}
 }
@@ -118,20 +134,20 @@ html, body { height: 100%; }
 	
 	.-skrollr-dry-animation(starfield2op; {
 		@opacityProp: ~"opacity[quadratic]";
-		center { @{opacityProp}: @initial-opacity; }
-		top-bottom { @{opacityProp}: 1.0; }
+		_sky_phase_center { @{opacityProp}: @initial-opacity; }
+		_sky_phase_end { @{opacityProp}: 1.0; }
 	});
 	
 	.image {
-		background: url('../graphics/starfield2.s1024.png') fixed;
 	
 		@initial-background-position: 0px 0px;
 		background-position: @initial-background-position;
+		background: url('../graphics/starfield2.s1024.png');
 		
 		.-skrollr-dry-animation(starfield2pos; {
 			@backgroundPositionProp: ~"background-position[linear]";
-			start { @{backgroundPositionProp}: @initial-background-position; }
-			top-bottom { @{backgroundPositionProp}: 0px -100px; }
+			_sky_phase_start { @{backgroundPositionProp}: @initial-background-position; }
+			_sky_phase_end { @{backgroundPositionProp}: 0px -100px; }
 		});
 	}
 }
@@ -143,22 +159,22 @@ html, body { height: 100%; }
 	
 	.-skrollr-dry-animation(starfield3op; {
 		@opacityProp: ~"opacity[quadratic]";
-		center { @{opacityProp}: @initial-opacity; }
-		top-bottom { @{opacityProp}: 1.0; }
+		_sky_phase_center { @{opacityProp}: @initial-opacity; }
+		_sky_phase_end { @{opacityProp}: 1.0; }
 	});
 	
 	.image {
 		&:extend(.starfield .image);
 		
-		background: url('../graphics/starfield3.s720.png') fixed;
 	
 		@initial-background-position: 0px 0px;
 		background-position: @initial-background-position;
+		background: url('../graphics/starfield3.s720.png');
 		
 		.-skrollr-dry-animation(starfield3pos; {
 			@backgroundPositionProp: ~"background-position[linear]";
-			start { @{backgroundPositionProp}: @initial-background-position; }
-			top-bottom { @{backgroundPositionProp}: 0px -125px; }
+			_sky_phase_start { @{backgroundPositionProp}: @initial-background-position; }
+			_sky_phase_end { @{backgroundPositionProp}: 0px -125px; }
 		});
 	}
 }
@@ -170,22 +186,22 @@ html, body { height: 100%; }
 	
 	.-skrollr-dry-animation(starfield4op; {
 		@opacityProp: ~"opacity[quadratic]";
-		start { @{opacityProp}: @initial-opacity; }
-		center { @{opacityProp}: 1.0; }
+		_sky_phase_start { @{opacityProp}: @initial-opacity; }
+		_sky_phase_center { @{opacityProp}: 1.0; }
 	});
 	
 	.image {
 		&:extend(.starfield .image);
 		
-		background: url('../graphics/starfield4.s700.png') fixed;
 	
 		@initial-background-position: 0px 0px;
 		background-position: @initial-background-position;
+		background: url('../graphics/starfield4.s700.png');
 		
 		.-skrollr-dry-animation(starfield4pos; {
 			@backgroundPositionProp: ~"background-position[linear]";
-			start { @{backgroundPositionProp}: @initial-background-position; }
-			top-bottom { @{backgroundPositionProp}: 0px -115px; }
+			_sky_phase_start { @{backgroundPositionProp}: @initial-background-position; }
+			_sky_phase_end { @{backgroundPositionProp}: 0px -115px; }
 		});
 	}
 }

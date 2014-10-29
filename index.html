@@ -22,11 +22,13 @@
 
 
 <section id="sky-phase" class="vh-200">
-	<div class="back fill"></div>
-	<div id="starfield1" class="back"><div class="back image"></div></div>
-	<div id="starfield2" class="back"><div class="back image"></div></div>
-	<div id="starfield3" class="back"><div class="back image"></div></div>
-	<div id="starfield4" class="back"><div class="back image"></div></div>
+	<div class="back fixed">
+		<div class="back fill"></div>
+		<div id="starfield1" class="back"><div class="back image"></div></div>
+		<div id="starfield2" class="back"><div class="back image"></div></div>
+		<div id="starfield3" class="back"><div class="back image"></div></div>
+		<div id="starfield4" class="back"><div class="back image"></div></div>
+	</div>
 	
 	<div class="container vh-100">
 		<div class="monologue">Oh, there you are.  I missed you.</div>
@@ -161,6 +163,52 @@ var accelDecelSkrollrEasing = function (progress, domElement, propertyName, targ
 };
 
 
+function getSkyPhaseScrollStart() {
+	var skyPhaseScrollStart = skrollr.get().relativeToAbsolute($('#sky-phase')[0], 'top', 'top');
+	console.log("skyPhaseScrollStart: "+skyPhaseScrollStart);
+	return skyPhaseScrollStart;
+}
+function getSkyPhaseScrollCenter() {
+	var skyPhaseScrollCenter = skrollr.get().relativeToAbsolute($('#sky-phase')[0], 'top', 'center');
+	console.log("skyPhaseScrollCenter: "+skyPhaseScrollCenter);
+	return skyPhaseScrollCenter;
+}
+function getSkyPhaseScrollEnd() {
+	var skyPhaseScrollEnd = skrollr.get().relativeToAbsolute($('#sky-phase')[0], 'top', 'bottom');
+	console.log("skyPhaseScrollEnd: "+skyPhaseScrollEnd);
+	return skyPhaseScrollEnd;
+}
+function getAmbitionsPhaseScrollStart() {
+	var ambitionsPhaseScrollStart = skrollr.get().relativeToAbsolute($('#ambitions-phase')[0], 'bottom', 'top');
+	console.log("ambitionsPhaseScrollStart: "+ambitionsPhaseScrollStart);
+	return ambitionsPhaseScrollStart;
+}
+function getAmbitionsPhaseScrollCenter() {
+	var ambitionsPhaseScrollCenter = skrollr.get().relativeToAbsolute($('#ambitions-phase')[0], 'center', 'center');
+	console.log("ambitionsPhaseScrollCenter: "+ambitionsPhaseScrollCenter);
+	return ambitionsPhaseScrollCenter;
+}
+function getAmbitionsPhaseScrollEnd() {
+	var ambitionsPhaseScrollEnd = skrollr.get().relativeToAbsolute($('#ambitions-phase')[0], 'top', 'bottom');
+	console.log("ambitionsPhaseScrollEnd: "+ambitionsPhaseScrollEnd);
+	return ambitionsPhaseScrollEnd;
+}
+function getTitlePhaseScrollStart() {
+	var titlePhaseScrollStart = skrollr.get().relativeToAbsolute($('#title-phase')[0], 'bottom', 'top');
+	console.log("titlePhaseScrollStart: "+titlePhaseScrollStart);
+	return titlePhaseScrollStart;
+}
+function getTitlePhaseScrollCenter() {
+	var titlePhaseScrollCenter = skrollr.get().relativeToAbsolute($('#title-phase')[0], 'center', 'center');
+	console.log("titlePhaseScrollCenter: "+titlePhaseScrollCenter);
+	return titlePhaseScrollCenter;
+}
+function getTitlePhaseScrollEnd() {
+	var titlePhaseScrollEnd = skrollr.get().relativeToAbsolute($('#title-phase')[0], 'top', 'bottom');
+	console.log("titlePhaseScrollEnd: "+titlePhaseScrollEnd);
+	return titlePhaseScrollEnd;
+}
+
 var $s = skrollr.init({
 	mobileCheck: function () { return false; },
 	edgeStrategy: 'ease',
@@ -168,6 +216,17 @@ var $s = skrollr.init({
 	smoothScrolling: false,
 	easing: {
 		accelDecel: accelDecelSkrollrEasing
+	},
+	constants: {
+		sky_phase_start: getSkyPhaseScrollStart,
+		sky_phase_center: getSkyPhaseScrollCenter,
+		sky_phase_end: getSkyPhaseScrollEnd,
+		ambitions_phase_start: getAmbitionsPhaseScrollStart,
+		ambitions_phase_center: getAmbitionsPhaseScrollCenter,
+		ambitions_phase_end: getAmbitionsPhaseScrollEnd,
+		title_phase_start: getTitlePhaseScrollStart,
+		title_phase_center: getTitlePhaseScrollCenter,
+		title_phase_end: getTitlePhaseScrollEnd,
 	}
 });
 		</script>
