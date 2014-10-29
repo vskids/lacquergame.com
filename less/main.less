@@ -117,12 +117,12 @@ html, body { height: 100%; }
 	&.image, & .image {
 		@initialScrollOffset: (@starfieldScrollOffsetBase * @initialScrollOffsetFactor);
 		@endScrollOffset: (@starfieldScrollOffsetBase * @endScrollOffsetFactor);
-		background-position: 0px @initialScrollOffset;
+		background-position: left 0px top @initialScrollOffset;
 		
 		.-skrollr-dry-animation(~"@{uniqueName}-pos"; {
 			@backgroundPositionProp: ~"background-position[@{bgEasing}]";
-			_sky_phase_start { @{backgroundPositionProp}: 0px @initialScrollOffset; }
-			_sky_phase_end { @{backgroundPositionProp}: 0px @endScrollOffset; }
+			_sky_phase_start { @{backgroundPositionProp}: left 0px top @initialScrollOffset; }
+			_sky_phase_end { @{backgroundPositionProp}: left 0px top @endScrollOffset; }
 		});
 	}
 }
