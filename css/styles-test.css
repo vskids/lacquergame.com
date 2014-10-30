@@ -6684,6 +6684,13 @@ h1 {
   height: 80px;
   margin: 4px;
   border-radius: 3px;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+}
+.on-dark .color-swatch {
+  border: 1px solid rgba(230, 230, 230, 0.1);
+}
+.on-light .color-swatch {
+  border: 1px solid rgba(26, 26, 26, 0.1);
 }
 .color-swatch:after {
   font-size: 85%;
