@@ -45,6 +45,25 @@
 @yellow-lighter: lighten(@yellow, 40%);
 
 
+@sky-eve-top: rgb(74, 108, 135);
+@sky-eve-mid: overlay(@sky-eve-top, @sky-eve-bottom);
+@sky-eve-bottom: rgb(180, 206, 169);
+@sky-eve-top-mid: average(@sky-eve-top, @sky-eve-mid);
+@sky-eve-bottom-mid: average(@sky-eve-bottom, @sky-eve-mid);
+
+@sky-night-top-pure: rgb(28, 8, 79);
+@sky-night-mid-pure: rgb(85, 32, 78);
+@sky-night-bottom-pure: rgb(139, 57, 79);
+
+@sky-night-top: multiply(@sky-night-top-pure, rgba(0,0,0,0.4));
+@sky-night-mid: multiply(@sky-night-mid-pure, rgba(0,0,0,0.667));
+@sky-night-bottom: @sky-night-bottom-pure;
+@sky-night-top-mid: average(@sky-night-top, @sky-night-mid);
+@sky-night-bottom-mid: average(@sky-night-bottom, @sky-night-mid);
+
+
+
+
 // `hsl(…)`-generating variants
 
 ._blue-as-hsl() { .color-as-hsl(@blue); @blue-as-hsl: @as-hsl; } ._blue-as-hsl();
@@ -91,6 +110,18 @@
 ._purple-lighter-as-hsl() { .color-as-hsl(@purple-lighter); @purple-lighter-as-hsl: @as-hsl; } ._purple-lighter-as-hsl();
 ._teal-lighter-as-hsl() { .color-as-hsl(@teal-lighter); @teal-lighter-as-hsl: @as-hsl; } ._teal-lighter-as-hsl();
 ._yellow-lighter-as-hsl() { .color-as-hsl(@yellow-lighter); @yellow-lighter-as-hsl: @as-hsl; } ._yellow-lighter-as-hsl();
+
+._sky-eve-top-as-hsl() { .color-as-hsl(@sky-eve-top); @sky-eve-top-as-hsl: @as-hsl; } ._sky-eve-top-as-hsl();
+._sky-eve-mid-as-hsl() { .color-as-hsl(@sky-eve-mid); @sky-eve-mid-as-hsl: @as-hsl; } ._sky-eve-mid-as-hsl();
+._sky-eve-bottom-as-hsl() { .color-as-hsl(@sky-eve-bottom); @sky-eve-bottom-as-hsl: @as-hsl; } ._sky-eve-bottom-as-hsl();
+._sky-eve-top-mid-as-hsl() { .color-as-hsl(@sky-eve-top-mid); @sky-eve-top-mid-as-hsl: @as-hsl; } ._sky-eve-top-mid-as-hsl();
+._sky-eve-bottom-mid-as-hsl() { .color-as-hsl(@sky-eve-bottom-mid); @sky-eve-bottom-mid-as-hsl: @as-hsl; } ._sky-eve-bottom-mid-as-hsl();
+
+._sky-night-top-as-hsl() { .color-as-hsl(@sky-night-top); @sky-night-top-as-hsl: @as-hsl; } ._sky-night-top-as-hsl();
+._sky-night-mid-as-hsl() { .color-as-hsl(@sky-night-mid); @sky-night-mid-as-hsl: @as-hsl; } ._sky-night-mid-as-hsl();
+._sky-night-bottom-as-hsl() { .color-as-hsl(@sky-night-bottom); @sky-night-bottom-as-hsl: @as-hsl; } ._sky-night-bottom-as-hsl();
+._sky-night-top-mid-as-hsl() { .color-as-hsl(@sky-night-top-mid); @sky-night-top-mid-as-hsl: @as-hsl; } ._sky-night-top-mid-as-hsl();
+._sky-night-bottom-mid-as-hsl() { .color-as-hsl(@sky-night-bottom-mid); @sky-night-bottom-mid-as-hsl: @as-hsl; } ._sky-night-bottom-mid-as-hsl();
 
 
 // `rgb(…)`-generating variants
@@ -139,3 +170,15 @@
 ._purple-lighter-as-rgb() { .color-as-rgb(@purple-lighter); @purple-lighter-as-rgb: @as-hsl; } ._purple-lighter-as-rgb();
 ._teal-lighter-as-rgb() { .color-as-rgb(@teal-lighter); @teal-lighter-as-rgb: @as-hsl; } ._teal-lighter-as-rgb();
 ._yellow-lighter-as-rgb() { .color-as-rgb(@yellow-lighter); @yellow-lighter-as-rgb: @as-hsl; } ._yellow-lighter-as-rgb();
+
+._sky-eve-top-as-rgb { .color-as-rgb(@sky-eve-top); @sky-eve-top-as-rgb: @as-rgb; } ._sky-eve-top-as-rgb();
+._sky-eve-mid-as-rgb { .color-as-rgb(@sky-eve-mid); @sky-eve-mid-as-rgb: @as-rgb; } ._sky-eve-mid-as-rgb();
+._sky-eve-bottom-as-rgb { .color-as-rgb(@sky-eve-bottom); @sky-eve-bottom-as-rgb: @as-rgb; } ._sky-eve-bottom-as-rgb();
+._sky-eve-top-mid-as-rgb { .color-as-rgb(@sky-eve-top-mid); @sky-eve-top-mid-as-rgb: @as-rgb; } ._sky-eve-top-mid-as-rgb();
+._sky-eve-bottom-mid-as-rgb { .color-as-rgb(@sky-eve-bottom-mid); @sky-eve-bottom-mid-as-rgb: @as-rgb; } ._sky-eve-bottom-mid-as-rgb();
+
+._sky-night-top-as-rgb { .color-as-rgb(@sky-night-top); @sky-night-top-as-rgb: @as-rgb; } ._sky-night-top-as-rgb();
+._sky-night-mid-as-rgb { .color-as-rgb(@sky-night-mid); @sky-night-mid-as-rgb: @as-rgb; } ._sky-night-mid-as-rgb();
+._sky-night-bottom-as-rgb { .color-as-rgb(@sky-night-bottom); @sky-night-bottom-as-rgb: @as-rgb; } ._sky-night-bottom-as-rgb();
+._sky-night-top-mid-as-rgb { .color-as-rgb(@sky-night-top-mid); @sky-night-top-mid-as-rgb: @as-rgb; } ._sky-night-top-mid-as-rgb();
+._sky-night-bottom-mid-as-rgb { .color-as-rgb(@sky-night-bottom-mid); @sky-night-bottom-mid-as-rgb: @as-rgb; } ._sky-night-bottom-mid-as-rgb();

@@ -7134,5 +7134,115 @@ h1 {
 .yellow-lighter .small {
   color: #f8f9d2;
 }
+.color-swatch.sky-eve-top {
+  background-color: #4a6c87;
+}
+.color-swatch.sky-eve-top:after {
+  color: #ffffff;
+  content: "#4a6c87";
+}
+.sky-eve-top small,
+.sky-eve-top .small {
+  color: #4a6c87;
+}
+.color-swatch.sky-eve-mid {
+  background-color: #68aeae;
+}
+.color-swatch.sky-eve-mid:after {
+  color: #ffffff;
+  content: "#68aeae";
+}
+.sky-eve-mid small,
+.sky-eve-mid .small {
+  color: #68aeae;
+}
+.color-swatch.sky-eve-bottom {
+  background-color: #b4cea9;
+}
+.color-swatch.sky-eve-bottom:after {
+  color: #000000;
+  content: "#b4cea9";
+}
+.sky-eve-bottom small,
+.sky-eve-bottom .small {
+  color: #b4cea9;
+}
+.color-swatch.sky-eve-top-mid {
+  background-color: #598d9b;
+}
+.color-swatch.sky-eve-top-mid:after {
+  color: #ffffff;
+  content: "#598d9b";
+}
+.sky-eve-top-mid small,
+.sky-eve-top-mid .small {
+  color: #598d9b;
+}
+.color-swatch.sky-eve-bottom-mid {
+  background-color: #8ebeac;
+}
+.color-swatch.sky-eve-bottom-mid:after {
+  color: #000000;
+  content: "#8ebeac";
+}
+.sky-eve-bottom-mid small,
+.sky-eve-bottom-mid .small {
+  color: #8ebeac;
+}
+.color-swatch.sky-night-top {
+  background-color: #11052f;
+}
+.color-swatch.sky-night-top:after {
+  color: #ffffff;
+  content: "#11052f";
+}
+.sky-night-top small,
+.sky-night-top .small {
+  color: #11052f;
+}
+.color-swatch.sky-night-mid {
+  background-color: #1c0b1a;
+}
+.color-swatch.sky-night-mid:after {
+  color: #ffffff;
+  content: "#1c0b1a";
+}
+.sky-night-mid small,
+.sky-night-mid .small {
+  color: #1c0b1a;
+}
+.color-swatch.sky-night-bottom {
+  background-color: #8b394f;
+}
+.color-swatch.sky-night-bottom:after {
+  color: #ffffff;
+  content: "#8b394f";
+}
+.sky-night-bottom small,
+.sky-night-bottom .small {
+  color: #8b394f;
+}
+.color-swatch.sky-night-top-mid {
+  background-color: #170825;
+}
+.color-swatch.sky-night-top-mid:after {
+  color: #ffffff;
+  content: "#170825";
+}
+.sky-night-top-mid small,
+.sky-night-top-mid .small {
+  color: #170825;
+}
+.color-swatch.sky-night-bottom-mid {
+  background-color: #542234;
+}
+.color-swatch.sky-night-bottom-mid:after {
+  color: #ffffff;
+  content: "#542234";
+}
+.sky-night-bottom-mid small,
+.sky-night-bottom-mid .small {
+  color: #542234;
+}
 
 /*# sourceMappingURL=styles-test.css.map */
