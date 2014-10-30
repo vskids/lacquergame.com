@@ -53,15 +53,15 @@
 }
 
 .color-as-rgb(@color) {
-	@red: red(@color);
-	@green: green(@color);
-	@blue: blue(@color);
+	@red: round(red(@color));
+	@green: round(green(@color));
+	@blue: round(blue(@color));
 	@as-rgb: ~"rgb(@{red}, @{green}, @{blue})";
 }
 
 .color-as-hsl(@color) {
-	@hue: hue(@color);
-	@saturation: saturation(@color);
-	@lightness: lightness(@color);
+	@hue: round(hue(@color), 3);
+	@saturation: round(saturation(@color), 2);
+	@lightness: round(lightness(@color), 2);
 	@as-hsl: ~"hsl(@{hue}, @{saturation}, @{lightness})";
 }
