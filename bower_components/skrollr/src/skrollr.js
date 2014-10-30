@@ -1246,12 +1246,12 @@
 
 		//Handle prefixing of "gradient" values.
 		//For now only the prefixed value will be set. Unprefixed isn't supported anyway.
-		if(theDashedCSSPrefix) {
-			rxGradient.lastIndex = 0;
-			val = val.replace(rxGradient, function(s) {
-				return theDashedCSSPrefix + s;
-			});
-		}
+		//if(theDashedCSSPrefix) {
+		//	rxGradient.lastIndex = 0;
+		//	val = val.replace(rxGradient, function(s) {
+		//		return theDashedCSSPrefix + s;
+		//	});
+		//}
 
 		//Now parse ANY number inside this string and create a format string.
 		val = val.replace(rxNumericValue, function(n) {
