@@ -56,7 +56,7 @@
 @sky-night-bottom-pure: rgb(139, 57, 79);
 
 @sky-night-top: multiply(@sky-night-top-pure, rgba(0,0,0,0.4));
-@sky-night-mid: multiply(@sky-night-mid-pure, rgba(0,0,0,0.667));
+@sky-night-mid: spin(@sky-night-mid-pure, -40);
 @sky-night-bottom: @sky-night-bottom-pure;
 @sky-night-top-mid: average(@sky-night-top, @sky-night-mid);
 @sky-night-bottom-mid: average(@sky-night-bottom, @sky-night-mid);

@@ -6452,7 +6452,7 @@ body {
     background[linear]: linear-gradient(to bottom, rgb(74, 108, 135), rgb(104, 174, 174), rgb(180, 206, 169)) no-repeat;
   }
   _sky_phase_center {
-    background[linear]: linear-gradient(to bottom, rgb(17, 5, 47), rgb(28, 11, 26), rgb(139, 57, 79)) no-repeat;
+    background[linear]: linear-gradient(to bottom, rgb(17, 5, 47), rgb(57, 32, 85), rgb(139, 57, 79)) no-repeat;
   }
 }
 #ambitions-phase {

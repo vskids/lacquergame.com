@@ -6452,7 +6452,7 @@ body {
     background[linear]: linear-gradient(to bottom, rgb(74, 108, 135), rgb(104, 174, 174), rgb(180, 206, 169)) no-repeat;
   }
   _sky_phase_center {
-    background[linear]: linear-gradient(to bottom, rgb(17, 5, 47), rgb(28, 11, 26), rgb(139, 57, 79)) no-repeat;
+    background[linear]: linear-gradient(to bottom, rgb(17, 5, 47), rgb(57, 32, 85), rgb(139, 57, 79)) no-repeat;
   }
 }
 #ambitions-phase {
@@ -7218,15 +7218,15 @@ h1 {
   color: #11052f;
 }
 .color-swatch.sky-night-mid {
-  background-color: #1c0b1a;
+  background-color: #392055;
 }
 .color-swatch.sky-night-mid:after {
   color: #ffffff;
-  content: "#1c0b1a";
+  content: "#392055";
 }
 .sky-night-mid small,
 .sky-night-mid .small {
-  color: #1c0b1a;
+  color: #392055;
 }
 .color-swatch.sky-night-bottom {
   background-color: #8b394f;
@@ -7240,26 +7240,26 @@ h1 {
   color: #8b394f;
 }
 .color-swatch.sky-night-top-mid {
-  background-color: #170825;
+  background-color: #251242;
 }
 .color-swatch.sky-night-top-mid:after {
   color: #ffffff;
-  content: "#170825";
+  content: "#251242";
 }
 .sky-night-top-mid small,
 .sky-night-top-mid .small {
-  color: #170825;
+  color: #251242;
 }
 .color-swatch.sky-night-bottom-mid {
-  background-color: #542234;
+  background-color: #622d52;
 }
 .color-swatch.sky-night-bottom-mid:after {
   color: #ffffff;
-  content: "#542234";
+  content: "#622d52";
 }
 .sky-night-bottom-mid small,
 .sky-night-bottom-mid .small {
-  color: #542234;
+  color: #622d52;
 }
 
 /*# sourceMappingURL=styles-test.css.map */
