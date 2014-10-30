@@ -65,3 +65,15 @@
 	@lightness: round(lightness(@color), 2);
 	@as-hsl: ~"hsl(@{hue}, @{saturation}, @{lightness})";
 }
+
+
+
+// linear-gradient helper
+
+.linear-gradient(@dir: to right; @stops) {
+	background: -webkit-linear-gradient(@dir, @stops) no-repeat;
+	background:    -moz-linear-gradient(@dir, @stops) no-repeat;
+	background:     -ms-linear-gradient(@dir, @stops) no-repeat;
+	background:      -o-linear-gradient(@dir, @stops) no-repeat;
+	background:         linear-gradient(@dir, @stops) no-repeat;
+}

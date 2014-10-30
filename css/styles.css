@@ -6421,7 +6421,8 @@ body {
 #sky-phase {
   position: relative;
   z-index: 100;
-  color: #6fa8da;
+  color: #fff;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 #sky-phase > .back {
   z-index: -1;
@@ -6438,12 +6439,21 @@ body {
 }
 #sky-phase > .back.fill,
 #sky-phase > .back .back.fill {
-  background-color: #0a1828;
-  background-image: -webkit-linear-gradient(top, #1a4163 0%, #0a1828 100%);
-  background-image: -o-linear-gradient(top, #1a4163 0%, #0a1828 100%);
-  background-image: linear-gradient(to bottom, #1a4163 0%, #0a1828 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1a4163', endColorstr='#ff0a1828', GradientType=0);
+  background-color: #68aeae;
+  background: -webkit-linear-gradient(to bottom, rgb(74, 108, 135), rgb(104, 174, 174), rgb(180, 206, 169)) no-repeat;
+  background: -moz-linear-gradient(to bottom, rgb(74, 108, 135), rgb(104, 174, 174), rgb(180, 206, 169)) no-repeat;
+  background: -ms-linear-gradient(to bottom, rgb(74, 108, 135), rgb(104, 174, 174), rgb(180, 206, 169)) no-repeat;
+  background: -o-linear-gradient(to bottom, rgb(74, 108, 135), rgb(104, 174, 174), rgb(180, 206, 169)) no-repeat;
+  background: linear-gradient(to bottom, rgb(74, 108, 135), rgb(104, 174, 174), rgb(180, 206, 169)) no-repeat;
+  -skrollr-animation-name: sky-fill-gradient;
+}
+@-skrollr-keyframes sky-fill-gradient {
+  _sky_phase_start {
+    background[linear]: linear-gradient(to bottom, rgb(74, 108, 135), rgb(104, 174, 174), rgb(180, 206, 169)) no-repeat;
+  }
+  _sky_phase_center {
+    background[linear]: linear-gradient(to bottom, rgb(17, 5, 47), rgb(28, 11, 26), rgb(139, 57, 79)) no-repeat;
+  }
 }
 #ambitions-phase {
   position: relative;
@@ -6466,11 +6476,11 @@ body {
 #ambitions-phase > .back.fill,
 #ambitions-phase > .back .back.fill {
   background-color: #3e2940;
-  background-image: -webkit-linear-gradient(top, #724b75 0%, #1e5558 100%);
-  background-image: -o-linear-gradient(top, #724b75 0%, #1e5558 100%);
-  background-image: linear-gradient(to bottom, #724b75 0%, #1e5558 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff724b75', endColorstr='#ff1e5558', GradientType=0);
+  background: -webkit-linear-gradient(to bottom, #724b75, #1e5558) no-repeat;
+  background: -moz-linear-gradient(to bottom, #724b75, #1e5558) no-repeat;
+  background: -ms-linear-gradient(to bottom, #724b75, #1e5558) no-repeat;
+  background: -o-linear-gradient(to bottom, #724b75, #1e5558) no-repeat;
+  background: linear-gradient(to bottom, #724b75, #1e5558) no-repeat;
 }
 #title-phase {
   position: relative;
@@ -6493,11 +6503,11 @@ body {
 #title-phase > .back.fill,
 #title-phase > .back .back.fill {
   background-color: #accdea;
-  background-image: -webkit-linear-gradient(top, #ffffff 0%, #accdea 100%);
-  background-image: -o-linear-gradient(top, #ffffff 0%, #accdea 100%);
-  background-image: linear-gradient(to bottom, #ffffff 0%, #accdea 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffaccdea', GradientType=0);
+  background: -webkit-linear-gradient(to bottom, #ffffff, #accdea) no-repeat;
+  background: -moz-linear-gradient(to bottom, #ffffff, #accdea) no-repeat;
+  background: -ms-linear-gradient(to bottom, #ffffff, #accdea) no-repeat;
+  background: -o-linear-gradient(to bottom, #ffffff, #accdea) no-repeat;
+  background: linear-gradient(to bottom, #ffffff, #accdea) no-repeat;
 }
 .starfield.image,
 .starfield .image,

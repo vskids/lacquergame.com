@@ -53,13 +53,33 @@ html, body { height: 100%; }
 	.phase;
 	z-index: 100;
 	
-	color: @cobalt;
+	color: #fff;
+	text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 	
 	> .back {
 		&, & .back {
 			&.fill {
-				background-color: @blue-darker;
-				#gradient > .vertical(@cobalt-darker, @blue-darker);
+				background-color: @sky-eve-mid; // fallback
+				.linear-gradient(
+					@dir: to bottom;
+					@stops: @sky-eve-top-as-rgb, @sky-eve-mid-as-rgb, @sky-eve-bottom-as-rgb
+				);
+				
+				.-skrollr-dry-animation(sky-fill-gradient; {
+					@backgroundProp: ~"background[linear]";
+					_sky_phase_start {
+						@{backgroundProp}: linear-gradient(
+							to bottom,
+							@sky-eve-top-as-rgb, @sky-eve-mid-as-rgb, @sky-eve-bottom-as-rgb
+						) no-repeat;
+					}
+					_sky_phase_center {
+						@{backgroundProp}: linear-gradient(
+							to bottom,
+							@sky-night-top-as-rgb, @sky-night-mid-as-rgb, @sky-night-bottom-as-rgb
+						) no-repeat;
+					}
+				});
 			}
 		}
 	}
@@ -73,8 +93,11 @@ html, body { height: 100%; }
 	> .back {
 		&, & .back {
 			&.fill {
-				background-color: @purple-darker;
-				#gradient > .vertical(@purple-dark, @teal-darker);
+				background-color: @purple-darker; // fallback
+				.linear-gradient(
+					@dir: to bottom;
+					@stops: @purple-dark, @teal-darker
+				);
 			}
 		}
 	}
@@ -88,8 +111,11 @@ html, body { height: 100%; }
 	> .back {
 		&, & .back {
 			&.fill {
-				background-color: @cobalt-light;
-				#gradient > .vertical(white, @cobalt-light);
+				background-color: @cobalt-light; // fallback
+				.linear-gradient(
+					@dir: to bottom;
+					@stops: white, @cobalt-light
+				);
 			}
 		}
 	}
