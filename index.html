@@ -202,6 +202,11 @@ var $s = skrollr.init({
 		accelDecel: accelDecelSkrollrEasing
 	},
 	constants: {
+		sky_phase_start_before: function () {
+			var box = $skyPhaseElement.getBoundingClientRect();
+			var boxHeight = box.bottom - box.top; // for IE-compat
+			return skrollr.get().relativeToAbsolute($skyPhaseElement, 'top', 'top') - (boxHeight * 0.20);
+		},
 		sky_phase_start: function () { return skrollr.get().relativeToAbsolute($skyPhaseElement, 'top', 'top'); },
 		sky_phase_center: function () { return skrollr.get().relativeToAbsolute($skyPhaseElement, 'top', 'center'); },
 		sky_phase_end: function () { return skrollr.get().relativeToAbsolute($skyPhaseElement, 'top', 'bottom'); },
