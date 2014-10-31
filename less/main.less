@@ -156,7 +156,7 @@ html, body { height: 100%; }
 
 // starfields
 
-@starfieldScrollOffsetBase: 500%;
+@starfieldScrollOffsetBase: (@line-height-rel-height-base * -300);
 
 .generateStarfieldRules(@uniqueName; @initialOpacity; @endOpacity; @initialScrollOffsetFactor; @endScrollOffsetFactor; @opacityEasing; @bgEasing) {
 	&:extend(.starfield all);

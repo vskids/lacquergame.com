@@ -6514,15 +6514,15 @@ body {
 }
 #starfield1.image,
 #starfield1 .image {
-  background-position: left 0px top -15%;
+  background-position: left 0px top 63px;
   -skrollr-animation-name: starfield1-pos;
 }
 @-skrollr-keyframes starfield1-pos {
   _sky_phase_start_before {
-    background-position[linear]: left 0px top -15%;
+    background-position[linear]: left 0px top 63px;
   }
   _sky_phase_end {
-    background-position[linear]: left 0px top 75%;
+    background-position[linear]: left 0px top -315px;
   }
 }
 #starfield1.image,
@@ -6544,15 +6544,15 @@ body {
 }
 #starfield2.image,
 #starfield2 .image {
-  background-position: left 0px top -33.3%;
+  background-position: left 0px top 139.86px;
   -skrollr-animation-name: starfield2-pos;
 }
 @-skrollr-keyframes starfield2-pos {
   _sky_phase_start_before {
-    background-position[linear]: left 0px top -33.3%;
+    background-position[linear]: left 0px top 139.86px;
   }
   _sky_phase_end {
-    background-position[linear]: left 0px top 166.5%;
+    background-position[linear]: left 0px top -699.3px;
   }
 }
 #starfield2.image,
@@ -6574,15 +6574,15 @@ body {
 }
 #starfield3.image,
 #starfield3 .image {
-  background-position: left 0px top -50%;
+  background-position: left 0px top 210px;
   -skrollr-animation-name: starfield3-pos;
 }
 @-skrollr-keyframes starfield3-pos {
   _sky_phase_start_before {
-    background-position[linear]: left 0px top -50%;
+    background-position[linear]: left 0px top 210px;
   }
   _sky_phase_end {
-    background-position[linear]: left 0px top 250%;
+    background-position[linear]: left 0px top -1050px;
   }
 }
 #starfield3.image,
@@ -6604,15 +6604,15 @@ body {
 }
 #starfield4.image,
 #starfield4 .image {
-  background-position: left 0px top -25%;
+  background-position: left 0px top 105px;
   -skrollr-animation-name: starfield4-pos;
 }
 @-skrollr-keyframes starfield4-pos {
   _sky_phase_start_before {
-    background-position[linear]: left 0px top -25%;
+    background-position[linear]: left 0px top 105px;
   }
   _sky_phase_end {
-    background-position[linear]: left 0px top 125%;
+    background-position[linear]: left 0px top -525px;
   }
 }
 #starfield4.image,
