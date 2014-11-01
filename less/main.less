@@ -24,6 +24,7 @@ html, body { height: 100%; }
 .screen-height-rel {
 	.vh() {}
 	& .vh-50, &.vh-50 { .vh(); min-height: 50vh; }
+	& .vh-75, &.vh-75 { .vh(); min-height: 75vh; }
 	& .vh-100, &.vh-100 { .vh(); min-height: 100vh; }
 	& .vh-150, &.vh-150 { .vh(); min-height: 150vh; }
 	& .vh-200, &.vh-200 { .vh(); min-height: 200vh; }
@@ -36,6 +37,7 @@ html, body { height: 100%; }
 .base-height-rel {
 	.vh() {}
 	& .vh-50, &.vh-50 { .vh(); height: (50 * @base-height-rel-height-base); }
+	& .vh-75, &.vh-75 { .vh(); height: (75 * @base-height-rel-height-base); }
 	& .vh-100, &.vh-100 { .vh(); height: (100 * @base-height-rel-height-base); }
 	& .vh-150, &.vh-150 { .vh(); height: (150 * @base-height-rel-height-base); }
 	& .vh-200, &.vh-200 { .vh(); height: (200 * @base-height-rel-height-base); }
@@ -47,6 +49,7 @@ html, body { height: 100%; }
 .line-height-rel {
 	.vh() {}
 	& .vh-50, &.vh-50 { .vh(); height: (50 * @line-height-rel-height-base); }
+	& .vh-75, &.vh-75 { .vh(); height: (75 * @line-height-rel-height-base); }
 	& .vh-100, &.vh-100 { .vh(); height: (100 * @line-height-rel-height-base); }
 	& .vh-150, &.vh-150 { .vh(); height: (150 * @line-height-rel-height-base); }
 	& .vh-200, &.vh-200 { .vh(); height: (200 * @line-height-rel-height-base); }
