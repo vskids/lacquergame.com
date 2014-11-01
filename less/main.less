@@ -165,14 +165,16 @@ html, body { height: 100%; }
 .generateStarfieldRules(@uniqueName; @initialOpacity; @endOpacity; @initialScrollOffsetFactor; @endScrollOffsetFactor; @opacityEasing; @bgEasing) {
 	&:extend(.starfield all);
 	
-	& when not (@initialOpacity = 1.0) and (@endOpacity = 1.0) {
-		.opacity(@initialOpacity);
-		
-		.-skrollr-dry-animation(~"@{uniqueName}-op"; {
-			@opacityProp: ~"opacity[@{opacityEasing}]";
-			_sky_phase_start { @{opacityProp}: @initialOpacity; }
-			_sky_phase_end { @{opacityProp}: @endOpacity; }
-		});
+	& when not (@initialOpacity = 1.0) {
+	 	& when not (@endOpacity = 1.0) {
+			.opacity(@initialOpacity);
+			
+			.-skrollr-dry-animation(~"@{uniqueName}-op"; {
+				@opacityProp: ~"opacity[@{opacityEasing}]";
+				_sky_phase_start { @{opacityProp}: @initialOpacity; }
+				_sky_phase_end { @{opacityProp}: @endOpacity; }
+			});
+		}
 	}
 	
 	&.image, & .image {
