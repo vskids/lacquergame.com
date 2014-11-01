@@ -6544,15 +6544,15 @@ body {
 }
 #starfield2.image,
 #starfield2 .image {
-  background-position: left 0px top 139.86px;
+  background-position: left 0px top 126px;
   -skrollr-animation-name: starfield2-pos;
 }
 @-skrollr-keyframes starfield2-pos {
   _sky_phase_start_before {
-    background-position[linear]: left 0px top 139.86px;
+    background-position[linear]: left 0px top 126px;
   }
   _sky_phase_end {
-    background-position[linear]: left 0px top -699.3px;
+    background-position[linear]: left 0px top -630px;
   }
 }
 #starfield2.image,
@@ -6604,15 +6604,15 @@ body {
 }
 #starfield4.image,
 #starfield4 .image {
-  background-position: left 0px top 105px;
+  background-position: left 0px top 84px;
   -skrollr-animation-name: starfield4-pos;
 }
 @-skrollr-keyframes starfield4-pos {
   _sky_phase_start_before {
-    background-position[linear]: left 0px top 105px;
+    background-position[linear]: left 0px top 84px;
   }
   _sky_phase_end {
-    background-position[linear]: left 0px top -525px;
+    background-position[linear]: left 0px top -420px;
   }
 }
 #starfield4.image,
