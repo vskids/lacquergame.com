@@ -89,6 +89,10 @@ html, body { height: 100%; }
 	
 	> .back {
 		&, & .back {
+			&.clip {
+				position: absolute !important;
+				clip: rect(auto, auto, auto, auto);
+			}
 			&.fill {
 				background-color: @sky-eve-mid; // fallback
 				.linear-gradient(

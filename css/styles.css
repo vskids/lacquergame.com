@@ -6428,6 +6428,11 @@ body {
 #sky-phase > .back .back.fixed {
   position: fixed;
 }
+#sky-phase > .back.clip,
+#sky-phase > .back .back.clip {
+  position: absolute !important;
+  clip: rect(auto, auto, auto, auto);
+}
 #sky-phase > .back.fill,
 #sky-phase > .back .back.fill {
   background-color: #68aeae;
