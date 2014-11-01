@@ -284,46 +284,91 @@ function easeInOutCirc(t) {
 	return 0.5 * (Math.sqrt(1 - t * t) + 1);
 }
 
+function lerpStartToMid(p) {
+	if (p >= 0.5)
+		return 1;
+	else
+		return p * 2;
+}
+function lerpMidToEnd(p) {
+	if (p <= 0.5)
+		return 0;
+	else
+		return (p - 0.5) * 2;
+}
+
 var $s = skrollr.init({
 	mobileCheck: function () { return false; },
 	edgeStrategy: 'ease',
 	forceHeight: false,
 	smoothScrolling: false,
 	easing: {
-		linearMidToEnd: function (p) {
-			if (p <= 0.5)
-				return 0.0;
-			else
-				return (p - 0.5) * 2;
-		},
-		linearStartToMid: function (p) {
-			if (p < 0.5)
-				return p * 2;
-			else
-				return 1.0;
-			},
+		linearStartToMid: lerpStartToMid,
+		linearMidToEnd: lerpMidToEnd,
 		accelDecel: accelDecelSkrollrEasing,
 		inQuad: easeInQuad,
+		inQuadStartToMid: function (p) { return easeInQuad(lerpStartToMid(p)); },
+		inQuadMidToEnd: function (p) { return easeInQuad(lerpMidToEnd(p)); },
 		outQuad: easeOutQuad,
+		outQuadStartToMid: function (p) { return easeOutQuad(lerpStartToMid(p)); },
+		outQuadMidToEnd: function (p) { return easeOutQuad(lerpMidToEnd(p)); },
 		inOutQuad: easeInOutQuad,
+		inOutQuadStartToMid: function (p) { return easeInOutQuad(lerpStartToMid(p)); },
+		inOutQuadMidToEnd: function (p) { return easeInOutQuad(lerpMidToEnd(p)); },
 		inCubic: easeInCubic,
+		inCubicStartToMid: function (p) { return easeInCubic(lerpStartToMid(p)); },
+		inCubicMidToEnd: function (p) { return easeInCubic(lerpMidToEnd(p)); },
 		outCubic: easeOutCubic,
+		outCubicStartToMid: function (p) { return easeOutCubic(lerpStartToMid(p)); },
+		outCubicMidToEnd: function (p) { return easeOutCubic(lerpMidToEnd(p)); },
 		inOutCubic: easeInOutCubic,
+		inOutCubicStartToMid: function (p) { return easeInOutCubic(lerpStartToMid(p)); },
+		inOutCubicMidToEnd: function (p) { return easeInOutCubic(lerpMidToEnd(p)); },
 		inQuart: easeInQuart,
+		inQuartStartToMid: function (p) { return easeInQuart(lerpStartToMid(p)); },
+		inQuartMidToEnd: function (p) { return easeInQuart(lerpMidToEnd(p)); },
 		outQuart: easeOutQuart,
+		outQuartStartToMid: function (p) { return easeOutQuart(lerpStartToMid(p)); },
+		outQuartMidToEnd: function (p) { return easeOutQuart(lerpMidToEnd(p)); },
 		inOutQuart: easeInOutQuart,
+		inOutQuartStartToMid: function (p) { return easeInOutQuart(lerpStartToMid(p)); },
+		inOutQuartMidToEnd: function (p) { return easeInOutQuart(lerpMidToEnd(p)); },
 		inQuint: easeInQuint,
+		inQuintStartToMid: function (p) { return easeInQuint(lerpStartToMid(p)); },
+		inQuintMidToEnd: function (p) { return easeInQuint(lerpMidToEnd(p)); },
 		outQuint: easeOutQuint,
+		outQuintStartToMid: function (p) { return easeOutQuint(lerpStartToMid(p)); },
+		outQuintMidToEnd: function (p) { return easeOutQuint(lerpMidToEnd(p)); },
 		inOutQuint: easeInOutQuint,
+		inOutQuintStartToMid: function (p) { return easeInOutQuint(lerpStartToMid(p)); },
+		inOutQuintMidToEnd: function (p) { return easeInOutQuint(lerpMidToEnd(p)); },
 		inSine: easeInSine,
+		inSineStartToMid: function (p) { return easeInSine(lerpStartToMid(p)); },
+		inSineMidToEnd: function (p) { return easeInSine(lerpMidToEnd(p)); },
 		outSine: easeOutSine,
+		outSineStartToMid: function (p) { return easeOutSine(lerpStartToMid(p)); },
+		outSineMidToEnd: function (p) { return easeOutSine(lerpMidToEnd(p)); },
 		inOutSine: easeInOutSine,
+		inOutSineStartToMid: function (p) { return easeInOutSine(lerpStartToMid(p)); },
+		inOutSineMidToEnd: function (p) { return easeInOutSine(lerpMidToEnd(p)); },
 		inExpo: easeInExpo,
+		inExpoStartToMid: function (p) { return easeInExpo(lerpStartToMid(p)); },
+		inExpoMidToEnd: function (p) { return easeInExpo(lerpMidToEnd(p)); },
 		outExpo: easeOutExpo,
+		outExpoStartToMid: function (p) { return easeOutExpo(lerpStartToMid(p)); },
+		outExpoMidToEnd: function (p) { return easeOutExpo(lerpMidToEnd(p)); },
 		inOutExpo: easeInOutExpo,
+		inOutExpoStartToMid: function (p) { return easeInOutExpo(lerpStartToMid(p)); },
+		inOutExpoMidToEnd: function (p) { return easeInOutExpo(lerpMidToEnd(p)); },
 		inCirc: easeInCirc,
+		inCircStartToMid: function (p) { return easeInCirc(lerpStartToMid(p)); },
+		inCircMidToEnd: function (p) { return easeInCirc(lerpMidToEnd(p)); },
 		outCirc: easeOutCirc,
+		outCircStartToMid: function (p) { return easeOutCirc(lerpStartToMid(p)); },
+		outCircMidToEnd: function (p) { return easeOutCirc(lerpMidToEnd(p)); },
 		inOutCirc: easeInOutCirc,
+		inOutCircStartToMid: function (p) { return easeInOutCirc(lerpStartToMid(p)); },
+		inOutCircMidToEnd: function (p) { return easeInOutCirc(lerpMidToEnd(p)); },
 	},
 	constants: {
 		sky_phase_start_before: function () {
