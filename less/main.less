@@ -54,6 +54,20 @@ html, body { height: 100%; }
 	& .vh-400, &.vh-400 { .vh(); height: (400 * @line-height-rel-height-base); }
 }
 
+.vert-block(@verticalAlign) {
+	display: table;
+	width: 100%; height: 100%;
+	// @maybe: min-height: 100%; // I don't remember where I found this CSS, but it originally had a min-height in it.  It might be necessary for some older or *cough*IE*cough* browsers.
+	
+	> * {
+		display: table-cell !important;
+		vertical-align: @verticalAlign;
+	}
+}
+
+.vert-top-block { .vert-block(top); }
+.vert-middle-block { .vert-block(middle); }
+.vert-bottom-block { .vert-block(bottom); }
 
 .monologue {
 	@font-size: (@font-size-base * 2.5);
