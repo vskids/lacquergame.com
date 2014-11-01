@@ -124,13 +124,13 @@ html, body { height: 100%; }
 				
 				.-skrollr-dry-animation(sky-fill-gradient; {
 					@backgroundProp: ~"background[linear]";
-					_sky_phase_start {
+					_sky_phase_open {
 						@{backgroundProp}: linear-gradient(
 							to bottom,
 							@sky-eve-top-as-rgb, @sky-eve-mid-as-rgb, @sky-eve-bottom-as-rgb
 						) no-repeat;
 					}
-					_sky_phase_center {
+					_sky_phase_close {
 						@{backgroundProp}: linear-gradient(
 							to bottom,
 							@sky-night-top-as-rgb, @sky-night-mid-as-rgb, @sky-night-bottom-as-rgb
@@ -193,8 +193,8 @@ html, body { height: 100%; }
 			
 			.-skrollr-dry-animation(~"@{uniqueName}-op"; {
 				@opacityProp: ~"opacity[@{opacityEasing}]";
-				_sky_phase_start { @{opacityProp}: @initialOpacity; }
-				_sky_phase_end { @{opacityProp}: @endOpacity; }
+				_sky_phase_open { @{opacityProp}: @initialOpacity; }
+				_sky_phase_disappear { @{opacityProp}: @endOpacity; }
 			});
 		}
 	}
@@ -206,8 +206,8 @@ html, body { height: 100%; }
 		
 		.-skrollr-dry-animation(~"@{uniqueName}-pos"; {
 			@backgroundPositionProp: ~"background-position[@{bgEasing}]";
-			_sky_phase_start_before { @{backgroundPositionProp}: left 0px top @initialScrollOffset; }
-			_sky_phase_end { @{backgroundPositionProp}: left 0px top @endScrollOffset; }
+			_sky_phase_open_before { @{backgroundPositionProp}: left 0px top @initialScrollOffset; }
+			_sky_phase_disappear { @{backgroundPositionProp}: left 0px top @endScrollOffset; }
 		});
 	}
 }
