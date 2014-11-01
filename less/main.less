@@ -208,7 +208,7 @@ html, body { height: 100%; }
 		starfield2;
 		0.0; 1.0;
 		(@scrollOffsetFactor * -0.2); @scrollOffsetFactor;
-		linearMidToEnd; linear
+		outQuart1stQuarterTo3rdQuarter; linear
 	);
 	&.image, & .image {
 		background-image: url('../graphics/starfield2.s1024.png');
@@ -220,7 +220,7 @@ html, body { height: 100%; }
 		starfield3;
 		0.0; 1.0;
 		(@scrollOffsetFactor * -0.2); @scrollOffsetFactor;
-		linearMidToEnd; linear
+		outExpoMidToEnd; linear
 	);
 	&.image, & .image {
 		background-image: url('../graphics/starfield3.s720.png');
@@ -230,9 +230,9 @@ html, body { height: 100%; }
 	@scrollOffsetFactor: 0.25;
 	.generateStarfieldRules(
 		starfield4;
-		0.25; 1.0;
+		0.0; 1.0;
 		(@scrollOffsetFactor * -0.2); @scrollOffsetFactor;
-		linearStartToMid; linear
+		outQuadStartToMid; linear
 	);
 	&.image, & .image {
 		background-image: url('../graphics/starfield4.s700.png');

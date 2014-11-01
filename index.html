@@ -288,13 +288,33 @@ function lerpStartToMid(p) {
 	if (p >= 0.5)
 		return 1;
 	else
-		return p * 2;
+		return p * 2; // `/ 1 * 2`
 }
 function lerpMidToEnd(p) {
 	if (p <= 0.5)
 		return 0;
 	else
-		return (p - 0.5) * 2;
+		return (p - 0.5) * 2; // `/ 1 * 2`
+}
+function lerpStartTo3rdQuarter(p) {
+	if (p >= 0.75)
+		return 1;
+	else
+		return p * 1.3333333333333333; // `/ 3 * 4`
+}
+function lerp1stQuarterToEnd(p) {
+	if (p <= 0.25)
+		return 0;
+	else
+		return (p - 0.25) * 1.3333333333333333; // `/ 3 * 4`
+}
+function lerp1stQuarterTo3rdQuarter(p) {
+	if (p <= 0.25)
+		return 0;
+	else if (p >= 0.75)
+		return 1;
+	else
+		return (p - 0.25) * 2; // `/ 2 * 4`
 }
 
 var $s = skrollr.init({
@@ -309,66 +329,129 @@ var $s = skrollr.init({
 		inQuad: easeInQuad,
 		inQuadStartToMid: function (p) { return easeInQuad(lerpStartToMid(p)); },
 		inQuadMidToEnd: function (p) { return easeInQuad(lerpMidToEnd(p)); },
+		inQuadStartTo3rdQuarter: function (p) { return easeInQuad(lerpStartTo3rdQuarter(p)); },
+		inQuad1stQuarterToEnd: function (p) { return easeInQuad(lerp1stQuarterToEnd(p)); },
+		inQuad1stQuarterTo3rdQuarter: function (p) { return easeInQuad(lerp1stQuarterTo3rdQuarter(p)); },
 		outQuad: easeOutQuad,
 		outQuadStartToMid: function (p) { return easeOutQuad(lerpStartToMid(p)); },
 		outQuadMidToEnd: function (p) { return easeOutQuad(lerpMidToEnd(p)); },
+		outQuadStartTo3rdQuarter: function (p) { return easeOutQuad(lerpStartTo3rdQuarter(p)); },
+		outQuad1stQuarterToEnd: function (p) { return easeOutQuad(lerp1stQuarterToEnd(p)); },
+		outQuad1stQuarterTo3rdQuarter: function (p) { return easeOutQuad(lerp1stQuarterTo3rdQuarter(p)); },
 		inOutQuad: easeInOutQuad,
 		inOutQuadStartToMid: function (p) { return easeInOutQuad(lerpStartToMid(p)); },
 		inOutQuadMidToEnd: function (p) { return easeInOutQuad(lerpMidToEnd(p)); },
+		inOutQuadStartTo3rdQuarter: function (p) { return easeInOutQuad(lerpStartTo3rdQuarter(p)); },
+		inOutQuad1stQuarterToEnd: function (p) { return easeInOutQuad(lerp1stQuarterToEnd(p)); },
+		inOutQuad1stQuarterTo3rdQuarter: function (p) { return easeInOutQuad(lerp1stQuarterTo3rdQuarter(p)); },
 		inCubic: easeInCubic,
 		inCubicStartToMid: function (p) { return easeInCubic(lerpStartToMid(p)); },
 		inCubicMidToEnd: function (p) { return easeInCubic(lerpMidToEnd(p)); },
+		inCubicStartTo3rdQuarter: function (p) { return easeInCubic(lerpStartTo3rdQuarter(p)); },
+		inCubic1stQuarterToEnd: function (p) { return easeInCubic(lerp1stQuarterToEnd(p)); },
+		inCubic1stQuarterTo3rdQuarter: function (p) { return easeInCubic(lerp1stQuarterTo3rdQuarter(p)); },
 		outCubic: easeOutCubic,
 		outCubicStartToMid: function (p) { return easeOutCubic(lerpStartToMid(p)); },
 		outCubicMidToEnd: function (p) { return easeOutCubic(lerpMidToEnd(p)); },
+		outCubicStartTo3rdQuarter: function (p) { return easeOutCubic(lerpStartTo3rdQuarter(p)); },
+		outCubic1stQuarterToEnd: function (p) { return easeOutCubic(lerp1stQuarterToEnd(p)); },
+		outCubic1stQuarterTo3rdQuarter: function (p) { return easeOutCubic(lerp1stQuarterTo3rdQuarter(p)); },
 		inOutCubic: easeInOutCubic,
 		inOutCubicStartToMid: function (p) { return easeInOutCubic(lerpStartToMid(p)); },
 		inOutCubicMidToEnd: function (p) { return easeInOutCubic(lerpMidToEnd(p)); },
+		inOutCubicStartTo3rdQuarter: function (p) { return easeInOutCubic(lerpStartTo3rdQuarter(p)); },
+		inOutCubic1stQuarterToEnd: function (p) { return easeInOutCubic(lerp1stQuarterToEnd(p)); },
+		inOutCubic1stQuarterTo3rdQuarter: function (p) { return easeInOutCubic(lerp1stQuarterTo3rdQuarter(p)); },
 		inQuart: easeInQuart,
 		inQuartStartToMid: function (p) { return easeInQuart(lerpStartToMid(p)); },
 		inQuartMidToEnd: function (p) { return easeInQuart(lerpMidToEnd(p)); },
+		inQuartStartTo3rdQuarter: function (p) { return easeInQuart(lerpStartTo3rdQuarter(p)); },
+		inQuart1stQuarterToEnd: function (p) { return easeInQuart(lerp1stQuarterToEnd(p)); },
+		inQuart1stQuarterTo3rdQuarter: function (p) { return easeInQuart(lerp1stQuarterTo3rdQuarter(p)); },
 		outQuart: easeOutQuart,
 		outQuartStartToMid: function (p) { return easeOutQuart(lerpStartToMid(p)); },
 		outQuartMidToEnd: function (p) { return easeOutQuart(lerpMidToEnd(p)); },
+		outQuartStartTo3rdQuarter: function (p) { return easeOutQuart(lerpStartTo3rdQuarter(p)); },
+		outQuart1stQuarterToEnd: function (p) { return easeOutQuart(lerp1stQuarterToEnd(p)); },
+		outQuart1stQuarterTo3rdQuarter: function (p) { return easeOutQuart(lerp1stQuarterTo3rdQuarter(p)); },
 		inOutQuart: easeInOutQuart,
 		inOutQuartStartToMid: function (p) { return easeInOutQuart(lerpStartToMid(p)); },
 		inOutQuartMidToEnd: function (p) { return easeInOutQuart(lerpMidToEnd(p)); },
+		inOutQuartStartTo3rdQuarter: function (p) { return easeInOutQuart(lerpStartTo3rdQuarter(p)); },
+		inOutQuart1stQuarterToEnd: function (p) { return easeInOutQuart(lerp1stQuarterToEnd(p)); },
+		inOutQuart1stQuarterTo3rdQuarter: function (p) { return easeInOutQuart(lerp1stQuarterTo3rdQuarter(p)); },
 		inQuint: easeInQuint,
 		inQuintStartToMid: function (p) { return easeInQuint(lerpStartToMid(p)); },
 		inQuintMidToEnd: function (p) { return easeInQuint(lerpMidToEnd(p)); },
+		inQuintStartTo3rdQuarter: function (p) { return easeInQuint(lerpStartTo3rdQuarter(p)); },
+		inQuint1stQuarterToEnd: function (p) { return easeInQuint(lerp1stQuarterToEnd(p)); },
+		inQuint1stQuarterTo3rdQuarter: function (p) { return easeInQuint(lerp1stQuarterTo3rdQuarter(p)); },
 		outQuint: easeOutQuint,
 		outQuintStartToMid: function (p) { return easeOutQuint(lerpStartToMid(p)); },
 		outQuintMidToEnd: function (p) { return easeOutQuint(lerpMidToEnd(p)); },
+		outQuintStartTo3rdQuarter: function (p) { return easeOutQuint(lerpStartTo3rdQuarter(p)); },
+		outQuint1stQuarterToEnd: function (p) { return easeOutQuint(lerp1stQuarterToEnd(p)); },
+		outQuint1stQuarterTo3rdQuarter: function (p) { return easeOutQuint(lerp1stQuarterTo3rdQuarter(p)); },
 		inOutQuint: easeInOutQuint,
 		inOutQuintStartToMid: function (p) { return easeInOutQuint(lerpStartToMid(p)); },
 		inOutQuintMidToEnd: function (p) { return easeInOutQuint(lerpMidToEnd(p)); },
+		inOutQuintStartTo3rdQuarter: function (p) { return easeInOutQuint(lerpStartTo3rdQuarter(p)); },
+		inOutQuint1stQuarterToEnd: function (p) { return easeInOutQuint(lerp1stQuarterToEnd(p)); },
+		inOutQuint1stQuarterTo3rdQuarter: function (p) { return easeInOutQuint(lerp1stQuarterTo3rdQuarter(p)); },
 		inSine: easeInSine,
 		inSineStartToMid: function (p) { return easeInSine(lerpStartToMid(p)); },
 		inSineMidToEnd: function (p) { return easeInSine(lerpMidToEnd(p)); },
+		inSineStartTo3rdQuarter: function (p) { return easeInSine(lerpStartTo3rdQuarter(p)); },
+		inSine1stQuarterToEnd: function (p) { return easeInSine(lerp1stQuarterToEnd(p)); },
+		inSine1stQuarterTo3rdQuarter: function (p) { return easeInSine(lerp1stQuarterTo3rdQuarter(p)); },
 		outSine: easeOutSine,
 		outSineStartToMid: function (p) { return easeOutSine(lerpStartToMid(p)); },
 		outSineMidToEnd: function (p) { return easeOutSine(lerpMidToEnd(p)); },
+		outSineStartTo3rdQuarter: function (p) { return easeOutSine(lerpStartTo3rdQuarter(p)); },
+		outSine1stQuarterToEnd: function (p) { return easeOutSine(lerp1stQuarterToEnd(p)); },
+		outSine1stQuarterTo3rdQuarter: function (p) { return easeOutSine(lerp1stQuarterTo3rdQuarter(p)); },
 		inOutSine: easeInOutSine,
 		inOutSineStartToMid: function (p) { return easeInOutSine(lerpStartToMid(p)); },
 		inOutSineMidToEnd: function (p) { return easeInOutSine(lerpMidToEnd(p)); },
+		inOutSineStartTo3rdQuarter: function (p) { return easeInOutSine(lerpStartTo3rdQuarter(p)); },
+		inOutSine1stQuarterToEnd: function (p) { return easeInOutSine(lerp1stQuarterToEnd(p)); },
+		inOutSine1stQuarterTo3rdQuarter: function (p) { return easeInOutSine(lerp1stQuarterTo3rdQuarter(p)); },
 		inExpo: easeInExpo,
 		inExpoStartToMid: function (p) { return easeInExpo(lerpStartToMid(p)); },
 		inExpoMidToEnd: function (p) { return easeInExpo(lerpMidToEnd(p)); },
+		inExpoStartTo3rdQuarter: function (p) { return easeInExpo(lerpStartTo3rdQuarter(p)); },
+		inExpo1stQuarterToEnd: function (p) { return easeInExpo(lerp1stQuarterToEnd(p)); },
+		inExpo1stQuarterTo3rdQuarter: function (p) { return easeInExpo(lerp1stQuarterTo3rdQuarter(p)); },
 		outExpo: easeOutExpo,
 		outExpoStartToMid: function (p) { return easeOutExpo(lerpStartToMid(p)); },
 		outExpoMidToEnd: function (p) { return easeOutExpo(lerpMidToEnd(p)); },
+		outExpoStartTo3rdQuarter: function (p) { return easeOutExpo(lerpStartTo3rdQuarter(p)); },
+		outExpo1stQuarterTo3rdQuarter: function (p) { return easeOutExpo(lerp1stQuarterTo3rdQuarter(p)); },
+		outExpo1stQuarterToEnd: function (p) { return easeOutExpo(lerp1stQuarterToEnd(p)); },
 		inOutExpo: easeInOutExpo,
 		inOutExpoStartToMid: function (p) { return easeInOutExpo(lerpStartToMid(p)); },
 		inOutExpoMidToEnd: function (p) { return easeInOutExpo(lerpMidToEnd(p)); },
+		inOutExpoStartTo3rdQuarter: function (p) { return easeInOutExpo(lerpStartTo3rdQuarter(p)); },
+		inOutExpo1stQuarterToEnd: function (p) { return easeInOutExpo(lerp1stQuarterToEnd(p)); },
+		inOutExpo1stQuarterTo3rdQuarter: function (p) { return easeInOutExpo(lerp1stQuarterTo3rdQuarter(p)); },
 		inCirc: easeInCirc,
 		inCircStartToMid: function (p) { return easeInCirc(lerpStartToMid(p)); },
 		inCircMidToEnd: function (p) { return easeInCirc(lerpMidToEnd(p)); },
+		inCircStartTo3rdQuarter: function (p) { return easeInCirc(lerpStartTo3rdQuarter(p)); },
+		inCirc1stQuarterToEnd: function (p) { return easeInCirc(lerp1stQuarterToEnd(p)); },
+		inCirc1stQuarterTo3rdQuarter: function (p) { return easeInCirc(lerp1stQuarterTo3rdQuarter(p)); },
 		outCirc: easeOutCirc,
 		outCircStartToMid: function (p) { return easeOutCirc(lerpStartToMid(p)); },
 		outCircMidToEnd: function (p) { return easeOutCirc(lerpMidToEnd(p)); },
+		outCircStartTo3rdQuarter: function (p) { return easeOutCirc(lerpStartTo3rdQuarter(p)); },
+		outCirc1stQuarterToEnd: function (p) { return easeOutCirc(lerp1stQuarterToEnd(p)); },
+		outCirc1stQuarterTo3rdQuarter: function (p) { return easeOutCirc(lerp1stQuarterTo3rdQuarter(p)); },
 		inOutCirc: easeInOutCirc,
 		inOutCircStartToMid: function (p) { return easeInOutCirc(lerpStartToMid(p)); },
 		inOutCircMidToEnd: function (p) { return easeInOutCirc(lerpMidToEnd(p)); },
+		inOutCircStartTo3rdQuarter: function (p) { return easeInOutCirc(lerpStartTo3rdQuarter(p)); },
+		inOutCirc1stQuarterToEnd: function (p) { return easeInOutCirc(lerp1stQuarterToEnd(p)); },
+		inOutCirc1stQuarterTo3rdQuarter: function (p) { return easeInOutCirc(lerp1stQuarterTo3rdQuarter(p)); },
 	},
 	constants: {
 		sky_phase_start_before: function () {
