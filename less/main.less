@@ -11,13 +11,18 @@
 
 
 
-/// Bootstrap default overrides
+// Text Styling
 
 @font-size-base: 20px;
 
+.monologue {
+	@font-size: (@font-size-base * 2.5);
+	.font_dancing-script(@font-size);
+}
 
 
-// full-screen-height adjustments, rules
+
+// Layout
 
 html, body { height: 100%; }
 
@@ -79,7 +84,7 @@ html, body { height: 100%; }
 
 
 
-// phases
+// Phases
 
 .phase {
 	position: relative;
@@ -175,7 +180,7 @@ html, body { height: 100%; }
 
 
 
-// starfields
+// Starfields
 
 @starfieldScrollOffsetBase: (@line-height-rel-height-base * -300);
 
