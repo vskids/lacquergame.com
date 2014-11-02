@@ -175,7 +175,7 @@ html, body { height: 100%; }
 
 
 
-// Starfields
+// Sky-Phase Starfields
 
 @starfieldScrollOffsetBase: (@line-height-rel-height-base * -300);
 
@@ -259,5 +259,30 @@ html, body { height: 100%; }
 	);
 	&.image, & .image {
 		background-image: url('../graphics/starfield4.s700.png');
+	}
+}
+
+
+
+// Title-Phase Images
+
+#lakestrip {
+	&.image, & .image {
+		@media (max-width: @screen-xs-max) {
+			background-image: url('../graphics/lakestrip.767x250.png');
+		}
+		@media (min-width: @screen-sm) {
+			background-image: url('../graphics/lakestrip.991x323.png');
+		}
+		@media (min-width: @screen-md) {
+			background-image: url('../graphics/lakestrip.1199x390.png');
+		}
+		@media (min-width: @screen-lg) {
+			background-image: url('../graphics/lakestrip.1920x625.png');
+		}
+		
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-position: 0 50%;
 	}
 }

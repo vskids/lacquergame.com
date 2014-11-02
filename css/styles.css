@@ -6676,5 +6676,35 @@ body {
 #starfield4 .image {
   background-image: url('../graphics/starfield4.s700.png');
 }
+#lakestrip.image,
+#lakestrip .image {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 0 50%;
+}
+@media (max-width: 767px) {
+  #lakestrip.image,
+  #lakestrip .image {
+    background-image: url('../graphics/lakestrip.767x250.png');
+  }
+}
+@media (min-width: 768px) {
+  #lakestrip.image,
+  #lakestrip .image {
+    background-image: url('../graphics/lakestrip.991x323.png');
+  }
+}
+@media (min-width: 992px) {
+  #lakestrip.image,
+  #lakestrip .image {
+    background-image: url('../graphics/lakestrip.1199x390.png');
+  }
+}
+@media (min-width: 1200px) {
+  #lakestrip.image,
+  #lakestrip .image {
+    background-image: url('../graphics/lakestrip.1920x625.png');
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
