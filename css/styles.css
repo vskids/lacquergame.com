@@ -6680,7 +6680,8 @@ body {
 #lakestrip .image {
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-position: 0 50%;
+  background-position: 0 40%;
+  -skrollr-animation-name: lakestrip-pos;
 }
 @media (max-width: 767px) {
   #lakestrip.image,
@@ -6704,6 +6705,14 @@ body {
   #lakestrip.image,
   #lakestrip .image {
     background-image: url('../graphics/lakestrip.1920x625.png');
+  }
+}
+@-skrollr-keyframes lakestrip-pos {
+  _title_phase_appear {
+    background-position[linear]: 0 200%;
+  }
+  _title_phase_close {
+    background-position[linear]: 0 40%;
   }
 }
 
