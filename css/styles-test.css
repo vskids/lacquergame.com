@@ -6432,10 +6432,6 @@ body {
   display: table-cell !important;
   vertical-align: bottom;
 }
-.monologue {
-  font: 50px "Dancing Script", cursive;
-  font-weight: 400;
-}
 .phase {
   position: relative;
 }
