@@ -182,8 +182,8 @@ html, body { height: 100%; }
 .generateStarfieldRules(@uniqueName; @initialOpacity; @endOpacity; @initialScrollOffsetFactor; @endScrollOffsetFactor; @opacityEasing; @bgEasing) {
 	&:extend(.starfield all);
 	
-	& when not (@initialOpacity = 1.0) {
-	 	& when not (@endOpacity = 1.0) {
+	//& when not (@initialOpacity = 1.0) {
+	//	& when not (@endOpacity = 1.0) {
 			.opacity(@initialOpacity);
 			
 			.-skrollr-dry-animation(~"@{uniqueName}-op"; {
@@ -191,8 +191,8 @@ html, body { height: 100%; }
 				_sky_phase_open { @{opacityProp}: @initialOpacity; }
 				_sky_phase_disappear { @{opacityProp}: @endOpacity; }
 			});
-		}
-	}
+	//	}
+	//}
 	
 	&.image, & .image {
 		@initialScrollOffset: (@starfieldScrollOffsetBase * @initialScrollOffsetFactor);
