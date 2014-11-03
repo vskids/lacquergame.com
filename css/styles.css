@@ -6791,6 +6791,8 @@ body {
   bottom: 0%;
 }
 #title-bottom > .inner #comingsoon {
+  width: 210px;
+  height: auto;
   bottom: 10px;
   right: 10px;
 }
