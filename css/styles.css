@@ -6317,6 +6317,10 @@ button.close {
   font: 48px "Cabin Sketch", sans-serif;
   font-weight: 400;
 }
+.monologue b {
+  font: 48px "Cabin Sketch", sans-serif;
+  font-weight: 700;
+}
 .statement {
   font: 60px "Codystar", sans-serif;
   font-weight: 400;
