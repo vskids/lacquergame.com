@@ -6969,6 +6969,21 @@ body {
     background-position[outExpo]: 0 15%;
   }
 }
+#sparkles.image,
+#sparkles .image {
+  background-image: url('../graphics/starfieldwhite.s512.png');
+  background-repeat: repeat;
+  background-position: 0 0%;
+  -skrollr-animation-name: sparkles-pos;
+}
+@-skrollr-keyframes sparkles-pos {
+  _title_phase_appear {
+    background-position[linear]: 0 0%;
+  }
+  _title_phase_close {
+    background-position[linear]: 0 -200%;
+  }
+}
 .title-piece,
 #title-logo,
 #title-closing,

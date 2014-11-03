@@ -388,6 +388,23 @@ html, body {
 	}
 }
 
+#sparkles {
+	&.image, & .image {
+		background-image: url('../graphics/starfieldwhite.s512.png');
+		background-repeat: repeat;
+		
+		@initialScrollOffset: 0%;
+		@endScrollOffset: -200%;
+		background-position: 0 @initialScrollOffset;
+		
+		.-skrollr-dry-animation(~"sparkles-pos"; {
+			@backgroundPositionProp: ~"background-position[linear]";
+			_title_phase_appear { @{backgroundPositionProp}: 0 @initialScrollOffset; }
+			_title_phase_close { @{backgroundPositionProp}: 0 @endScrollOffset; }
+		});
+	}
+}
+
 .title-piece {
 	position: absolute;
 	margin: 0 auto; left: 0; right: 0;
