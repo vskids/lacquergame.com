@@ -6323,6 +6323,9 @@ button.close {
   color: #1e5558;
   text-shadow: 0 0 2px #ffffff, 0 0 5px #ffffff;
 }
+.verse {
+  display: block;
+}
 html,
 body {
   height: 100%;
