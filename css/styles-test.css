@@ -6331,6 +6331,10 @@ button.close {
   font: 48px "Cabin Sketch", sans-serif;
   font-weight: 700;
 }
+.monologue i,
+.monologue i * {
+  font-style: oblique !important;
+}
 .monologue h1,
 h1.monologue,
 h1 .monologue {
