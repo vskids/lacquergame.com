@@ -280,6 +280,21 @@ html, body {
 		
 		overflow: hidden;
 	}
+	
+	> .overlay {
+		&#versuskidspresent, & #versuskidspresent {
+			&, img {
+				width: 147px; height: auto;
+			}
+			top: 10px; left: 10px;
+			
+			.-skrollr-dry-animation(versuskidspresent-op; {
+				@opacityProp: ~"opacity[linear]";
+				_title_phase_open_before { @{opacityProp}: 0.0; }
+				_title_phase_open { @{opacityProp}: 1.0; }
+			});
+		}
+	}
 }
 
 

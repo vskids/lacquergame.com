@@ -6826,6 +6826,27 @@ body {
   position: relative;
   overflow: hidden;
 }
+#title-phase > .overlay#versuskidspresent,
+#title-phase > .overlay #versuskidspresent {
+  top: 10px;
+  left: 10px;
+  -skrollr-animation-name: versuskidspresent-op;
+}
+#title-phase > .overlay#versuskidspresent,
+#title-phase > .overlay #versuskidspresent,
+#title-phase > .overlay#versuskidspresent img,
+#title-phase > .overlay #versuskidspresent img {
+  width: 147px;
+  height: auto;
+}
+@-skrollr-keyframes versuskidspresent-op {
+  _title_phase_open_before {
+    opacity[linear]: 0.0;
+  }
+  _title_phase_open {
+    opacity[linear]: 1.0;
+  }
+}
 .starfield.image,
 .starfield .image,
 #starfield1.image,

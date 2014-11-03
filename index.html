@@ -121,6 +121,8 @@
 			</div>
 		</div>
 	</section>
+	
+	<a id="versuskidspresent" class="overlay" href="http://versuskids.com/"><img src="graphics/logo_versuskidspresent.98x68.svg" width="98" height="68"></a>
 </section>
 
 
@@ -516,6 +518,11 @@ var $s = skrollr.init({
 		ambitions_phase_close: function () { return skrollr.get().relativeToAbsolute($ambitionsPhaseElement, 'bottom', 'bottom'); },
 		ambitions_phase_disappear: function () { return skrollr.get().relativeToAbsolute($ambitionsPhaseElement, 'top', 'bottom'); },
 		title_phase_appear: function () { return skrollr.get().relativeToAbsolute($titlePhaseElement, 'bottom', 'top'); },
+		title_phase_open_before: function () {
+			var box = $titlePhaseElement.getBoundingClientRect();
+			var boxHeight = box.bottom - box.top; // for IE-compat
+			return skrollr.get().relativeToAbsolute($titlePhaseElement, 'top', 'top') - (boxHeight * 0.20);
+		},
 		title_phase_open: function () { return skrollr.get().relativeToAbsolute($titlePhaseElement, 'top', 'top'); },
 		title_phase_center: function () { return skrollr.get().relativeToAbsolute($titlePhaseElement, 'center', 'center'); },
 		title_phase_close: function () { return skrollr.get().relativeToAbsolute($titlePhaseElement, 'bottom', 'bottom'); },
