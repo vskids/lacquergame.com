@@ -6377,6 +6377,84 @@ h2 .monologue small {
   display: block;
   clear: both;
 }
+.text-pad-left-0_25 {
+  padding-left: 0.25em;
+}
+.text-pad-left-0_333 {
+  padding-left: 0.333em;
+}
+.text-pad-left-0_5 {
+  padding-left: 0.5em;
+}
+.text-pad-left-0_666 {
+  padding-left: 0.666em;
+}
+.text-pad-left-0_75 {
+  padding-left: 0.75em;
+}
+.text-pad-left-1 {
+  padding-left: 1em;
+}
+.text-pad-left-1_25 {
+  padding-left: 1.25em;
+}
+.text-pad-left-1_333 {
+  padding-left: 1.333em;
+}
+.text-pad-left-1_5 {
+  padding-left: 1.5em;
+}
+.text-pad-left-1_666 {
+  padding-left: 1.666em;
+}
+.text-pad-left-1_75 {
+  padding-left: 1.75em;
+}
+.text-pad-left-2 {
+  padding-left: 2em;
+}
+.text-pad-left-2_5 {
+  padding-left: 2.5em;
+}
+.text-pad-right-0_25 {
+  padding-right: 0.25em;
+}
+.text-pad-right-0_333 {
+  padding-right: 0.333em;
+}
+.text-pad-right-0_5 {
+  padding-right: 0.5em;
+}
+.text-pad-right-0_666 {
+  padding-right: 0.666em;
+}
+.text-pad-right-0_75 {
+  padding-right: 0.75em;
+}
+.text-pad-right-1 {
+  padding-right: 1em;
+}
+.text-pad-right-1_333 {
+  padding-right: 1.333em;
+}
+.text-pad-right-1_25 {
+  padding-right: 1.25em;
+}
+.text-pad-right-1_5 {
+  padding-right: 1.5em;
+}
+.text-pad-right-1_666 {
+  padding-right: 1.666em;
+}
+.text-pad-right-1_75 {
+  padding-right: 1.75em;
+}
+.text-pad-right-2 {
+  padding-right: 2em;
+}
+.text-pad-right-2_5 {
+  padding-right: 2.5em;
+}
 html,
 body {
   height: 100%;
