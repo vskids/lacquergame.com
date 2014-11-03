@@ -6692,6 +6692,9 @@ body {
 .phase > .back .back.fixed {
   position: fixed;
 }
+.phase > .overlay {
+  position: fixed;
+}
 #sky-phase {
   position: relative;
   z-index: 100;
@@ -6709,6 +6712,9 @@ body {
 }
 #sky-phase > .back.fixed,
 #sky-phase > .back .back.fixed {
+  position: fixed;
+}
+#sky-phase > .overlay {
   position: fixed;
 }
 #sky-phase > .back.clip,
@@ -6734,6 +6740,22 @@ body {
     background[linear]: linear-gradient(to bottom, rgb(17, 5, 47), rgb(57, 32, 85), rgb(139, 57, 79)) no-repeat;
   }
 }
+#sky-phase > .overlay#scrolldown,
+#sky-phase > .overlay #scrolldown {
+  width: 50px;
+  height: auto;
+  bottom: 10px;
+  right: 10px;
+  -skrollr-animation-name: skrolldown-op;
+}
+@-skrollr-keyframes skrolldown-op {
+  0 {
+    opacity[linear]: 1.0;
+  }
+  30 {
+    opacity[linear]: 0.0;
+  }
+}
 #ambitions-phase {
   position: relative;
   z-index: 200;
@@ -6751,6 +6773,9 @@ body {
 }
 #ambitions-phase > .back.fixed,
 #ambitions-phase > .back .back.fixed {
+  position: fixed;
+}
+#ambitions-phase > .overlay {
   position: fixed;
 }
 #ambitions-phase > .back.fill,
@@ -6777,6 +6802,9 @@ body {
 }
 #title-phase > .back.fixed,
 #title-phase > .back .back.fixed {
+  position: fixed;
+}
+#title-phase > .overlay {
   position: fixed;
 }
 #title-phase,

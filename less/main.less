@@ -179,6 +179,10 @@ html, body {
 			}
 		}
 	}
+	
+	> .overlay {
+		position: fixed;
+	}
 }
 #sky-phase {
 	.phase;
@@ -216,6 +220,19 @@ html, body {
 					}
 				});
 			}
+		}
+	}
+	
+	> .overlay {
+		&#scrolldown, & #scrolldown {
+			width: 50px; height: auto;
+			bottom: 10px; right: 10px;
+			
+			.-skrollr-dry-animation(skrolldown-op; {
+				@opacityProp: ~"opacity[linear]";
+				0 { @{opacityProp}: 1.0; }
+				30 { @{opacityProp}: 0.0; }
+			});
 		}
 	}
 }
