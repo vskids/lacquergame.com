@@ -390,6 +390,17 @@ html, body {
 
 // Title-Phase Images
 
+#purplestars-border {
+	&.image, & .image {
+		background-image: url('../graphics/border_purplestars.2000x418.svg');
+		background-repeat: repeat-x;
+		@borderWidth: (2000px * 0.333); @borderHeight: (418px  * 0.333);
+		background-size: @borderWidth @borderHeight;
+		height: @borderHeight !important;
+		top: (-(@borderHeight / 2));
+	}
+}
+
 #lakestrip {
 	&.image, & .image {
 		@media (max-width: @screen-xs-max) {

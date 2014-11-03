@@ -6979,6 +6979,14 @@ body {
 #starfield4 .image {
   background-image: url('../graphics/starfield4.s700.png');
 }
+#purplestars-border.image,
+#purplestars-border .image {
+  background-image: url('../graphics/border_purplestars.2000x418.svg');
+  background-repeat: repeat-x;
+  background-size: 666px 139.194px;
+  height: 139.194px !important;
+  top: -69.597px;
+}
 #lakestrip.image,
 #lakestrip .image {
   background-repeat: no-repeat;
