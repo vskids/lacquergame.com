@@ -6452,7 +6452,7 @@ body {
   position: relative;
   z-index: 100;
   color: #fff;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
 }
 #sky-phase > .back {
   z-index: -1;
@@ -6571,15 +6571,15 @@ body {
 }
 #starfield1.image,
 #starfield1 .image {
-  background-position: left 0px top 63px;
+  background-position: 0 63px;
   -skrollr-animation-name: starfield1-pos;
 }
 @-skrollr-keyframes starfield1-pos {
   _sky_phase_open_before {
-    background-position[linear]: left 0px top 63px;
+    background-position[linear]: 0 63px;
   }
   _sky_phase_disappear {
-    background-position[linear]: left 0px top -315px;
+    background-position[linear]: 0 -315px;
   }
 }
 #starfield1.image,
@@ -6601,15 +6601,15 @@ body {
 }
 #starfield2.image,
 #starfield2 .image {
-  background-position: left 0px top 126px;
+  background-position: 0 126px;
   -skrollr-animation-name: starfield2-pos;
 }
 @-skrollr-keyframes starfield2-pos {
   _sky_phase_open_before {
-    background-position[linear]: left 0px top 126px;
+    background-position[linear]: 0 126px;
   }
   _sky_phase_disappear {
-    background-position[linear]: left 0px top -630px;
+    background-position[linear]: 0 -630px;
   }
 }
 #starfield2.image,
@@ -6631,15 +6631,15 @@ body {
 }
 #starfield3.image,
 #starfield3 .image {
-  background-position: left 0px top 210px;
+  background-position: 0 210px;
   -skrollr-animation-name: starfield3-pos;
 }
 @-skrollr-keyframes starfield3-pos {
   _sky_phase_open_before {
-    background-position[linear]: left 0px top 210px;
+    background-position[linear]: 0 210px;
   }
   _sky_phase_disappear {
-    background-position[linear]: left 0px top -1050px;
+    background-position[linear]: 0 -1050px;
   }
 }
 #starfield3.image,
@@ -6661,15 +6661,15 @@ body {
 }
 #starfield4.image,
 #starfield4 .image {
-  background-position: left 0px top 84px;
+  background-position: 0 84px;
   -skrollr-animation-name: starfield4-pos;
 }
 @-skrollr-keyframes starfield4-pos {
   _sky_phase_open_before {
-    background-position[linear]: left 0px top 84px;
+    background-position[linear]: 0 84px;
   }
   _sky_phase_disappear {
-    background-position[linear]: left 0px top -420px;
+    background-position[linear]: 0 -420px;
   }
 }
 #starfield4.image,
