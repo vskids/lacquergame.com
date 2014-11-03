@@ -261,6 +261,8 @@ html, body {
 	
 	.container, .container-fluid {
 		position: relative; // everything inside is absolutely-positioned
+		
+		overflow: hidden;
 	}
 }
 
@@ -441,13 +443,13 @@ html, body {
 			left: 0; right: 0;
 		}
 		#stargazer {
-			@stargazerWidth: 300px; width: @stargazerWidth;
+			@stargazerWidth: 220px; width: @stargazerWidth;
 			height: auto;
 			
 			left: 50%;
 			margin-left: (-@stargazerWidth / 2);
 			
-			bottom: 0;
+			bottom: -10px;
 		}
 	}
 }

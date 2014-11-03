@@ -6796,6 +6796,7 @@ body {
 #title-phase .container,
 #title-phase .container-fluid {
   position: relative;
+  overflow: hidden;
 }
 .starfield.image,
 .starfield .image,
@@ -7018,11 +7019,11 @@ body {
   right: 0;
 }
 #title-closing > .inner #stargazer {
-  width: 300px;
+  width: 220px;
   height: auto;
   left: 50%;
-  margin-left: -150px;
-  bottom: 0;
+  margin-left: -110px;
+  bottom: -10px;
 }
 #title-bottom {
   bottom: 0%;
