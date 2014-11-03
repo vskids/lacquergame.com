@@ -7022,7 +7022,7 @@ body {
   width: 220px;
   height: auto;
   left: 50%;
-  margin-left: -110px;
+  margin-left: -66px;
   bottom: -10px;
 }
 #title-bottom {
@@ -7032,7 +7032,7 @@ body {
   width: 210px;
   height: auto;
   bottom: 10px;
-  right: 10px;
+  left: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
