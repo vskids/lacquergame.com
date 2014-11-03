@@ -61,9 +61,6 @@
 	</section>
 	
 	<img id="scrolldown" class="overlay" src="graphics/scrolldown.75x124.svg" width="75" height="124" alt="scroll ↓">
-</section>
-<section id="ambitions-phase" class="base-height-rel monologue">
-	<div class="back fill"></div>
 	
 	<section class="container vh-50">
 		<div class="vert-middle-block">
@@ -96,6 +93,7 @@
 		</div>
 	</section>
 </section>
+<!--section id="ambitions-phase" class="base-height-rel monologue"></section-->
 <section id="title-phase" class="screen-height-rel">
 	<div class="back fill">
 		<div id="lakestrip" class="back image"></div>
@@ -229,7 +227,7 @@ function cacheIdElement(elementId) {
 	window[idVarName] = element;
 }
 cacheIdElement('sky-phase');
-cacheIdElement('ambitions-phase');
+//cacheIdElement('ambitions-phase');
 cacheIdElement('title-phase');
 
 
@@ -514,11 +512,11 @@ var $s = skrollr.init({
 		sky_phase_center: function () { return skrollr.get().relativeToAbsolute($skyPhaseElement, 'top', 'center'); },
 		sky_phase_close: function () { return skrollr.get().relativeToAbsolute($skyPhaseElement, 'bottom', 'bottom'); },
 		sky_phase_disappear: function () { return skrollr.get().relativeToAbsolute($skyPhaseElement, 'top', 'bottom'); },
-		ambitions_phase_appear: function () { return skrollr.get().relativeToAbsolute($ambitionsPhaseElement, 'bottom', 'top'); },
-		ambitions_phase_open: function () { return skrollr.get().relativeToAbsolute($ambitionsPhaseElement, 'top', 'top'); },
-		ambitions_phase_center: function () { return skrollr.get().relativeToAbsolute($ambitionsPhaseElement, 'center', 'center'); },
-		ambitions_phase_close: function () { return skrollr.get().relativeToAbsolute($ambitionsPhaseElement, 'bottom', 'bottom'); },
-		ambitions_phase_disappear: function () { return skrollr.get().relativeToAbsolute($ambitionsPhaseElement, 'top', 'bottom'); },
+		//ambitions_phase_appear: function () { return skrollr.get().relativeToAbsolute($ambitionsPhaseElement, 'bottom', 'top'); },
+		//ambitions_phase_open: function () { return skrollr.get().relativeToAbsolute($ambitionsPhaseElement, 'top', 'top'); },
+		//ambitions_phase_center: function () { return skrollr.get().relativeToAbsolute($ambitionsPhaseElement, 'center', 'center'); },
+		//ambitions_phase_close: function () { return skrollr.get().relativeToAbsolute($ambitionsPhaseElement, 'bottom', 'bottom'); },
+		//ambitions_phase_disappear: function () { return skrollr.get().relativeToAbsolute($ambitionsPhaseElement, 'top', 'bottom'); },
 		title_phase_appear: function () { return skrollr.get().relativeToAbsolute($titlePhaseElement, 'bottom', 'top'); },
 		title_phase_open_before: function () {
 			var box = $titlePhaseElement.getBoundingClientRect();
