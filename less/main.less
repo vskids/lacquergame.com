@@ -56,10 +56,10 @@
 	}
 }
 .statement {
-	@font-size: (@font-size-base * 2.5);
+	@font-size: (@font-size-base * 2.3);
 	.font_codystar(@font-size);
 	
-	color: @teal-darker;
+	color: @orange-darker;
 	text-shadow: 0 0 2px rgba(255, 255, 255, 1.0),
 		0 0 5px rgba(255, 255, 255, 1.0);
 }
@@ -378,7 +378,7 @@ html, body {
 		background-size: 100% auto;
 		
 		@initialScrollOffset: 200%;
-		@endScrollOffset: 40%;
+		@endScrollOffset: 15%;
 		background-position: 0 @endScrollOffset; // initially at end just-in-case we don't have JS
 		
 		.-skrollr-dry-animation(~"lakestrip-pos"; {
@@ -406,7 +406,7 @@ html, body {
 #title-logo {
 	&:extend(.title-piece all);
 	
-	top: 5%;
+	top: 10%;
 	
 	@logoBaseWidth: 605px;
 	@logoBaseHeight: 318px;
@@ -435,7 +435,7 @@ html, body {
 #title-closing {
 	&:extend(.title-piece all);
 	
-	top: 68%; bottom: 0%;
+	top: 72%; bottom: 0%;
 	
 	> .inner {
 		.statement {

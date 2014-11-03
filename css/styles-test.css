@@ -6473,9 +6473,9 @@ h2 .monologue small {
   font-weight: 400;
 }
 .statement {
-  font: 60px "Codystar", sans-serif;
+  font: 55.2px "Codystar", sans-serif;
   font-weight: 400;
-  color: #1e5558;
+  color: #a53d06;
   text-shadow: 0 0 2px #ffffff, 0 0 5px #ffffff;
 }
 .verse {
@@ -6934,7 +6934,7 @@ body {
 #lakestrip .image {
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-position: 0 40%;
+  background-position: 0 15%;
   -skrollr-animation-name: lakestrip-pos;
 }
 @media (max-width: 767px) {
@@ -6966,7 +6966,7 @@ body {
     background-position[linear]: 0 200%;
   }
   _title_phase_close {
-    background-position[linear]: 0 40%;
+    background-position[linear]: 0 15%;
   }
 }
 .title-piece,
@@ -6993,7 +6993,7 @@ body {
   position: absolute;
 }
 #title-logo {
-  top: 5%;
+  top: 10%;
   width: 726px;
   height: 381.6px;
 }
@@ -7010,7 +7010,7 @@ body {
   top: 48.11320755%;
 }
 #title-closing {
-  top: 68%;
+  top: 72%;
   bottom: 0%;
 }
 #title-closing > .inner .statement {
