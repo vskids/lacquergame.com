@@ -6567,31 +6567,31 @@ body {
 }
 .screen-height-rel .vh-50,
 .screen-height-rel.vh-50 {
-  min-height: 50vh;
+  height: 50vh;
 }
 .screen-height-rel .vh-75,
 .screen-height-rel.vh-75 {
-  min-height: 75vh;
+  height: 75vh;
 }
 .screen-height-rel .vh-100,
 .screen-height-rel.vh-100 {
-  min-height: 100vh;
+  height: 100vh;
 }
 .screen-height-rel .vh-150,
 .screen-height-rel.vh-150 {
-  min-height: 150vh;
+  height: 150vh;
 }
 .screen-height-rel .vh-200,
 .screen-height-rel.vh-200 {
-  min-height: 200vh;
+  height: 200vh;
 }
 .screen-height-rel .vh-300,
 .screen-height-rel.vh-300 {
-  min-height: 300vh;
+  height: 300vh;
 }
 .screen-height-rel .vh-400,
 .screen-height-rel.vh-400 {
-  min-height: 400vh;
+  height: 400vh;
 }
 .base-height-rel .vh-50,
 .base-height-rel.vh-50 {
