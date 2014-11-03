@@ -7012,10 +7012,10 @@ body {
 }
 @-skrollr-keyframes lakestrip-pos {
   _title_phase_appear {
-    background-position[outExpo]: 0 100%;
+    background-position[outQuad]: 0 50%;
   }
   _title_phase_close {
-    background-position[outExpo]: 0 15%;
+    background-position[outQuad]: 0 15%;
   }
 }
 #sparkles.image,
