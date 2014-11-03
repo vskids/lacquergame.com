@@ -6963,10 +6963,10 @@ body {
 }
 @-skrollr-keyframes lakestrip-pos {
   _title_phase_appear {
-    background-position[linear]: 0 200%;
+    background-position[outExpo]: 0 100%;
   }
   _title_phase_close {
-    background-position[linear]: 0 15%;
+    background-position[outExpo]: 0 15%;
   }
 }
 .title-piece,

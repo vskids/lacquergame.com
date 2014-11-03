@@ -377,12 +377,12 @@ html, body {
 		background-repeat: no-repeat;
 		background-size: 100% auto;
 		
-		@initialScrollOffset: 200%;
+		@initialScrollOffset: 100%;
 		@endScrollOffset: 15%;
 		background-position: 0 @endScrollOffset; // initially at end just-in-case we don't have JS
 		
 		.-skrollr-dry-animation(~"lakestrip-pos"; {
-			@backgroundPositionProp: ~"background-position[linear]";
+			@backgroundPositionProp: ~"background-position[outExpo]";
 			_title_phase_appear { @{backgroundPositionProp}: 0 @initialScrollOffset; }
 			_title_phase_close { @{backgroundPositionProp}: 0 @endScrollOffset; }
 		});
