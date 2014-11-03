@@ -6425,7 +6425,7 @@ body {
   width: 100%;
   height: 100%;
 }
-.vert-top-block > * {
+.vert-top-block > .inner {
   display: table-cell !important;
   vertical-align: top;
 }
@@ -6434,7 +6434,7 @@ body {
   width: 100%;
   height: 100%;
 }
-.vert-middle-block > * {
+.vert-middle-block > .inner {
   display: table-cell !important;
   vertical-align: middle;
 }
@@ -6443,7 +6443,7 @@ body {
   width: 100%;
   height: 100%;
 }
-.vert-bottom-block > * {
+.vert-bottom-block > .inner {
   display: table-cell !important;
   vertical-align: bottom;
 }
