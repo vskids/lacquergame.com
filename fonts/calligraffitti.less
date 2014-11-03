@@ -1,0 +1,24 @@
+@font-family-list_calligraffitti: "Calligraffitti", cursive;
+
+.font-face_calligraffitti {
+	@font-face {
+		font-family: "Calligraffitti";
+		font-style: normal;
+		font-weight: 400;
+		src: local("Calligraffitti"),
+			local("Calligraffitti-Regular"),
+			url("/fonts/assets/Calligraffitti-Regular.woff") format("woff"),
+			url("/fonts/assets/Calligraffitti-Regular.ttf") format("truetype");
+	}
+}
+
+.font_calligraffitti() {
+	&:extend(.font-face_calligraffitti);
+	
+	font-family: @font-family-list_calligraffitti;
+}
+.font_calligraffitti(@properties) {
+	&:extend(.font-face_calligraffitti);
+	
+	font: @properties @font-family-list_calligraffitti;
+}

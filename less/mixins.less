@@ -1,0 +1,39 @@
+@import "for";
+
+
+
+// skrollr animation helpers
+
+.-skrollr-dry-animation(@name; @keyframes)
+{
+	-skrollr-animation-name: @name;
+	@-skrollr-keyframes @name {
+		@keyframes();
+	}
+}
+
+.color-as-rgb(@color) {
+	@red: round(red(@color));
+	@green: round(green(@color));
+	@blue: round(blue(@color));
+	@as-rgb: ~"rgb(@{red}, @{green}, @{blue})";
+}
+
+.color-as-hsl(@color) {
+	@hue: round(hue(@color), 3);
+	@saturation: round(saturation(@color), 2);
+	@lightness: round(lightness(@color), 2);
+	@as-hsl: ~"hsl(@{hue}, @{saturation}, @{lightness})";
+}
+
+
+
+// linear-gradient helper
+
+.linear-gradient(@dir: to right; @stops) {
+	background: -webkit-linear-gradient(@dir, @stops) no-repeat;
+	background:    -moz-linear-gradient(@dir, @stops) no-repeat;
+	background:     -ms-linear-gradient(@dir, @stops) no-repeat;
+	background:      -o-linear-gradient(@dir, @stops) no-repeat;
+	background:         linear-gradient(@dir, @stops) no-repeat;
+}

@@ -1,0 +1,23 @@
+@font-family-list_megrim: "Megrim", sans-serif;
+
+.font-face_megrim {
+	@font-face {
+		font-family: "Megrim";
+		font-style: normal;
+		font-weight: 400;
+		src: local("Megrim"),
+			url("/fonts/assets/Megrim.woff") format("woff"),
+			url("/fonts/assets/Megrim.ttf") format("truetype");
+	}
+}
+
+.font_megrim() {
+	&:extend(.font-face_megrim);
+	
+	font-family: @font-family-list_megrim;
+}
+.font_megrim(@properties) {
+	&:extend(.font-face_megrim);
+	
+	font: @properties @font-family-list_megrim;
+}

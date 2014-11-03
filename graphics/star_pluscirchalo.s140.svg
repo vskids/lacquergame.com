@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_2" x="0px" y="0px" viewBox="0 0 140 140" enable-background="new 0 0 140 140" xml:space="preserve">
+  <switch>
+    <foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0" y="0" width="1" height="1"/>
+    <g>
+      <radialGradient id="SVGID_1_" cx="70" cy="70" r="39.0236" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#FFFFFF"/>
+        <stop offset="1" style="stop-color:#6EC3FF;stop-opacity:0"/>
+      </radialGradient>
+      <circle fill="url(#SVGID_1_)" cx="70" cy="70" r="39"/>
+      <path opacity="0.5" fill="#6EC3FF" d="M70 139.4C70 75.7 75.7 70 139.4 70 75.7 70 70 64.3 70 0.6 70 64.3 64.3 70 0.6 70 64.3 70 70 75.7 70 139.4z"/>
+      <path fill="#FFFFFF" d="M70 106.7C70 73 73 70 106.7 70 73 70 70 67 70 33.3 70 67 67 70 33.3 70 67 70 70 73 70 106.7z"/>
+      <path opacity="0.5" fill="#6EC3FF" d="M70 10c-33.1 0-59.9 26.8-59.9 59.9s26.8 59.9 59.9 59.9c33.1 0 59.9-26.8 59.9-59.9S103.1 10 70 10zM70 127.3c-31.7 0-57.4-25.7-57.4-57.4S38.3 12.5 70 12.5c31.7 0 57.4 25.7 57.4 57.4S101.7 127.3 70 127.3z"/>
+    </g>
+  </switch>
+</svg>

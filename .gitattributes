@@ -1,0 +1,4 @@
+# Auto-Generated Files
+# 	Intended only to be staged as a whole, and to never conflict (ideally, newer should always win over older).
+/css/*.css -diff merge=ours
+/css/*.css.map -diff merge=ours

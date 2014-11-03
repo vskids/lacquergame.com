@@ -1,35 +1,134 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Lacquer: From Dreams To Ice</title>
-    <style type="text/css">
-.title {
-	height: 100%;
-}
-.wrapper {
-	min-height: 100%;
-	height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
-	height: 100%;
-	margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
-}
-.footer, .push {
-	height: 155px; /* .push must be the same height as .footer */
-}
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="maximum-scale=1.0">
+		
+		<title>Lacquer: From Dreams To Ice - iOS game coming this winter to the App Store</title>
+		
+		<!-- Bootstrap -->
+		<link href="css/styles.css" rel="stylesheet" type="text/css" data-skrollr-stylesheet>
+		
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
 
-.author {
-	color: gray;
-}
-     </style>
-</head>
-<body style="background: #0376a4 url('graphics/lacquerlake.png') repeat-x top center" behavior="fixed">
-	<img src="graphics/lacquer_web.png" style="display: block; margin: 0 auto;"/>
-	
-	<div style="margin-top: 450px;">
-		<a href="http://versuskids.com/"><img src="graphics/vskide_mini.png" style="display: block; float: left; margin-right: -128px;"/></a>
-		<img src="graphics/comingsoon.png" style="display: block; margin: 0 auto;"/>
+
+
+<section id="sky-phase" class="line-height-rel monologue">
+	<div class="back clip">
+		<div class="back fixed">
+			<div class="back fill"></div>
+			<div id="starfield1" class="back image"></div>
+			<div id="starfield2" class="back image"></div>
+			<div id="starfield3" class="back image"></div>
+			<div id="starfield4" class="back image"></div>
+		</div>
 	</div>
 	
-	<script>
+	<section class="container vh-100">
+		<div class="vert-middle-block">
+			<div class="inner">
+				<h1>
+					<span class="verse text-center">there you are.</span>
+					<small class="verse text-left col-xs-offset-6 col-xs-6 text-pad-left-1_25"><i>I missed you.</i></small>
+				</h1>
+			</div>
+		</div>
+	</section>
+	<section class="container vh-75">
+		<div class="vert-middle-block">
+			<div class="inner">
+				<span class="verse text-center">you know what I've been thinking a lot about lately?</span>
+				<header class="verse text-center">the stars</header>
+			</div>
+		</div>
+	</section>
+	<section class="container vh-75">
+		<div class="vert-middle-block">
+			<div class="inner">
+				<span class="verse text-center">the constellations were named by the ancient Greeks…</span>
+				<i class="verse text-center">and those stars are still there</i>
+				<i class="verse text-center">as <b>bright</b> as they always have been.</i>
+			</div>
+		</div>
+	</section>
+	
+	<img id="scrolldown" class="overlay" src="graphics/scrolldown.75x124.svg" width="75" height="124" alt="scroll ↓">
+	
+	<section class="container vh-50">
+		<div class="vert-middle-block">
+			<div class="inner">
+				<i class="verse text-center">I want to leave my mark, so no one ever forgets</i>
+				<header class="verse text-center">my dream</header>
+				<i class="verse text-right col-xs-6 text-pad-right-2_5">to shine like a <b>star</b>,</i>
+				<i class="verse text-center">a <b>dazzling light</b>,</i>
+				<i class="verse text-left col-xs-offset-6 col-xs-6 text-pad-left-1_333">against the cold expanse.</i>
+			</div>
+		</div>
+	</section>
+	<section class="container vh-50">
+		<div class="vert-middle-block">
+			<div class="inner">
+				<header class="verse text-center">my story</header>
+				<i class="verse text-center">fulfilling my dreams of skating not just for myself</i>
+				<i class="verse text-center">but <b><em>for everyone</em></b>.</i>
+			</div>
+		</div>
+	</section>
+	<section class="container vh-50">
+		<div class="vert-middle-block">
+			<div class="inner">
+				<header class="verse text-center">my constellation</header>
+				<i class="verse text-right col-xs-6 text-pad-right-1_333">my <b>mark</b> on this lake,</i>
+				<i class="verse text-center"><b><em>my canvas</b></em></i>
+				<i class="verse text-left col-xs-offset-6 col-xs-6 text-pad-left-2"><em>my piece of the <b>world</b>.</em></i>
+			</div>
+		</div>
+	</section>
+</section>
+<!--section id="ambitions-phase" class="base-height-rel monologue"></section-->
+<section id="title-phase" class="screen-height-rel">
+	<div class="back fill">
+		<div id="purplestars-border" class="back image"></div>
+		<div id="lakestrip" class="back image"></div>
+		<div id="sparkles" class="back image"></div>
+	</div>
+	
+	<section class="container vh-100">
+		<header id="title-logo">
+			<div class="inner">
+				<img id="lacquer" src="graphics/logo_lacquer_slanted.293x164.svg" width="293" height="164" alt="Lacquer">
+				<img id="fromdreamstoice" src="graphics/logo_fromdreamstoice_slanted.290x165.svg" width="290" height="165" alt="From Dreams To Ice">
+			</div>
+		</header>
+		<div id="title-closing">
+			<div class="inner">
+				<div class="statement">Leave your mark this winter.</div>
+				<img id="stargazer" src="graphics/char_stargazer.267x139.svg" width="267" height="139">
+			</div>
+		</div>
+		<div id="title-bottom">
+			<div class="inner">
+				<img id="comingsoon" src="graphics/comingsoon.180x63.svg" width="180" height="63" alt="Coming soon to the App Store">
+			</div>
+		</div>
+	</section>
+	
+	<a id="versuskidspresent" class="overlay" href="http://versuskids.com/">
+		<img src="graphics/logo_versuskidspresent.98x68.svg" width="98" height="68" alt="Versus Kids Present:">
+	</a>
+</section>
+
+
+
+		<script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -38,6 +137,442 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', {trackingId: 'UA-48870305-4', cookieDomain: 'auto', alwaysSendReferrer: true});
 ga('require', 'displayfeatures');
 ga('send', 'pageview');
-	</script>
-</body>
+		</script>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="bower_components/viewport-units-buggyfill/viewport-units-buggyfill.js"></script>
+		<script>window.viewportUnitsBuggyfill.init();</script>
+		<script src="bower_components/skrollr-stylesheets/dist/skrollr.stylesheets.min.js"></script>
+		<script src="bower_components/skrollr/src/skrollr.js"></script>
+		<!--[if lt IE 9]><script type="text/javascript" src="bower_components/skrollr-ie/dist/skrollr.ie.min.js"></script><![endif]-->
+		<script>
+var accelDecelSkrollrEasing = function (progress, domElement, propertyName, targetValue, currentValueGetter, newValueSetter, keyframeValues) {
+	var currentValue = currentValueGetter();
+	if (currentValue[2] == targetValue[2])
+		return progress;
+	
+	if (domElement['___skrollr_accelDecel'] == undefined)
+		domElement['___skrollr_accelDecel'] = {};
+	
+	var state = domElement.___skrollr_accelDecel[propertyName];
+	if (state === null || state === undefined) {
+		state = domElement.___skrollr_accelDecel[propertyName] = {
+			velocity: 0.0,
+			direction: 0,
+			target: targetValue[2] //.slice(1)
+		};
+		
+		setTimeout(function () {
+			_step(state, currentValueGetter);
+		}, 10);
+	}
+	else {
+		state.target = targetValue[2]; //.slice(1)
+	}
+	
+	var leftRightDelta = keyframeValues.right[2] - keyframeValues.left[2];
+	var newValueLeftOffset = currentValue - keyframeValues.left[2];
+	var newProgress = newValueLeftOffset / leftRightDelta;
+	return newProgress;
+	
+	var state = domElement.___skrollr_accelDecel[propertyName];
+	
+	function _step(state) {
+		if (state === null || state === undefined)
+			return;
+		
+		var currentValue = currentValueGetter();
+		
+		var deltaValue = state.target - currentValue[2];
+		if (Math.abs(deltaValue) < 1.0) {
+			newValueSetter([targetValue[0], targetValue[1], state.target]);
+			
+			domElement.___skrollr_accelDecel[propertyName] = null;
+			return;
+		}
+		
+		var direction = (deltaValue > 0) ? 1 : -1;
+		var accelAmount = (direction != state.direction) ? 0.5 : 2.0;
+		var accelVelocity = (state.velocity + direction) * accelAmount;
+		var decelVelocity = deltaValue * 0.5;
+		var newVelocity = (Math.abs(accelVelocity) < Math.abs(decelVelocity)) ? accelVelocity : decelVelocity;
+		
+		var newValue = currentValue[2] + newVelocity;
+		
+		var currentValue_beforeSet = currentValueGetter();
+		newValueSetter([targetValue[0], targetValue[1], newValue]);
+		var currentValue_afterSet = currentValueGetter();
+		
+		console.log(
+			'velocity: '+state.velocity+'->'+newVelocity+', ' +
+			'delta: '+deltaValue+', ' +
+			'dir: '+direction+', ' +
+			'accel: '+accelVelocity+', ' +
+			'decel: '+decelVelocity+', ' +
+			'value: '+currentValue_beforeSet+'->'+currentValue_afterSet
+		);
+		
+		state.velocity = newVelocity;
+		
+		setTimeout(function () {
+			_step(state);
+		}, 10);
+	}
+};
+
+/// @source: http://stackoverflow.com/questions/10425287/convert-string-to-camelcase-with-regular-expression#10425344
+function camelCase(input) { 
+	return input.toLowerCase().replace(/-(.)/g, function(match, group1) {
+		return group1.toUpperCase();
+	});
+}
+
+function cacheIdElement(elementId) {
+	var element = document.getElementById(elementId);
+	if (element == null)
+		throw "Could not find required element with id #"+elementId+".  Aborting cacheIdElement().";
+	
+	var idVarName = '$'+camelCase(elementId)+'Element';
+	window[idVarName] = element;
+}
+cacheIdElement('sky-phase');
+//cacheIdElement('ambitions-phase');
+cacheIdElement('title-phase');
+
+
+Math.HalfPI = Math.PI * 0.5;
+
+function easeInQuad(t) {
+	return t * t;
+}
+function easeOutQuad(t) {
+	return -(t * (t - 2));
+}
+function easeInOutQuad(t) {
+	t *= 2;
+	if (t < 1)
+		return 0.5 * t * t;
+	--t;
+	return -0.5 * (t * (t - 2) - 1);
+}
+function easeInCubic(t) {
+	return t * t * t;
+}
+function easeOutCubic(t) {
+	t -= 1;
+	return t * t * t + 1;
+}
+function easeInOutCubic(t) {
+	t *= 2;
+	if (t < 1)
+		return 0.5 * t * t * t;
+	t -= 2;
+	return 0.5 * (t * t * t + 2);
+}
+function easeInQuart(t) {
+	return t * t * t * t;
+}
+function easeOutQuart(t) {
+	t -= 1;
+	return -(t * t * t * t - 1);
+}
+function easeInOutQuart(t) {
+	t *= 2;
+	if (t < 1)
+		return 0.5 * t * t * t * t;
+	t -= 2;
+	return -0.5 * (t * t * t * t - 2);
+}
+function easeInQuint(t) {
+	return t * t * t * t * t;
+}
+function easeOutQuint(t) {
+	t -= 1;
+	return t * t * t * t * t + 1;
+}
+function easeInOutQuint(t) {
+	t *= 2;
+	if (t < 1)
+		return 0.5 * t * t * t * t * t;
+	t -= 2;
+	return 0.5 * (t * t * t * t * t + 2);
+}
+function easeInSine(t) {
+	return -(Math.cos(t * Math.HalfPI) + 1);
+}
+function easeOutSine(t) {
+	return Math.sin(t * Math.HalfPI);
+}
+function easeInOutSine(t) {
+	return -0.5 * (Math.cos(Math.PI * t) - 1);
+}
+function easeInExpo(t) {
+	if (t == 0)
+		return 0;
+	return Math.pow(2, 10 * (t - 1));
+}
+function easeOutExpo(t) {
+	if (t == 1)
+		return 1;
+	return (-Math.pow(2, -10 * t) + 1);
+}
+function easeInOutExpo(t) {
+	if (t == 0)
+		return 0;
+	if (t == 1)
+		return 1;
+	t *= 2;
+	if (t < 1)
+		return 0.5 * Math.pow(2, 10 * (t - 1));
+	--t;
+	return 0.5 * (-Math.pow(2, -10 * t) + 2);
+}
+function easeInCirc(t) {
+	return -(Math.sqrt(1 - t * t) - 1);
+}
+function easeOutCirc(t) {
+	t -= 1;
+	return Math.sqrt(1 - t * t);
+}
+function easeInOutCirc(t) {
+	t *= 2;
+	if (t < 1)
+		return -0.5 * (Math.sqrt(1 - t * t) - 1);
+	t -= 2;
+	return 0.5 * (Math.sqrt(1 - t * t) + 1);
+}
+
+function lerpStartToMid(p) {
+	if (p >= 0.5)
+		return 1;
+	else
+		return p * 2; // `/ 1 * 2`
+}
+function lerpMidToEnd(p) {
+	if (p <= 0.5)
+		return 0;
+	else
+		return (p - 0.5) * 2; // `/ 1 * 2`
+}
+function lerpStartTo3rdQuarter(p) {
+	if (p >= 0.75)
+		return 1;
+	else
+		return p * 1.3333333333333333; // `/ 3 * 4`
+}
+function lerp1stQuarterToEnd(p) {
+	if (p <= 0.25)
+		return 0;
+	else
+		return (p - 0.25) * 1.3333333333333333; // `/ 3 * 4`
+}
+function lerp1stQuarterTo3rdQuarter(p) {
+	if (p <= 0.25)
+		return 0;
+	else if (p >= 0.75)
+		return 1;
+	else
+		return (p - 0.25) * 2; // `/ 2 * 4`
+}
+
+var $s = skrollr.init({
+	mobileCheck: function () { return false; },
+	edgeStrategy: 'ease',
+	forceHeight: false,
+	smoothScrolling: false,
+	easing: {
+		linearStartToMid: lerpStartToMid,
+		linearMidToEnd: lerpMidToEnd,
+		accelDecel: accelDecelSkrollrEasing,
+		inQuad: easeInQuad,
+		inQuadStartToMid: function (p) { return easeInQuad(lerpStartToMid(p)); },
+		inQuadMidToEnd: function (p) { return easeInQuad(lerpMidToEnd(p)); },
+		inQuadStartTo3rdQuarter: function (p) { return easeInQuad(lerpStartTo3rdQuarter(p)); },
+		inQuad1stQuarterToEnd: function (p) { return easeInQuad(lerp1stQuarterToEnd(p)); },
+		inQuad1stQuarterTo3rdQuarter: function (p) { return easeInQuad(lerp1stQuarterTo3rdQuarter(p)); },
+		outQuad: easeOutQuad,
+		outQuadStartToMid: function (p) { return easeOutQuad(lerpStartToMid(p)); },
+		outQuadMidToEnd: function (p) { return easeOutQuad(lerpMidToEnd(p)); },
+		outQuadStartTo3rdQuarter: function (p) { return easeOutQuad(lerpStartTo3rdQuarter(p)); },
+		outQuad1stQuarterToEnd: function (p) { return easeOutQuad(lerp1stQuarterToEnd(p)); },
+		outQuad1stQuarterTo3rdQuarter: function (p) { return easeOutQuad(lerp1stQuarterTo3rdQuarter(p)); },
+		inOutQuad: easeInOutQuad,
+		inOutQuadStartToMid: function (p) { return easeInOutQuad(lerpStartToMid(p)); },
+		inOutQuadMidToEnd: function (p) { return easeInOutQuad(lerpMidToEnd(p)); },
+		inOutQuadStartTo3rdQuarter: function (p) { return easeInOutQuad(lerpStartTo3rdQuarter(p)); },
+		inOutQuad1stQuarterToEnd: function (p) { return easeInOutQuad(lerp1stQuarterToEnd(p)); },
+		inOutQuad1stQuarterTo3rdQuarter: function (p) { return easeInOutQuad(lerp1stQuarterTo3rdQuarter(p)); },
+		inCubic: easeInCubic,
+		inCubicStartToMid: function (p) { return easeInCubic(lerpStartToMid(p)); },
+		inCubicMidToEnd: function (p) { return easeInCubic(lerpMidToEnd(p)); },
+		inCubicStartTo3rdQuarter: function (p) { return easeInCubic(lerpStartTo3rdQuarter(p)); },
+		inCubic1stQuarterToEnd: function (p) { return easeInCubic(lerp1stQuarterToEnd(p)); },
+		inCubic1stQuarterTo3rdQuarter: function (p) { return easeInCubic(lerp1stQuarterTo3rdQuarter(p)); },
+		outCubic: easeOutCubic,
+		outCubicStartToMid: function (p) { return easeOutCubic(lerpStartToMid(p)); },
+		outCubicMidToEnd: function (p) { return easeOutCubic(lerpMidToEnd(p)); },
+		outCubicStartTo3rdQuarter: function (p) { return easeOutCubic(lerpStartTo3rdQuarter(p)); },
+		outCubic1stQuarterToEnd: function (p) { return easeOutCubic(lerp1stQuarterToEnd(p)); },
+		outCubic1stQuarterTo3rdQuarter: function (p) { return easeOutCubic(lerp1stQuarterTo3rdQuarter(p)); },
+		inOutCubic: easeInOutCubic,
+		inOutCubicStartToMid: function (p) { return easeInOutCubic(lerpStartToMid(p)); },
+		inOutCubicMidToEnd: function (p) { return easeInOutCubic(lerpMidToEnd(p)); },
+		inOutCubicStartTo3rdQuarter: function (p) { return easeInOutCubic(lerpStartTo3rdQuarter(p)); },
+		inOutCubic1stQuarterToEnd: function (p) { return easeInOutCubic(lerp1stQuarterToEnd(p)); },
+		inOutCubic1stQuarterTo3rdQuarter: function (p) { return easeInOutCubic(lerp1stQuarterTo3rdQuarter(p)); },
+		inQuart: easeInQuart,
+		inQuartStartToMid: function (p) { return easeInQuart(lerpStartToMid(p)); },
+		inQuartMidToEnd: function (p) { return easeInQuart(lerpMidToEnd(p)); },
+		inQuartStartTo3rdQuarter: function (p) { return easeInQuart(lerpStartTo3rdQuarter(p)); },
+		inQuart1stQuarterToEnd: function (p) { return easeInQuart(lerp1stQuarterToEnd(p)); },
+		inQuart1stQuarterTo3rdQuarter: function (p) { return easeInQuart(lerp1stQuarterTo3rdQuarter(p)); },
+		outQuart: easeOutQuart,
+		outQuartStartToMid: function (p) { return easeOutQuart(lerpStartToMid(p)); },
+		outQuartMidToEnd: function (p) { return easeOutQuart(lerpMidToEnd(p)); },
+		outQuartStartTo3rdQuarter: function (p) { return easeOutQuart(lerpStartTo3rdQuarter(p)); },
+		outQuart1stQuarterToEnd: function (p) { return easeOutQuart(lerp1stQuarterToEnd(p)); },
+		outQuart1stQuarterTo3rdQuarter: function (p) { return easeOutQuart(lerp1stQuarterTo3rdQuarter(p)); },
+		inOutQuart: easeInOutQuart,
+		inOutQuartStartToMid: function (p) { return easeInOutQuart(lerpStartToMid(p)); },
+		inOutQuartMidToEnd: function (p) { return easeInOutQuart(lerpMidToEnd(p)); },
+		inOutQuartStartTo3rdQuarter: function (p) { return easeInOutQuart(lerpStartTo3rdQuarter(p)); },
+		inOutQuart1stQuarterToEnd: function (p) { return easeInOutQuart(lerp1stQuarterToEnd(p)); },
+		inOutQuart1stQuarterTo3rdQuarter: function (p) { return easeInOutQuart(lerp1stQuarterTo3rdQuarter(p)); },
+		inQuint: easeInQuint,
+		inQuintStartToMid: function (p) { return easeInQuint(lerpStartToMid(p)); },
+		inQuintMidToEnd: function (p) { return easeInQuint(lerpMidToEnd(p)); },
+		inQuintStartTo3rdQuarter: function (p) { return easeInQuint(lerpStartTo3rdQuarter(p)); },
+		inQuint1stQuarterToEnd: function (p) { return easeInQuint(lerp1stQuarterToEnd(p)); },
+		inQuint1stQuarterTo3rdQuarter: function (p) { return easeInQuint(lerp1stQuarterTo3rdQuarter(p)); },
+		outQuint: easeOutQuint,
+		outQuintStartToMid: function (p) { return easeOutQuint(lerpStartToMid(p)); },
+		outQuintMidToEnd: function (p) { return easeOutQuint(lerpMidToEnd(p)); },
+		outQuintStartTo3rdQuarter: function (p) { return easeOutQuint(lerpStartTo3rdQuarter(p)); },
+		outQuint1stQuarterToEnd: function (p) { return easeOutQuint(lerp1stQuarterToEnd(p)); },
+		outQuint1stQuarterTo3rdQuarter: function (p) { return easeOutQuint(lerp1stQuarterTo3rdQuarter(p)); },
+		inOutQuint: easeInOutQuint,
+		inOutQuintStartToMid: function (p) { return easeInOutQuint(lerpStartToMid(p)); },
+		inOutQuintMidToEnd: function (p) { return easeInOutQuint(lerpMidToEnd(p)); },
+		inOutQuintStartTo3rdQuarter: function (p) { return easeInOutQuint(lerpStartTo3rdQuarter(p)); },
+		inOutQuint1stQuarterToEnd: function (p) { return easeInOutQuint(lerp1stQuarterToEnd(p)); },
+		inOutQuint1stQuarterTo3rdQuarter: function (p) { return easeInOutQuint(lerp1stQuarterTo3rdQuarter(p)); },
+		inSine: easeInSine,
+		inSineStartToMid: function (p) { return easeInSine(lerpStartToMid(p)); },
+		inSineMidToEnd: function (p) { return easeInSine(lerpMidToEnd(p)); },
+		inSineStartTo3rdQuarter: function (p) { return easeInSine(lerpStartTo3rdQuarter(p)); },
+		inSine1stQuarterToEnd: function (p) { return easeInSine(lerp1stQuarterToEnd(p)); },
+		inSine1stQuarterTo3rdQuarter: function (p) { return easeInSine(lerp1stQuarterTo3rdQuarter(p)); },
+		outSine: easeOutSine,
+		outSineStartToMid: function (p) { return easeOutSine(lerpStartToMid(p)); },
+		outSineMidToEnd: function (p) { return easeOutSine(lerpMidToEnd(p)); },
+		outSineStartTo3rdQuarter: function (p) { return easeOutSine(lerpStartTo3rdQuarter(p)); },
+		outSine1stQuarterToEnd: function (p) { return easeOutSine(lerp1stQuarterToEnd(p)); },
+		outSine1stQuarterTo3rdQuarter: function (p) { return easeOutSine(lerp1stQuarterTo3rdQuarter(p)); },
+		inOutSine: easeInOutSine,
+		inOutSineStartToMid: function (p) { return easeInOutSine(lerpStartToMid(p)); },
+		inOutSineMidToEnd: function (p) { return easeInOutSine(lerpMidToEnd(p)); },
+		inOutSineStartTo3rdQuarter: function (p) { return easeInOutSine(lerpStartTo3rdQuarter(p)); },
+		inOutSine1stQuarterToEnd: function (p) { return easeInOutSine(lerp1stQuarterToEnd(p)); },
+		inOutSine1stQuarterTo3rdQuarter: function (p) { return easeInOutSine(lerp1stQuarterTo3rdQuarter(p)); },
+		inExpo: easeInExpo,
+		inExpoStartToMid: function (p) { return easeInExpo(lerpStartToMid(p)); },
+		inExpoMidToEnd: function (p) { return easeInExpo(lerpMidToEnd(p)); },
+		inExpoStartTo3rdQuarter: function (p) { return easeInExpo(lerpStartTo3rdQuarter(p)); },
+		inExpo1stQuarterToEnd: function (p) { return easeInExpo(lerp1stQuarterToEnd(p)); },
+		inExpo1stQuarterTo3rdQuarter: function (p) { return easeInExpo(lerp1stQuarterTo3rdQuarter(p)); },
+		outExpo: easeOutExpo,
+		outExpoStartToMid: function (p) { return easeOutExpo(lerpStartToMid(p)); },
+		outExpoMidToEnd: function (p) { return easeOutExpo(lerpMidToEnd(p)); },
+		outExpoStartTo3rdQuarter: function (p) { return easeOutExpo(lerpStartTo3rdQuarter(p)); },
+		outExpo1stQuarterTo3rdQuarter: function (p) { return easeOutExpo(lerp1stQuarterTo3rdQuarter(p)); },
+		outExpo1stQuarterToEnd: function (p) { return easeOutExpo(lerp1stQuarterToEnd(p)); },
+		inOutExpo: easeInOutExpo,
+		inOutExpoStartToMid: function (p) { return easeInOutExpo(lerpStartToMid(p)); },
+		inOutExpoMidToEnd: function (p) { return easeInOutExpo(lerpMidToEnd(p)); },
+		inOutExpoStartTo3rdQuarter: function (p) { return easeInOutExpo(lerpStartTo3rdQuarter(p)); },
+		inOutExpo1stQuarterToEnd: function (p) { return easeInOutExpo(lerp1stQuarterToEnd(p)); },
+		inOutExpo1stQuarterTo3rdQuarter: function (p) { return easeInOutExpo(lerp1stQuarterTo3rdQuarter(p)); },
+		inCirc: easeInCirc,
+		inCircStartToMid: function (p) { return easeInCirc(lerpStartToMid(p)); },
+		inCircMidToEnd: function (p) { return easeInCirc(lerpMidToEnd(p)); },
+		inCircStartTo3rdQuarter: function (p) { return easeInCirc(lerpStartTo3rdQuarter(p)); },
+		inCirc1stQuarterToEnd: function (p) { return easeInCirc(lerp1stQuarterToEnd(p)); },
+		inCirc1stQuarterTo3rdQuarter: function (p) { return easeInCirc(lerp1stQuarterTo3rdQuarter(p)); },
+		outCirc: easeOutCirc,
+		outCircStartToMid: function (p) { return easeOutCirc(lerpStartToMid(p)); },
+		outCircMidToEnd: function (p) { return easeOutCirc(lerpMidToEnd(p)); },
+		outCircStartTo3rdQuarter: function (p) { return easeOutCirc(lerpStartTo3rdQuarter(p)); },
+		outCirc1stQuarterToEnd: function (p) { return easeOutCirc(lerp1stQuarterToEnd(p)); },
+		outCirc1stQuarterTo3rdQuarter: function (p) { return easeOutCirc(lerp1stQuarterTo3rdQuarter(p)); },
+		inOutCirc: easeInOutCirc,
+		inOutCircStartToMid: function (p) { return easeInOutCirc(lerpStartToMid(p)); },
+		inOutCircMidToEnd: function (p) { return easeInOutCirc(lerpMidToEnd(p)); },
+		inOutCircStartTo3rdQuarter: function (p) { return easeInOutCirc(lerpStartTo3rdQuarter(p)); },
+		inOutCirc1stQuarterToEnd: function (p) { return easeInOutCirc(lerp1stQuarterToEnd(p)); },
+		inOutCirc1stQuarterTo3rdQuarter: function (p) { return easeInOutCirc(lerp1stQuarterTo3rdQuarter(p)); },
+	},
+	constants: {
+		sky_phase_open_before: function () {
+			var box = $skyPhaseElement.getBoundingClientRect();
+			var boxHeight = box.bottom - box.top; // for IE-compat
+			return skrollr.get().relativeToAbsolute($skyPhaseElement, 'top', 'top') - (boxHeight * 0.20);
+		},
+		sky_phase_open: function () { return skrollr.get().relativeToAbsolute($skyPhaseElement, 'top', 'top'); },
+		sky_phase_center: function () { return skrollr.get().relativeToAbsolute($skyPhaseElement, 'top', 'center'); },
+		sky_phase_close: function () { return skrollr.get().relativeToAbsolute($skyPhaseElement, 'bottom', 'bottom'); },
+		sky_phase_disappear: function () { return skrollr.get().relativeToAbsolute($skyPhaseElement, 'top', 'bottom'); },
+		//ambitions_phase_appear: function () { return skrollr.get().relativeToAbsolute($ambitionsPhaseElement, 'bottom', 'top'); },
+		//ambitions_phase_open: function () { return skrollr.get().relativeToAbsolute($ambitionsPhaseElement, 'top', 'top'); },
+		//ambitions_phase_center: function () { return skrollr.get().relativeToAbsolute($ambitionsPhaseElement, 'center', 'center'); },
+		//ambitions_phase_close: function () { return skrollr.get().relativeToAbsolute($ambitionsPhaseElement, 'bottom', 'bottom'); },
+		//ambitions_phase_disappear: function () { return skrollr.get().relativeToAbsolute($ambitionsPhaseElement, 'top', 'bottom'); },
+		title_phase_appear: function () { return skrollr.get().relativeToAbsolute($titlePhaseElement, 'bottom', 'top'); },
+		title_phase_open_before: function () {
+			var box = $titlePhaseElement.getBoundingClientRect();
+			var boxHeight = box.bottom - box.top; // for IE-compat
+			return skrollr.get().relativeToAbsolute($titlePhaseElement, 'top', 'top') - (boxHeight * 0.20);
+		},
+		title_phase_open: function () { return skrollr.get().relativeToAbsolute($titlePhaseElement, 'top', 'top'); },
+		title_phase_center: function () { return skrollr.get().relativeToAbsolute($titlePhaseElement, 'center', 'center'); },
+		title_phase_close: function () { return skrollr.get().relativeToAbsolute($titlePhaseElement, 'bottom', 'bottom'); },
+		title_phase_disappear: function () { return skrollr.get().relativeToAbsolute($titlePhaseElement, 'top', 'bottom'); },
+	}
+});
+		</script>
+		<script>
+var $unscaleBackgrounds_closeEnoughDifference = 20;
+function unscaleBackgrounds(jQElements, lastStateObject) {
+	// according to: http://www.quirksmode.org/mobile/viewports2.html
+	var layoutViewportWidth = document.documentElement.clientWidth;
+	var visualViewportWidth = window.innerWidth;
+	var screenWidth = screen.width;
+	if (layoutViewportWidth == lastStateObject.layoutViewportWidth && visualViewportWidth == lastStateObject.visualViewportWidth) {
+		return;
+	} else {
+		lastStateObject.layoutViewportWidth = layoutViewportWidth;
+		lastStateObject.visualViewportWidth = visualViewportWidth;
+	}
+	
+	var isCloseEnoguhToAssume1To1Scale = Math.abs(visualViewportWidth - layoutViewportWidth) < $unscaleBackgrounds_closeEnoughDifference;
+	var viewportInverseZoom = isCloseEnoguhToAssume1To1Scale ? 1.0 : (visualViewportWidth / layoutViewportWidth);
+	if (viewportInverseZoom == lastStateObject.viewportInverseZoom)
+		return;
+	else
+		lastStateObject.viewportInverseZoom = viewportInverseZoom;
+	
+	jQElements.css({ zoom: viewportInverseZoom });
+}
+
+$(document).ready(function() {
+	$lastState_unscaleSkyBackImages = {};
+	var unscaleSkyBackImages = function () {
+		unscaleBackgrounds($('#sky-phase > .back.image, #sky-phase > .back .image'), $lastState_unscaleSkyBackImages);
+	};
+	unscaleSkyBackImages();
+	$(window).on('scroll resize', unscaleSkyBackImages);
+});
+		</script>
+	</body>
 </html>

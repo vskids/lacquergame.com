@@ -1,0 +1,27 @@
+@font-family-list_dancing-script-regular: "Dancing Script", cursive;
+@font-weight_dancing-script-regular: 400;
+
+.font-face_dancing-script-regular {
+	@font-face {
+		font-family: "Dancing Script";
+		font-style: normal;
+		font-weight: @font-weight_dancing-script-regular;
+		src: local("Dancing Script"),
+			local("DancingScript"),
+			url("/fonts/assets/DancingScript-Regular.woff") format("woff"),
+			url("/fonts/assets/DancingScript-Regular.ttf") format("truetype");
+	}
+}
+
+.font_dancing-script-regular() {
+	&:extend(.font-face_dancing-script-regular);
+	
+	font-family: @font-family-list_dancing-script-regular;
+	font-weight: @font-weight_dancing-script-regular;
+}
+.font_dancing-script-regular(@properties) {
+	&:extend(.font-face_dancing-script-regular);
+	
+	font: @properties @font-family-list_dancing-script-regular;
+	font-weight: @font-weight_dancing-script-regular;
+}

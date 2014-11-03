@@ -1,0 +1,28 @@
+@font-family-list_cabin-sketch-regular: "Cabin Sketch", sans-serif;
+@font-weight_cabin-sketch-regular: 400;
+
+.font-face_cabin-sketch-regular {
+	@font-face {
+		font-family: "Cabin Sketch";
+		font-style: normal;
+		font-weight: @font-weight_cabin-sketch-regular;
+		src: local("Cabin Sketch Regular"),
+			local("CabinSketch Regular"),
+			local("CabinSketch-Regular"),
+			url("/fonts/assets/CabinSketch-Regular.woff") format("woff"),
+			url("/fonts/assets/CabinSketch-Regular.ttf") format("truetype");
+	}
+}
+
+.font_cabin-sketch-regular() {
+	&:extend(.font-face_cabin-sketch-regular);
+	
+	font-family: @font-family-list_cabin-sketch-regular;
+	font-weight: @font-weight_cabin-sketch-regular;
+}
+.font_cabin-sketch-regular(@properties) {
+	&:extend(.font-face_cabin-sketch-regular);
+	
+	font: @properties @font-family-list_cabin-sketch-regular;
+	font-weight: @font-weight_cabin-sketch-regular;
+}

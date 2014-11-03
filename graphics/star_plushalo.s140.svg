@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_2" x="0px" y="0px" viewBox="0 0 140 140" enable-background="new 0 0 140 140" xml:space="preserve">
+  <switch>
+    <foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0" y="0" width="1" height="1"/>
+    <g>
+      <radialGradient id="SVGID_1_" cx="70" cy="70" r="39.0236" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#FFFFFF"/>
+        <stop offset="1" style="stop-color:#FFF655;stop-opacity:0"/>
+      </radialGradient>
+      <circle fill="url(#SVGID_1_)" cx="70" cy="70" r="39"/>
+      <polygon opacity="0.5" fill="#FFF655" points="82.5,82.4 140,69.9 82.5,57.4 70,-0.1 57.5,57.4 0,69.9 57.5,82.4 70,139.9   "/>
+      <polygon fill="#FFFFFF" points="78.6,78.6 118.4,69.9 78.6,61.3 70,21.5 61.3,61.3 21.5,69.9 61.3,78.6 70,118.4   "/>
+    </g>
+  </switch>
+</svg>

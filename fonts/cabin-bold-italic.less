@@ -1,0 +1,31 @@
+@font-family-list_cabin-bold-italic: "Cabin", sans-serif;
+@font-style_cabin-bold-italic: italic;
+@font-weight_cabin-bold-italic: 700;
+
+.font-face_cabin-bold-italic {
+	@font-face {
+		font-family: "Cabin";
+		font-style: @font-style_cabin-bold-italic;
+		font-weight: @font-weight_cabin-bold-italic;
+		src: local("Cabin Bold Italic"),
+			local("Cabin BoldItalic"),
+			local("Cabin-BoldItalic"),
+			url("/fonts/assets/Cabin-BoldItalic.woff") format("woff"),
+			url("/fonts/assets/Cabin-BoldItalic.ttf") format("truetype");
+	}
+}
+
+.font_cabin-bold-italic() {
+	&:extend(.font-face_cabin-bold-italic);
+	
+	font-family: @font-family-list_cabin-bold-italic;
+	font-style: @font-style_cabin-bold-italic;
+	font-weight: @font-weight_cabin-bold-italic;
+}
+.font_cabin-bold-italic(@properties) {
+	&:extend(.font-face_cabin-bold-italic);
+	
+	font: @properties @font-family-list_cabin-bold-italic;
+	font-style: @font-style_cabin-bold-italic;
+	font-weight: @font-weight_cabin-bold-italic;
+}
