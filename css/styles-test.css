@@ -6314,11 +6314,11 @@ button.close {
   src: local("Oswald Bold"), local("Oswald-Bold"), url("/fonts/assets/Oswald-Bold.woff") format("woff"), url("/fonts/assets/Oswald-Bold.ttf") format("truetype");
 }
 .monologue {
-  font: 48px "Cabin Sketch", sans-serif;
+  font: 36px "Cabin Sketch", sans-serif;
   font-weight: 400;
 }
 .monologue b {
-  font: 48px "Cabin Sketch", sans-serif;
+  font: 36px "Cabin Sketch", sans-serif;
   font-weight: 700;
 }
 .statement {
