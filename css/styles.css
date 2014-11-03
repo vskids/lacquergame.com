@@ -6773,6 +6773,11 @@ body {
 #title-phase > .back .back.fixed {
   position: fixed;
 }
+#title-phase,
+#title-phase .container,
+#title-phase .container-fluid {
+  min-height: 768px;
+}
 #title-phase > .back.fill,
 #title-phase > .back .back.fill {
   background-color: #accdea;
