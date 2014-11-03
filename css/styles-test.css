@@ -6329,6 +6329,7 @@ button.close {
 }
 .verse {
   display: block;
+  clear: both;
 }
 html,
 body {
