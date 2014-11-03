@@ -6508,7 +6508,8 @@ body {
 #ambitions-phase {
   position: relative;
   z-index: 200;
-  color: white;
+  color: #fff;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
 }
 #ambitions-phase > .back {
   z-index: -1;
