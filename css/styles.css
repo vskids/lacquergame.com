@@ -6412,6 +6412,12 @@ button.close {
   font-weight: 700;
   src: local("Oswald Bold"), local("Oswald-Bold"), url("/fonts/assets/Oswald-Bold.woff") format("woff"), url("/fonts/assets/Oswald-Bold.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Raleway Dots";
+  font-style: normal;
+  font-weight: 400;
+  src: local("RalewayDots"), local("Raleway Dots"), local("RalewayDots Regular"), local("RalewayDots-Regular"), local("Raleway Dots Regular"), url("/fonts/assets/RalewayDots-Regular.woff") format("woff"), url("/fonts/assets/RalewayDots-Regular.ttf") format("truetype");
+}
 .monologue {
   font: 36px "Cabin Sketch", sans-serif;
   font-weight: 400;

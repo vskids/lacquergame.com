@@ -1,0 +1,27 @@
+@font-family-list_raleway-dots: "Raleway Dots", sans-serif;
+
+.font-face_raleway-dots {
+	@font-face {
+		font-family: "Raleway Dots";
+		font-style: normal;
+		font-weight: 400;
+		src: local("RalewayDots"),
+			local("Raleway Dots"),
+			local("RalewayDots Regular"),
+			local("RalewayDots-Regular"),
+			local("Raleway Dots Regular"),
+			url("/fonts/assets/RalewayDots-Regular.woff") format("woff"),
+			url("/fonts/assets/RalewayDots-Regular.ttf") format("truetype");
+	}
+}
+
+.font_raleway-dots() {
+	&:extend(.font-face_raleway-dots);
+	
+	font-family: @font-family-list_raleway-dots;
+}
+.font_raleway-dots(@properties) {
+	&:extend(.font-face_raleway-dots);
+	
+	font: @properties @font-family-list_raleway-dots;
+}
