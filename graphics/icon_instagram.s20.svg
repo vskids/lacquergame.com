@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+  <switch>
+    <foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0" y="0" width="1" height="1"/>
+    <g>
+      <g>
+        <path fill="#FFFFFF" d="M1.6 1C0.8 1.7 0.2 2.7 0.2 3.8V6h1.3V1z"/>
+        <path fill="#FFFFFF" d="M4.2 6V0.2H3.8c-0.3 0-0.6 0-0.9 0.1V6H4.2z"/>
+        <path fill="#FFFFFF" d="M10 4.4c1.5 0 2.9 0.6 3.9 1.6h5.8V3.8c0-1.9-1.6-3.5-3.5-3.5H5.4V6h0.6C7.1 5 8.5 4.4 10 4.4zM14.5 2.3c0-0.4 0.3-0.8 0.8-0.8h2.3c0.4 0 0.8 0.3 0.8 0.8v2.3c0 0.4-0.3 0.8-0.8 0.8h-2.3c-0.4 0-0.8-0.3-0.8-0.8V2.3z"/>
+        <path fill="#FFFFFF" d="M15.6 10c0 3.1-2.5 5.6-5.6 5.6S4.4 13.1 4.4 10c0-0.9 0.2-1.8 0.7-2.6H0.2v8.9c0 1.9 1.6 3.5 3.5 3.5h12.5c1.9 0 3.5-1.6 3.5-3.5V7.4H15C15.4 8.2 15.6 9.1 15.6 10z"/>
+        <path fill="#FFFFFF" d="M5.6 10c0 2.4 2 4.4 4.4 4.4 2.4 0 4.4-2 4.4-4.4s-2-4.4-4.4-4.4C7.6 5.6 5.6 7.6 5.6 10zM12.8 10c0 1.6-1.3 2.8-2.8 2.8S7.2 11.6 7.2 10 8.4 7.2 10 7.2 12.8 8.4 12.8 10z"/>
+      </g>
+    </g>
+  </switch>
+</svg>
