@@ -6322,6 +6322,47 @@ button.close {
   font: 36px "Cabin Sketch", sans-serif;
   font-weight: 700;
 }
+.monologue em {
+  font: 48px "Cabin Sketch", sans-serif;
+  font-weight: 400;
+}
+.monologue em b,
+.monologue b em {
+  font: 48px "Cabin Sketch", sans-serif;
+  font-weight: 700;
+}
+.monologue h1,
+h1.monologue,
+h1 .monologue {
+  font: 72px "Cabin Sketch", sans-serif;
+  font-weight: 400;
+}
+.monologue h1 small,
+h1.monologue small,
+h1 .monologue small {
+  color: inherit;
+  font: 48px "Cabin Sketch", sans-serif;
+  font-weight: 400;
+}
+.monologue header,
+header.monologue,
+header .monologue,
+.monologue h2,
+h2.monologue,
+h2 .monologue {
+  font: 60px "Cabin Sketch", sans-serif;
+  font-weight: 400;
+}
+.monologue header small,
+header.monologue small,
+header .monologue small,
+.monologue h2 small,
+h2.monologue small,
+h2 .monologue small {
+  color: inherit;
+  font: 48px "Cabin Sketch", sans-serif;
+  font-weight: 400;
+}
 .statement {
   font: 60px "Codystar", sans-serif;
   font-weight: 400;

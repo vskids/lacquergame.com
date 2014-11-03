@@ -16,12 +16,39 @@
 @font-size-base: 24px;
 
 .monologue {
-	@font-size: (@font-size-base * 1.5); // 36px, should be equivalent to 36pt
+	@font-size: (@font-size-base * 1.5);
+	@em-strong-font-size: (@font-size-base * 2);
+	@h1-font-size: (@font-size-base * 3);
+	@header-font-size: (@font-size-base * 2.5);
+	@small-header-font-size: (@font-size-base * 2);
+	
 	.font_cabin-sketch-regular(@font-size);
 	line-height: (@font-size * 1.8);
 	
 	b {
 		.font_cabin-sketch-bold(@font-size);
+	}
+	em {
+		.font_cabin-sketch-regular(@em-strong-font-size);
+	}
+	em b, b em {
+		.font_cabin-sketch-bold(@em-strong-font-size);
+	}
+	
+	.header() {
+		small {
+			color: inherit; // revert Bootstrap re-coloring
+			.font_cabin-sketch-regular(@small-header-font-size);
+		}
+	}
+	& h1, h1&, h1 & {
+		.header();
+		.font_cabin-sketch-regular(@h1-font-size);
+	}
+	& header, header&, header &,
+	& h2, h2&, h2 & {
+		.header();
+		.font_cabin-sketch-regular(@header-font-size);
 	}
 }
 .statement {
