@@ -20,6 +20,7 @@
     "skrollr": "~0.6.27",
     "skrollr-stylesheets": "~0.0.6",
     "skrollr-ie": "~1.0.3",
-	"viewport-units-buggyfill": "~0.4.1"
+    "viewport-units-buggyfill": "~0.4.1",
+    "scroll-depth": "0.6"
   }
 }
