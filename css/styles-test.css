@@ -6263,78 +6263,6 @@ button.close {
 }
 
 @font-face {
-  font-family: "Cabin";
-  font-style: normal;
-  font-weight: 700;
-  src: local("Cabin"), local("Cabin Regular"), local("Cabin-Regular"), url("/fonts/assets/Cabin-Regular.woff") format("woff"), url("/fonts/assets/Cabin-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Cabin";
-  font-style: normal;
-  font-weight: 700;
-  src: local("Cabin Medium"), local("Cabin-Medium"), url("/fonts/assets/Cabin-Medium.woff") format("woff"), url("/fonts/assets/Cabin-Medium.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Cabin";
-  font-style: normal;
-  font-weight: 700;
-  src: local("Cabin SemiBold"), local("Cabin SemiBold"), local("Cabin-SemiBold"), url("/fonts/assets/Cabin-SemiBold.woff") format("woff"), url("/fonts/assets/Cabin-SemiBold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Cabin";
-  font-style: normal;
-  font-weight: 700;
-  src: local("Cabin Bold"), local("Cabin Bold"), local("Cabin-Bold"), url("/fonts/assets/Cabin-Bold.woff") format("woff"), url("/fonts/assets/Cabin-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Cabin";
-  font-style: italic;
-  font-weight: 700;
-  src: local("Cabin Italic"), local("Cabin-Italic"), url("/fonts/assets/Cabin-Italic.woff") format("woff"), url("/fonts/assets/Cabin-Italic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Cabin";
-  font-style: italic;
-  font-weight: 700;
-  src: local("Cabin Medium Italic"), local("Cabin MediumItalic"), local("Cabin-MediumItalic"), url("/fonts/assets/Cabin-MediumItalic.woff") format("woff"), url("/fonts/assets/Cabin-MediumItalic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Cabin";
-  font-style: italic;
-  font-weight: 700;
-  src: local("Cabin SemiBold Italic"), local("Cabin SemiBoldItalic"), local("Cabin-SemiBoldItalic"), url("/fonts/assets/Cabin-SemiBoldItalic.woff") format("woff"), url("/fonts/assets/Cabin-SemiBoldItalic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Cabin";
-  font-style: italic;
-  font-weight: 700;
-  src: local("Cabin Bold Italic"), local("Cabin BoldItalic"), local("Cabin-BoldItalic"), url("/fonts/assets/Cabin-BoldItalic.woff") format("woff"), url("/fonts/assets/Cabin-BoldItalic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Cabin Condensed";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Cabin Condensed"), local("CabinCondensed"), local("Cabin Condensed Regular"), local("CabinCondensed Regular"), local("CabinCondensed-Regular"), url("/fonts/assets/CabinCondensed-Regular.woff") format("woff"), url("/fonts/assets/CabinCondensed-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Cabin Condensed";
-  font-style: normal;
-  font-weight: 500;
-  src: local("Cabin Condensed Medium"), local("CabinCondensed Medium"), local("CabinCondensed-Medium"), url("/fonts/assets/CabinCondensed-Medium.woff") format("woff"), url("/fonts/assets/CabinCondensed-Medium.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Cabin Condensed";
-  font-style: normal;
-  font-weight: 600;
-  src: local("Cabin Condensed SemiBold"), local("CabinCondensed SemiBold"), local("CabinCondensed-SemiBold"), url("/fonts/assets/CabinCondensed-SemiBold.woff") format("woff"), url("/fonts/assets/CabinCondensed-SemiBold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Cabin Condensed";
-  font-style: normal;
-  font-weight: 700;
-  src: local("Cabin Condensed Bold"), local("CabinCondensed Bold"), local("CabinCondensed-Bold"), url("/fonts/assets/CabinCondensed-Bold.woff") format("woff"), url("/fonts/assets/CabinCondensed-Bold.ttf") format("truetype");
-}
-@font-face {
   font-family: "Cabin Sketch";
   font-style: normal;
   font-weight: 400;
@@ -6347,12 +6275,6 @@ button.close {
   src: local("Cabin Sketch Bold"), local("CabinSketch Bold"), local("CabinSketch-Bold"), url("/fonts/assets/CabinSketch-Bold.woff") format("woff"), url("/fonts/assets/CabinSketch-Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Calligraffitti";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Calligraffitti"), local("Calligraffitti-Regular"), url("/fonts/assets/Calligraffitti-Regular.woff") format("woff"), url("/fonts/assets/Calligraffitti-Regular.ttf") format("truetype");
-}
-@font-face {
   font-family: "Codystar";
   font-style: normal;
   font-weight: 400;
@@ -6363,60 +6285,6 @@ button.close {
   font-style: normal;
   font-weight: 300;
   src: local("Codystar Light"), local("Codystar-Light"), url("/fonts/assets/Codystar-Light.woff") format("woff"), url("/fonts/assets/Codystar-Light.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Dancing Script";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Dancing Script"), local("DancingScript"), url("/fonts/assets/DancingScript-Regular.woff") format("woff"), url("/fonts/assets/DancingScript-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Dancing Script";
-  font-style: normal;
-  font-weight: 700;
-  src: local("Dancing Script Bold"), local("DancingScript-Bold"), url("/fonts/assets/DancingScript-Bold.woff") format("woff"), url("/fonts/assets/DancingScript-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Fredericka the Great";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Fredericka the Great"), local("FrederickatheGreat"), local("FrederickatheGreat-Regular"), url("/fonts/assets/FrederickatheGreat-Regular.woff") format("woff"), url("/fonts/assets/FrederickatheGreat-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Indie Flower";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Indie Flower"), local("IndieFlower"), url("/fonts/assets/IndieFlower.woff") format("woff"), url("/fonts/assets/IndieFlower.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Megrim";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Megrim"), url("/fonts/assets/Megrim.woff") format("woff"), url("/fonts/assets/Megrim.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Oswald Regular"), local("Oswald-Regular"), url("/fonts/assets/Oswald-Regular.woff") format("woff"), url("/fonts/assets/Oswald-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 300;
-  src: local("Oswald Light"), local("Oswald-Light"), url("/fonts/assets/Oswald-Light.woff") format("woff"), url("/fonts/assets/Oswald-Light.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 700;
-  src: local("Oswald Bold"), local("Oswald-Bold"), url("/fonts/assets/Oswald-Bold.woff") format("woff"), url("/fonts/assets/Oswald-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Raleway Dots";
-  font-style: normal;
-  font-weight: 400;
-  src: local("RalewayDots"), local("Raleway Dots"), local("RalewayDots Regular"), local("RalewayDots-Regular"), local("Raleway Dots Regular"), url("/fonts/assets/RalewayDots-Regular.woff") format("woff"), url("/fonts/assets/RalewayDots-Regular.ttf") format("truetype");
 }
 .monologue {
   font: 36px "Cabin Sketch", sans-serif;
