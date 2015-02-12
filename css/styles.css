@@ -7065,7 +7065,8 @@ body {
   position: absolute;
 }
 #title-logo {
-  top: 10%;
+  top: 5%;
+  left: 10%;
   width: 726px;
   height: 381.6px;
 }
@@ -7082,8 +7083,8 @@ body {
   top: 48.11320755%;
 }
 #title-closing {
-  top: 72%;
-  bottom: 0%;
+  top: 60%;
+  bottom: 10%;
 }
 #title-closing > .inner .statement {
   text-align: center;
@@ -7094,7 +7095,7 @@ body {
   width: 220px;
   height: auto;
   left: 50%;
-  margin-left: -66px;
+  margin-left: -88px;
   bottom: -10px;
 }
 #title-bottom {
