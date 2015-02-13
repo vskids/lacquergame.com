@@ -6436,50 +6436,62 @@ body {
 .screen-height-rel .vh-12_5,
 .screen-height-rel.vh-12_5 {
   height: 12.5vh;
+  min-height: 62.5px;
 }
 .screen-height-rel .vh-25,
 .screen-height-rel.vh-25 {
   height: 25vh;
+  min-height: 125px;
 }
 .screen-height-rel .vh-50,
 .screen-height-rel.vh-50 {
   height: 50vh;
+  min-height: 250px;
 }
 .screen-height-rel .vh-75,
 .screen-height-rel.vh-75 {
   height: 75vh;
+  min-height: 375px;
 }
 .screen-height-rel .vh-100,
 .screen-height-rel.vh-100 {
   height: 100vh;
+  min-height: 500px;
 }
 .screen-height-rel .vh-125,
 .screen-height-rel.vh-125 {
   height: 125vh;
+  min-height: 625px;
 }
 .screen-height-rel .vh-150,
 .screen-height-rel.vh-150 {
   height: 150vh;
+  min-height: 750px;
 }
 .screen-height-rel .vh-175,
 .screen-height-rel.vh-175 {
   height: 175vh;
+  min-height: 875px;
 }
 .screen-height-rel .vh-200,
 .screen-height-rel.vh-200 {
   height: 200vh;
+  min-height: 1000px;
 }
 .screen-height-rel .vh-250,
 .screen-height-rel.vh-250 {
   height: 250vh;
+  min-height: 1250px;
 }
 .screen-height-rel .vh-300,
 .screen-height-rel.vh-300 {
   height: 300vh;
+  min-height: 1500px;
 }
 .screen-height-rel .vh-400,
 .screen-height-rel.vh-400 {
   height: 400vh;
+  min-height: 2000px;
 }
 .base-height-rel .vh-12_5,
 .base-height-rel.vh-12_5 {
@@ -6735,11 +6747,6 @@ body {
 #title-phase > .overlay {
   position: fixed;
 }
-#title-phase,
-#title-phase .container,
-#title-phase .container-fluid {
-  min-height: 768px;
-}
 #title-phase > .back.fill,
 #title-phase > .back .back.fill {
   background-color: #accdea;
@@ -6752,7 +6759,6 @@ body {
 #title-phase .container,
 #title-phase .container-fluid {
   position: relative;
-  overflow: hidden;
 }
 #title-phase > .overlay#versuskidspresent,
 #title-phase > .overlay #versuskidspresent {
