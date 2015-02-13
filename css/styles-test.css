@@ -7041,19 +7041,23 @@ body {
   bottom: 10px;
   left: 10px;
 }
-#title-bottom > .inner #badges #badge-twitter {
+#title-bottom > .inner #badges #badge-twitter,
+#title-bottom > .inner #badges #badge-twitter img {
   height: 75px;
   width: auto;
 }
-#title-bottom > .inner #badges #badge-facebook {
+#title-bottom > .inner #badges #badge-facebook,
+#title-bottom > .inner #badges #badge-facebook img {
   height: 75px;
   width: auto;
 }
-#title-bottom > .inner #badges #badge-instagram {
+#title-bottom > .inner #badges #badge-instagram,
+#title-bottom > .inner #badges #badge-instagram img {
   height: 75px;
   width: auto;
 }
-#title-bottom > .inner #badges #badge-tumblr {
+#title-bottom > .inner #badges #badge-tumblr,
+#title-bottom > .inner #badges #badge-tumblr img {
   height: 75px;
   width: auto;
 }

@@ -525,13 +525,14 @@ html, body {
 	
 	> .inner {
 		#badges {
-			
 			width: 50%; height: @element-height;
 			
 			bottom: 10px; left: 10px;
 			
 			.badge() {
-				height: @element-height; width: auto;
+				&, img {
+					height: @element-height; width: auto;
+				}
 			}
 			#badge-twitter { .badge(); }
 			#badge-facebook { .badge(); }
