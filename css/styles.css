@@ -7035,11 +7035,33 @@ body {
 #title-bottom {
   bottom: 0%;
 }
-#title-bottom > .inner #comingsoon {
-  width: 210px;
-  height: auto;
+#title-bottom > .inner #badges {
+  width: 50%;
+  height: 75px;
   bottom: 10px;
   left: 10px;
+}
+#title-bottom > .inner #badges #badge-twitter {
+  height: 75px;
+  width: auto;
+}
+#title-bottom > .inner #badges #badge-facebook {
+  height: 75px;
+  width: auto;
+}
+#title-bottom > .inner #badges #badge-instagram {
+  height: 75px;
+  width: auto;
+}
+#title-bottom > .inner #badges #badge-tumblr {
+  height: 75px;
+  width: auto;
+}
+#title-bottom > .inner #comingsoon {
+  height: 75px;
+  width: auto;
+  bottom: 10px;
+  right: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

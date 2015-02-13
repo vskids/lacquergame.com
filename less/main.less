@@ -519,14 +519,30 @@ html, body {
 #title-bottom {
 	&:extend(.title-piece all);
 	
+	@element-height: 75px;
+	
 	bottom: 0%;
 	
 	> .inner {
-		#comingsoon {
-			width: 210px;
-			height: auto;
+		#badges {
+			
+			width: 50%; height: @element-height;
 			
 			bottom: 10px; left: 10px;
+			
+			.badge() {
+				height: @element-height; width: auto;
+			}
+			#badge-twitter { .badge(); }
+			#badge-facebook { .badge(); }
+			#badge-instagram { .badge(); }
+			#badge-tumblr { .badge(); }
+		}
+		
+		#comingsoon {
+			height: @element-height; width: auto;
+			
+			bottom: 10px; right: 10px;
 		}
 	}
 }
