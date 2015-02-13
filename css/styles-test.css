@@ -6433,6 +6433,14 @@ body {
   height: 100%;
   min-width: 970px !important;
 }
+.screen-height-rel .vh-12_5,
+.screen-height-rel.vh-12_5 {
+  height: 12.5vh;
+}
+.screen-height-rel .vh-25,
+.screen-height-rel.vh-25 {
+  height: 25vh;
+}
 .screen-height-rel .vh-50,
 .screen-height-rel.vh-50 {
   height: 50vh;
@@ -6473,6 +6481,14 @@ body {
 .screen-height-rel.vh-400 {
   height: 400vh;
 }
+.base-height-rel .vh-12_5,
+.base-height-rel.vh-12_5 {
+  height: 125px;
+}
+.base-height-rel .vh-25,
+.base-height-rel.vh-25 {
+  height: 250px;
+}
 .base-height-rel .vh-50,
 .base-height-rel.vh-50 {
   height: 500px;
@@ -6512,6 +6528,14 @@ body {
 .base-height-rel .vh-400,
 .base-height-rel.vh-400 {
   height: 4000px;
+}
+.line-height-rel .vh-12_5,
+.line-height-rel.vh-12_5 {
+  height: 106.25px;
+}
+.line-height-rel .vh-25,
+.line-height-rel.vh-25 {
+  height: 212.5px;
 }
 .line-height-rel .vh-50,
 .line-height-rel.vh-50 {
@@ -6987,8 +7011,8 @@ body {
   top: 48.11320755%;
 }
 #title-closing {
-  top: 60%;
-  bottom: 10%;
+  top: 70%;
+  bottom: 0%;
 }
 #title-closing > .inner .statement {
   text-align: center;
